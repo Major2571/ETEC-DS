@@ -1,0 +1,52 @@
+body {
+    background-color: rgba(92, 68, 16, 0.699);
+    font-size: 20px;
+    font-family: consolas; 
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+img {
+    width: 350px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(63, 42, 42) ;
+    margin: auto;
+}
+
+.links {
+    text-align: center;
+    padding: 50px;
+    text-shadow: 2px 2px 5px rgb(100, 99, 99) ;
+    line-height: 1.6;
+}
+
+/* cor do link */
+a:link {
+    color: rgb(94, 64, 64);
+}
+
+/* link vistado */
+a:visited {
+    color: rgb(71, 56, 45);
+}
+  
+/* quando passa o mouse pelo link */
+a:hover {
+    color: rgb(56, 32, 32);
+}
+  
+/* quando clica no link*/
+a:active {
+    color: rgb(87, 62, 62);
+}
+  

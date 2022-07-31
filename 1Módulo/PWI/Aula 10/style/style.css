@@ -1,0 +1,66 @@
+html {
+    background-image: url(https://preview.redd.it/zgmi8frme3u31.jpg?auto=webp&s=79a89d363b7381b6501cc25c23a2a57c1d36c41b);
+    background-position-x: center;
+    background-repeat: repeat;
+}
+
+body {
+    text-align: center;
+    font-family: consolas;
+    margin: 50px 40px 50px 40px;
+    font-size: 20px;
+    text-shadow: 1px 3px 15px rgba(17, 17, 17, 0.829);
+
+    position: relative; 
+    padding: 40px 40px;
+    background: rgba(255, 255, 255, 0.301);
+    border-radius: 50px; 
+}
+
+h1 {
+    text-shadow: 1px 3px 10px rgba(2, 2, 2, 0.582);
+    font-size: 40px !important;
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 85px;
+
+    align-items: center;
+    align-content: center;
+
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    background-image: linear-gradient( 180deg,#833ab4, #fd1d1d, #fcb045);
+}
+  
+.flex-container > div {
+    background-color: #7fcee6a6;
+    width: 100px;
+    margin: 20px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: 1px 5px 15px black;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.flex-container > div:hover {
+    transform: translateY(-15);
+
+    /* dar o efeito zoom */
+   -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+
+   -webkit-transform: scale(2.0);
+   transform: scale(1.2);
+
+    color: rgba(67, 15, 255, 0.836); 
+
+    cursor: pointer;
+}

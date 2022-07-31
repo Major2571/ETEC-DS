@@ -1,0 +1,10 @@
+1º Iniciar o wamp (tem que ficar com a cor verde)
+
+2º criar o projeto dentro da pasta www (C:\wamp642\www)
+
+3º Criar uma nova pasta com o nome do seu projeto
+
+4º Abrir o visual studio code e carregar o projeto criado
+
+5º Abrir o navegador e digitar:
+localhost/nomeDoSeuProjeto

@@ -1,0 +1,27 @@
+body {
+   margin-top: 50px;
+   margin-left: 80px;
+   margin-right: 80px;
+   font-family: consolas; 
+   font-size: 20px;
+
+   background-color: antiquewhite   ;
+
+}
+
+form {
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+
+    margin: 10px 15px;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    border-color: rgb(30, 199, 120);
+
+    padding: 3px 5px;
+}

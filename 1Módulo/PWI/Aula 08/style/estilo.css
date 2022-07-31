@@ -1,0 +1,37 @@
+html {
+    background-image: url(../img/img1.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    display: block;
+    place-content: center;
+
+}
+
+body {
+    margin: 30px ;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    font-family: consolas;
+    font-size: 22px;
+    color: rgb(31, 8, 136);
+
+    position: relative;
+    padding: 100px 100px;
+    background: rgba(176, 134, 243, 0.712);
+    border-radius: 15px; 
+
+}
+
+h1, h3, p {
+    text-align: center;
+    text-shadow: -3px 4px 5px rgba(151, 0, 252, 0.659);
+}
+
+
+.hover:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+

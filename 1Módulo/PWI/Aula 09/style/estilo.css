@@ -1,0 +1,91 @@
+html {
+    background-image: url(https://i0.wp.com/abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled-1.jpg?fit=2560%2C1440&ssl=1);
+    background-position: center;
+    background-repeat: repeat; 
+    font-family: consolas;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+
+}
+
+h1 {
+    text-shadow:  1px 5px 9px #000000b9, -5px 5px 30px rgba(5, 255, 192, 0.938)
+}
+
+.div1, .div2 {
+    border: 5px rgb(0, 17, 255);
+    border-style: dashed;
+    border-radius: 55px;
+    background-color: rgb(9, 221, 186);
+    box-shadow: 0px 5px 15px black;
+    text-align: center;
+    margin: 100px 50px 100px 50px;
+    padding: 10px;
+}
+
+
+.boxes {
+    margin: 50px 50px 50px 50px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(33, 221, 228);
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.589);
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    margin: 30px 50px 30px 50px !important;
+  }
+  
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 100px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.589);
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 2;
+
+}
+
+.divx {
+    background-color: #e98121;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.589);
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 2;
+}
+
+.divy {
+    background-color: #072e61;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.589);
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 2;
+}
