@@ -11,7 +11,7 @@
 
 #### Ferramentas e linguagens utilizadas/desenvolvidas em aula:
 
-Programação Web I ( [PWI](https://github.com/Major2571/ETEC-DS-Aulas) )
+Programação Web I ( [PWI](https://github.com/Major2571/ETEC-DS-Aulas/tree/main/1M%C3%B3dulo/PWI) )
 <div align="left" class="imagens_home">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"  height="50" width="50" />     
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50" width="50" />
