@@ -1,4 +1,4 @@
-# ETEC-DS-Aulas
+# ETEC-DS
 Repositório das aulas do curso técnico Desenvolvimento de Sistemas.
 
 
@@ -9,9 +9,11 @@ Repositório das aulas do curso técnico Desenvolvimento de Sistemas.
 <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" />
+</div>
+
+<div align="center">
 <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-<a href="https://github.com/Major2571">
-<img height="150em" src="https://github-readme-stats.vercel.app/api?username=Major2571&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-<img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Major2571&layout=compact&langs_count=7&theme=tokyonight"/>
+<img src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white" />
+<img src="https://img.shields.io/badge/NetBeansIDE-1B6AC6.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white" />
+<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
 </div>
