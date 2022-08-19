@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Cadastro"
+        android:background="#80F1F1"
+    >
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Cadastro"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:background="#025159"
+        android:textStyle="bold"
+    />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:background="#04BFBF"
+        app:srcCompat="@drawable/cadastro"
+        android:padding="50px"
+    />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="20px"
+
+    />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Nome: "
+        android:textStyle="bold"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+
+    />
+
+    <EditText
+        android:id="@+id/edt_nome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+    />
+
+    <TextView
+        android:id="@+id/txtCelular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Celular: "
+        android:textStyle="bold"
+        android:layout_marginTop="20px"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+    />
+
+    <EditText
+        android:id="@+id/edt_celular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+    />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="E-mail: "
+        android:textStyle="bold"
+        android:layout_marginTop="20px"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+    />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+    />
+
+    <TextView
+        android:id="@+id/txtEndereco"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Endereço: "
+        android:textStyle="bold"
+        android:layout_marginTop="20px"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        />
+
+    <EditText
+        android:id="@+id/edt_endereco"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_limpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:layout_weight="1"
+            android:padding="10px"
+            android:text="Limpar"
+            android:backgroundTint="#025159"
+         />
+
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:padding="10px"
+            android:backgroundTint="#025159"
+        />
+
+        <Button
+            android:id="@+id/btn_excluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Excluir"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:padding="10px"
+            android:backgroundTint="#025159"
+        />
+
+    </LinearLayout>
+
+    </LinearLayout>
