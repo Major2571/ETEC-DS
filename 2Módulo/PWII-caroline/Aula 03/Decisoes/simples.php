@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/decisao.css">
+    <link rel="stylesheet" href="decisao.css">
     <title> Decisão Simples </title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     
     <?php 
     
-        echo "<h1> Decisão Simples e Composta ( if, else ) </h1>";
+        echo "<h1> Decisão Simples e Composta <br/> ( if, else ) </h1>";
 
         // o Aluno Zézinho, para ser aprovado tem que tirar média 7 ou superior para ser aprovado;
         // serão 2 atividades que valem de 0 a 10;
