@@ -1,4 +1,4 @@
-<?php require("./templetes/head.php") ?>
+<?php require("templetes/head.php"); ?>
 
 <section>
     <h1> Contact </h1>
@@ -12,4 +12,4 @@
     </div>
 </section>
 
-<?php require("./templetes/footer.php") ?>
+<?php require("templetes/footer.php"); ?>
