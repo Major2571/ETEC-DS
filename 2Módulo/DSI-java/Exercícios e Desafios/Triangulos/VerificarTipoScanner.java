@@ -18,7 +18,7 @@ public class VerificarTipoScanner {
         Scanner x = new Scanner(System.in);
 
         double a = 0.0, b = 0.0, c = 0.0;
-
+        
         System.out.println(" Tipos de Triangulos ");
         System.out.println(" Digite o valor do lado A: ");
         a = Double.parseDouble(x.nextLine());
@@ -29,13 +29,17 @@ public class VerificarTipoScanner {
         System.out.println(" Digite o valor do lado C: ");
         c = Double.parseDouble(x.nextLine());
 
-        if ((a == b) && (b == c)) {
-            System.out.println(" O Triângulo é Equilátero! ");
-        } else if ((a == b) || (b == c) || (a == c)) {
-            System.out.println(" O Triângulo é Isósceles! ");
-        } else {
-            System.out.println(" O Triângulo é Escaleno! ");
-        }
+            if ((a == b) && (b == c)) {
+                System.out.println(" O Triângulo é Equilátero! ");
+            } 
+
+            else if ((a == b) || (b == c) || (a == c)) {
+                System.out.println(" O Triângulo é Isósceles! ");
+            } 
+
+            else {
+                System.out.println(" O Triângulo é Escaleno! ");
+            }
 
     }
 

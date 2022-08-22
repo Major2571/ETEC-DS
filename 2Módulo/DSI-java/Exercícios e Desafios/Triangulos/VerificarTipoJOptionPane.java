@@ -29,7 +29,6 @@ public class VerificarTipoJOptionPane {
         } else {
             JOptionPane.showMessageDialog(null," Trinângulo Escaleno! ");
         }
-        
     }
     
 }
