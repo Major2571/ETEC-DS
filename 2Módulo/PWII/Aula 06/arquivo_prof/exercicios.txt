@@ -1,0 +1,6 @@
+3 - Criar uma tabela HTML com 10 linhas contendo as colunas Produto e Valor. Utilizando laço de repetição exiba as linha ímpares na cor azul e as pares na cor vermelha.
+
+4 - Criar uma tabela HTML com 10 linhas contendo as colunas Produto e Valor. Exiba apenas na tabela os produtos cujo valor seja inferior a 1000.
+
+5 - Utilizando vetores e laços de repetição, crie uma página que exiba a imagem referente a um país, seu nome e o seu continente. 
+
