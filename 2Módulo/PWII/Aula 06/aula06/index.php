@@ -46,7 +46,6 @@
 </section>
 
 <section>
-
     <?php
 
         echo "<h1>Atividade 2 </h1>";
