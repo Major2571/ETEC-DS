@@ -1,0 +1,66 @@
+1. O que é um programa de computador?
+Conjunto de instruções que descrevem uma tarefa a ser realizada por um computador.
+
+2. O que é um sistema?
+É um Conjunto integrado de componentes regularmente inter-relacionados e interdependentes criados para realizar um objetivo definido, com relações definidas e mantidas entre seus componentes e cuja produção e operação como um todo é melhor que a simples soma de seus componentes.
+
+
+3. Quando surgiu a linguagem Java?
+A linguagem Java surgiu no ano de 1991.
+
+4. Quais os problemas que a linguagem Java é capaz de sanar?
+
+
+5. Quem foi considerado o pai do Java?
+James Gosling
+
+6. Como funciona a linguagem Java?
+Java é uma linguagem de programação orientada a objetos, baseada em classes, que permite o desenvolvimento de aplicações pelos profissionais de TI através da escrita do código uma única vez.
+
+7. O que é a máquina virtual?
+Basicamente, máquina virtual é um programa que permite rodar um sistema operacional dentro de outro, sendo capaz de executar sistemas operacionais e aplicativos como se fosse uma máquina física, podendo, inclusive, rodar sistemas operacionais que normalmente não seriam compatíveis com sua arquitetura.
+
+8. O que é JVM?
+JVM, ou, Máquina virtual Java, é um programa interpreta o código em Java e permite rodá-lo em qualquer plataforma.
+
+9. O que é JRE?
+JRE, ou, Java Runtime Environment, é o ambiente de execução Java que deve ser instalado na máquina para rodar aplicativos Java em seu computador.
+
+10. O que é JDK?
+JDK, ou, Java Development Kit, é um pacote que inclui tudo o que é necessário para escrever aplicações e também deve ser instalado na sua máquina. 
+
+11. Relate os passos para criar um projeto no NetBeans:
+
+
+12. Faça um programa que imprima seu nome?
+
+13. Defina o que é public?
+Modificador de Acesso do método, podendo ser acessado por qualquer classe dentro/fora do projeto, pode ser public, private ou protect.
+
+14. Defina o que é static?
+Define o método como Estático, executa nossa classe.
+
+15. Defina o que é void?
+Retorno do método, ele envia dados e não espera retorno.
+
+16. Defina o que é main?
+Nome do nosso Método
+
+17. Defina o que é String?
+Tipo de dado, normalmente, é acompanhado por um vetor que define nosso array, por exemplo, String[] args, onde args é o nome do array da String.
+
+18. O que faz o import na figura abaixo?
+Importa a classe JOptionPane para o nosso programa, que irá fornecer métodos para criar as caixas de diálogos.
+
+19. O que faz o código abaixo?
+
+
+
+
+
+
+
+
+
+
+
