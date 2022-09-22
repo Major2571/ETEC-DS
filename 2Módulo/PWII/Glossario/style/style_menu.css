@@ -115,7 +115,7 @@ header section.top-nav {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 67px;
+        margin-top: 75px;
         /* margem de quando o quadrinho desce*/
         left: 0;
         flex-direction: column;

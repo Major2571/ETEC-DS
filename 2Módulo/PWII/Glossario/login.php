@@ -1,6 +1,7 @@
 <?php include("templates/head.php"); ?>
 
 <section class="login">
+    <h1>Faça seu Login</h1>
         <form action="">
 
             <div>
