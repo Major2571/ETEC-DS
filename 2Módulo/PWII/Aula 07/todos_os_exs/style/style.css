@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: #8BC6EC;
+    font-family: Poppins;
+    margin: 0;
+}
+
+header nav {
+    background-color: #0f1364;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav ul {
+    flex-flow: row wrap;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    margin: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in;
+    text-shadow: 0 0 25px rgb(105, 104, 104);
+}
+
+header nav ul li a:hover {
+    color: #f0f8ff;
+    background-color: #363dc9;
+    box-shadow: 0 0 10px rgb(54, 54, 54);
+}
+
+
+section {
+    margin-top: 50px;
+    height: max-content;
+}
+
+section h2,
+p {
+    width: 70%;
+    margin: 20px auto;
+
+    text-align: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-family: 'Open Sans';
+    color: rgb(0, 0, 0);
+}
+
+
+div.container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 50px auto;
+}
+
+div.container .card {
+    width: 40%;
+    height: 15em;
+    background-color: #0f1364;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div.container .card:hover {
+    transition: all 0.2s ease-in-out;
+    background-color:rgb(151, 154, 202);
+}
+
+div.container .card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+
+
+
+
+footer {
+    background-color: #070b53;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+
+section.ex01mae {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+}
+section.ex01 {
+    background-color: rgb(181, 226, 255);
+    width: 30%;
+    height: 500px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin: 50px 1%;
+    font-size: 1.5rem;
+}
+
+section.ex01 p {
+    margin: 0;
+    font-size: 1.2rem;
+    width: 100%;
+    justify-content: center;
+}
