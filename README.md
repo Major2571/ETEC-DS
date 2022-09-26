@@ -1,6 +1,13 @@
-# ETEC-DS
 
-Repositório das aulas do curso técnico Desenvolvimento de Sistemas.
+## ETEC - DS
+
+Bem Vindo ao meu repositório geral de aulas do **Curso Técnico de Desenvolvimento de Sistemas**, realizado entre 2022 e 2023. 
+
+Nele você pode encontrar: 
+- Critérios utilizados e avaliados pelos mentores;
+- Ferramentas utilizadas em aula;
+- Linguagens desenvolvidas em aula;
+- Projetos, avaliações, entre outros.
 
 ##  💻 Technologies & Tools 
 
@@ -17,3 +24,11 @@ Repositório das aulas do curso técnico Desenvolvimento de Sistemas.
 
 </div>
 
+
+<br/>
+
+> ### **👩🏻‍💻 Status**: 
+> - 1° Módulo ✅ *( Concluído - 06/2022 )*
+> - 2° Módulo  ⏳ *( Loading... )*
+> - 3° Módulo 🚧 
+	 
