@@ -4,7 +4,7 @@
 
     $palavra = $_POST['txPalavra'];
     $desc = $_POST['txDescricao'];
-    $img = $_POST['txImg'];
+    $img = $_POST['Img'];
     $link = $_POST['txLink'];
 
 
@@ -15,8 +15,8 @@
                 <p>
                        <strong> Palavra: </strong> $palavra
                 <br /> <strong> Descrição: </strong> $desc
-                <br /> <strong> Imagem: </strong> $link
-                <br /> <strong> Link: </strong> $img
+                <br /> <strong> Link: </strong> $link
+                <br /> <strong> Imagem: </strong> <img src='$img' alt=''>
                 </p>
             </div> ";
     

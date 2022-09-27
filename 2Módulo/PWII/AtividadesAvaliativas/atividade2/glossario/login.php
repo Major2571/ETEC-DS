@@ -1,24 +1,36 @@
 <?php include("templates/head.php"); ?>
 
-<section class="login">
-    <h1>Faça seu Login</h1>
-        <form action="">
+<section class="login-box">
+    <form action="">
+        <h2>Login</h2>
 
-            <div>
-                <input type="text" placeholder="Usuario">
-            </div>
+        <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+        </div>
 
-            <div>
-                <input type="text" placeholder="Senha">
-            </div>
+        <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+        </div>
 
-            <div>
-                <input type="submit" placeholder="Salvar">
-            </div>
 
-        </form>
+        <div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input type="submit" placeholder="submit">
+            </a>
+        </div>
 
+
+    </form>
+    <div class="img_login">
+        <img src="./img/login.svg" alt="">
+    </div>
 </section>
 
 
-    <?php include("templates/footer.php"); ?>
+<?php include("templates/footer.php"); ?>

@@ -63,33 +63,39 @@
 
 </section>
 
-<section class="palavra">
-    <h1>Cadastre sua Palavra Abaixo:</h1>
+<section>
+    <div class="palavra">
+        <h1>Cadastre sua Palavra Abaixo:</h1>
         <form action="cadastroPalavras.php" method="post">
 
-            <div>
-                <input type="text" placeholder="Palavra"  name="txPalavra">
+            <div class="input-group">
+                <input type="text" id="palavra" name="txPalavra">
+                <label for="palavra" class="input-label"> Palavra </label>
             </div>
 
-            <div>
-                <input type="text" placeholder="Descrição" name="txDescricao">
+            <div class="input-group">
+                <input type="text" id="descricao" name="txDescricao">
+                <label for="descricao" class="input-label"> Descrição </label>
             </div>
-            
-            <div>
-                <input type="text" placeholder="Imagem" name="txLink">
+
+            <div class="input-group">
+                <input type="text" id="link" name="txLink">
+                <label for="link" class="input-label"> Link </label>
             </div>
-            <div>
-                <input type="text" placeholder="Link" name="txImg">
+
+            <div class="button-wrap">
+                <label class="new-button" for="upload" > Escolha uma Imagem
+                <input type="file" id="upload" name="Img">
             </div>
 
 
             <div>
-                <input type="submit" placeholder="Salvar" class="btn btn-info">
+                <input type="submit">
             </div>
-
         </form>
+    </div>
 
-    </section>
+</section>
 
 
 

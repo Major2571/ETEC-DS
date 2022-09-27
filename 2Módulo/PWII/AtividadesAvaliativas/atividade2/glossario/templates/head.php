@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style_menu.css">
     <link rel="stylesheet" href="style/style_login.css">
+    <link rel="stylesheet" href="style/style_palavra.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Glossário</title>
 </head>
