@@ -1,5 +1,5 @@
 
-## ETEC - DS
+## 📚 ETEC - DS
 
 Bem Vindo ao meu repositório geral de aulas do **Curso Técnico de Desenvolvimento de Sistemas**, realizado entre 2022 e 2023. 
 
@@ -9,7 +9,7 @@ Nele você pode encontrar:
 - Linguagens desenvolvidas em aula;
 - Projetos, avaliações, entre outros.
 
-##  💻 Technologies & Tools 
+##  💻 Technologies & Tools
 
 <div align="center">
 
