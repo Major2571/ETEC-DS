@@ -1,0 +1,202 @@
+table {
+    max-width: 80%;
+    margin: 50px auto;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+thead {
+    height: 75px;
+    background: rgb(0, 53, 68);
+    color: rgb(240, 248, 255);
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+thead tr th {
+    border-radius: 5px;
+}
+
+
+tr td {
+    border-radius: 5px;
+    width: 300px;
+    max-height: 200px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.274);
+    padding: 15px;
+}
+
+
+table a img {
+    max-width: 2rem;
+    padding: 10px 0;
+}
+
+
+.palavra {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.palavra form {
+    width: 55%;
+    background: rgb(0, 53, 68);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    padding: 80px 60px;
+}
+
+.palavra form .input-group {
+    position: relative;
+}
+
+.palavra form .input-group input {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+    border: 1.3px solid #fff;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    outline: none;
+}
+
+.palavra form .input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 2.4em;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .3s;
+}
+
+/* O + q tava dando problema*/
+.palavra form .input-group input:focus+label,
+.palavra form .input-group input:valid+label {
+    transform: translate(1.7em, -22px) scale(1);
+    color: #ffffff;
+    background: rgb(0, 53, 68);
+    left: 1em;
+    font-size: 17px;
+    padding: 2px 15px;
+}
+
+
+
+
+
+.new-button {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: rgb(6, 91, 114);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.767);
+    font-size: 19px;
+    color: #fff;
+}
+
+.new-button:hover {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #024868;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+    transition: all 0.2s ease-in;
+    font-size: 19px;
+    color: #fff;
+}
+
+
+.button-wrap input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    top: 6px;
+    left: 0;
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+}
+
+.button-wrap {
+    position: relative;
+}
+
+
+.palavra form input[type="submit"] {
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+    border: none;
+    color: #ffffff;
+    background: rgb(7, 173, 185);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 20px 30px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.palavra form input[type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    background-color: #0e8185;
+    box-shadow: 0 0 10px rgb(31, 255, 206), 0 0 20px rgb(31, 255, 206);
+}
+
+
+
+
+.var,
+.dados {
+    border-radius: 5px;
+    margin: 5% auto;
+    text-align: center;
+    color: #262626;
+}
+
+.dados {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.var {
+    font-size: 1.5rem;
+    background-color: #8F8EBF;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 25px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 35px;
+    max-width: 20em;
+
+}
+
+.var p {
+    text-shadow: 0 0 25px rgba(112, 112, 112, 0.788);
+    text-align: left;
+    margin: auto 10%;
+}
+
+.var img {
+    width: 70%;
+}
