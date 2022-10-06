@@ -32,7 +32,7 @@ tr td {
 
 
 table a img {
-    max-width: 2rem;
+    max-width: 3rem;
     padding: 10px 0;
 }
 
@@ -160,8 +160,8 @@ table a img {
 
 .palavra form input[type="submit"]:hover {
     color: rgb(255, 255, 255);
-    background-color: #0e8185;
-    box-shadow: 0 0 10px rgb(31, 255, 206), 0 0 20px rgb(31, 255, 206);
+    background-color: #0b8066;
+    box-shadow: -5px -5px 2px rgb(9, 184, 146), 5px 5px 2px rgb(10, 223, 177);
 }
 
 
