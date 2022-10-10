@@ -45,7 +45,7 @@
                             "<td>" . $row['descricao'] . "</td>" .
                             "<td>" . $row['imagem'] . "</td>" .
                             "<td>" . $row['link'] . "</td>" .
-                            "<td> <a href='Action_ExcluirPalavra.php?id=" . $row['idPalavra'] .  "'><img src='./img/trash.png'> </a> </td> 
+                            "<td> <a href='Action_ExcluirPalavra.php?id=" . $row['idPalavra'] .  "'><img src='./img/trash.svg'> </a> </td> 
                           </tr>";
                 }
             } catch (PDOException $e) {
