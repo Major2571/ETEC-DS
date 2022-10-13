@@ -1,6 +1,9 @@
 
 ## 1° Módulo - DS
 **Critérios utilizados e avaliadas pelos mentores (de forma geral)**
+<img src="https://i.pinimg.com/originals/9a/68/71/9a68716efc331fcc84e3a4ce5f23d18d.png" width="450" align="right"/>
+
+
 - Relacionamento de ideias;
 - Relacionamento de conceitos;
 - Resolução de problemas;
@@ -9,23 +12,15 @@
 - Assiduidade;
 - Elaborar propostas;
 
+
 #### Ferramentas e linguagens utilizadas/desenvolvidas em aula:
 
-Programação Web I ( [PWI](https://github.com/Major2571/ETEC-DS-Aulas/tree/main/1M%C3%B3dulo/PWI) )
-<div align="left" class="imagens_home">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"  height="50" width="50" />     
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50" width="50" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50" width="50" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="50" width="50"/>
-</div>
+<div align="left">
 
-Banco de Dados I
-<div align="left" class="imagens_home">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" height="50" width="50"/>   
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/WampServer-logo.svg/1024px-WampServer-logo.svg.png" height="50" width="50"/>
-</div>
-
-Programação e Algoritmos ( Lógica voltada a Programação )
-<div align="left" class="imagens_home">
-<img src="https://yt3.ggpht.com/ytc/AKedOLQSeiLmadkWkBrgttmFZucTmyRhUq7BhySFokrUtQ=s900-c-k-c0x00ffffff-no-rj" height="70" width="70" />   
+| Componente Curricular | Linguagens / Ferramentas  |
+| :---:        |     :---:      
+| Programação Web I   |![HTML5](https://img.shields.io/badge/html5-0D1117.svg?logo=html5&logoColor=E34F26&labelColor=0D1117&style=for-the-badge) <br/> ![CSS3](https://img.shields.io/badge/css3-0D1117.svg?logo=css3&logoColor=1572B6&labelColor=0D1117&style=for-the-badge&)<br/>  ![Git](https://img.shields.io/badge/git-0D1117.svg?logo=git&logoColor=E44C30&labelColor=0D1117&style=for-the-badge) 
+| Banco de Dados I     | ![MySQL](https://img.shields.io/badge/mysql-161B22.svg?logo=mysql&logoColor=white&labelColor=161B22&style=for-the-badge)
+| Programação e Algoritmos <br/> ( Lógica voltada a Programação )     | <img src="https://cdn.programadoresbrasil.com.br/wp-content/uploads/2022/06/Portugol.jpg" height="50" width="auto" />    
+ 
 </div>
