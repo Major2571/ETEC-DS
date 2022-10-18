@@ -4,11 +4,16 @@ header section.top-nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color:  #003544;
+    background-color:  #003544cc;
     color: #FFF;
     padding: 0 2em;
-    height: 4em;
+    height: 5em;
     font-size: 1.2em;
+}
+
+header section.top-nav div img {
+    max-width: 15vw;
+    padding: 5%;
 }
 
 .menu {
@@ -107,6 +112,11 @@ header section.top-nav {
 }
 
 @media (max-width: 900px) {
+    header section.top-nav div img {
+        max-width: 30vw;
+        padding: 5%;
+    }
+
     .menu-button-container {
         display: flex;
     }
@@ -145,14 +155,37 @@ header section.top-nav {
         padding: 0.5em 0;
         width: 100%;
         color: white;
-        background-color: rgba(0, 0, 0, 0.596);
+        background-color: #003544;
         cursor: pointer;
     }
 
     .menu>li:hover {
         color: white;
-        background-color: rgb(0, 113, 145);
+        background-color: #042d38;
         transition: all 0.2s ease-in;
+    }
+
+    .menu li a {
+        color: #ffffff;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .menu li a:hover {
+        color: #ffffff;
+        text-shadow: none;
+    }
+
+    .menu li a::before {
+        transform-origin: none;
+        transform: none;
+        transition: none;
+        height: 0;
+    }
+
+    .menu li a:hover::before {
+        transform-origin: none;
+        transform: none;
     }
 
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/style_menu.css">
     <link rel="stylesheet" href="style/style_login.css">
     <link rel="stylesheet" href="style/style_palavra.css">
+    <link rel="stylesheet" href="style/style_principal.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Glossário</title>
 </head>
@@ -18,7 +19,9 @@
     <header>
         <section class="top-nav">
             <div>
-                logo?
+                <a href="principal.php">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
