@@ -10,10 +10,15 @@ table {
 
 thead {
     height: 75px;
-    background: rgb(0, 53, 68);
-    color: rgb(240, 248, 255);
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-    text-transform: uppercase;
+    background: #024059e5;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-family: 'Kanit';
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 thead tr th {
@@ -30,20 +35,22 @@ tr td:nth-child(7) {
 }
 
 
+
 tr td {
     border-radius: 5px;
     width: 300px;
     max-height: 200px;
     padding: 0 20px;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: #2e2e2e59;
     padding: 15px;
 }
 
 
 table a img {
-    max-width: 2rem;
+    max-width: 1.7rem;
     padding: 10px 0;
 }
+
 
 
 .palavra {
@@ -56,21 +63,26 @@ table a img {
 }
 
 .palavra h1 {
-    color: #fff;
-    text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 53, 68);
+    color: #ffffff;
+    font-family: 'Kanit';
     font-size: 2em;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .palavra form {
     width: 55%;
-    background: rgb(0, 53, 68);
+    background: #024059e5;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     box-sizing: border-box;
     margin: auto;
     align-items: center;
     border-radius: 5px;
     text-align: center;
-    padding: 80px 60px;
+    padding: 50px 60px;
 }
 
 .palavra form .input-group {
@@ -106,7 +118,7 @@ table a img {
 .palavra form .input-group input:valid+label {
     transform: translate(1.7em, -22px) scale(1);
     color: #ffffff;
-    background: rgb(0, 53, 68);
+    background: #104B63;
     left: 1em;
     font-size: 17px;
     padding: 2px 15px;
@@ -156,12 +168,12 @@ table a img {
 
 .palavra form input[type="submit"] {
     position: relative;
-    margin-top: 40px;
+    margin-top: 0px;
     display: inline-block;
     border: none;
     color: #ffffff;
-    background: rgb(7, 173, 185);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background: #085574;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.397);
     border-radius: 4px;
     font-size: 15px;
     padding: 20px 30px;
@@ -175,46 +187,32 @@ table a img {
 
 .palavra form input[type="submit"]:hover {
     color: rgb(255, 255, 255);
-    background-color: #0e8185;
-    box-shadow: 0 0 10px rgb(31, 255, 206), 0 0 20px rgb(31, 255, 206);
+    background-color: #0cbcc9;
+    box-shadow: 0 0 10px #058a94, 0 0 20px #0d9ea3, 0 0 30px #00f7ff;
 }
 
 
-
-
-.var,
-.dados {
-    border-radius: 5px;
-    margin: 5% auto;
-    text-align: center;
-    color: #262626;
+.custom-shape-divider-top-1666199524 {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 110px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-.dados {
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+.custom-shape-divider-top-1666199524 svg {
+    position: relative;
+    display: auto;
+    width: calc(100% + 1px);
+    height: 10em;
 }
 
-.var {
-    font-size: 1.5rem;
-    background-color: #8F8EBF;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 35px;
-    max-width: 20em;
-
+.custom-shape-divider-top-1666199524 .shape-fill {
+    fill: #024059;
 }
 
-.var p {
-    text-shadow: 0 0 25px rgba(112, 112, 112, 0.788);
-    text-align: left;
-    margin: auto 10%;
-}
-
-.var img {
-    width: 70%;
-}
 
 .alterar_palavra h1 {
     width: 70%;
@@ -222,8 +220,13 @@ table a img {
     margin: auto;
     padding: 2em;
     z-index: 1;
+    color: #05F2DB;
+    font-family: 'Kanit';
     font-size: 2em;
-    color: #fff;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    mix-blend-mode: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -235,25 +238,23 @@ table a img {
     padding: 10px;
     font-style: italic;
     z-index: 1;
-    font-size: 2em;
-    color: #fff;
-    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    font-size: 2.2em;
+    color: #ffffff;
+    font-family: 'Kanit';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 2px solid;
-    border-image: linear-gradient(100deg, rgba(60, 74, 83, 0), #00f7ff, rgba(60, 74, 83, 0)) 1;
+    border-image: linear-gradient(160deg, rgba(60, 74, 83, 0), #00f7ff, rgba(60, 74, 83, 0)) 1;
+    background: linear-gradient(105deg, rgba(2, 0, 36, 0) 20%, rgba(9, 117, 121, 0.486) 50%, rgba(0, 213, 255, 0) 80%);
 
 }
 
 .alteracao {
     padding-top: 50px;
     margin-top: -2em;
-    border: 2px solid;
-    border-top: none;
-    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), rgba(0, 226, 242, 0.822), rgba(60, 74, 83, 0)) 1;
+    border: none;
 }
 
 .alterar_palavra {
-    background-color: transparent;
-    background-image: radial-gradient(at center center, #00435e 0%, #002230 55%);
     border-top: 2px solid;
     border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), #00f7ff, rgba(60, 74, 83, 0)) 1;
 }
@@ -281,15 +282,15 @@ table a img {
     margin: 20px 10px;
     width: 35%;
     padding: 25px;
-
+    background: linear-gradient(170deg, rgba(12, 247, 255, 0.11) 0%, rgba(0, 81, 95, 0.137) 50%, rgba(100, 247, 240, 0.13) 100%);
     border: 2px solid;
-    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), rgba(0, 226, 242, 0.822), rgba(60, 74, 83, 0)) 1;
+    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), rgba(0, 126, 126, 0.822), rgba(60, 74, 83, 0)) 1;
 }
 
 .alterar_palavra form div.alteracao div h3 {
-    color: #00f7ff;
+    color: #002c41;
     font-family: 'Kanit';
-    font-size: 2em;
+    font-size: 1.7em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px;
     width: auto;
@@ -315,7 +316,7 @@ table a img {
 .alterar_palavra form input[type="submit"] {
     width: 10em;
     height: 3em;
-    margin: 2%;
+    margin: 2% auto 4%;
     font-size: 1.2em;
     border-radius: 5px;
     background-image: linear-gradient(45deg, #003c44, #098191, #0ac5b6, #003544);

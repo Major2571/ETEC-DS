@@ -1,6 +1,6 @@
 section.principal {
     padding: 2% 10%;
-    background-color: #003544cc;
+    background-color: #1add0000;
 
 }
 
@@ -16,14 +16,15 @@ section.principal div.top div:first-child {
     max-width: 50%;
     text-align: right;
     margin-right: 10%;
+    font-weight: 300;
 
-    color: #FFFFFF;
+    color: #272727;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 1.5em;
 }
 
 section.principal div.top div:first-child h1 {
-    color: #7cffe7;
+    color: #05F2DB;
     font-family: 'Kanit';
     font-size: 2em;
     font-style: normal;
@@ -48,10 +49,8 @@ section.total {
 
     padding: 5%;
 
-    background-color: transparent;
-    background-image: radial-gradient(at center center, #057381 0%, #0000008c 55%);
-    border-top: 2px solid;
-    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), rgb(0, 255, 242), rgba(60, 74, 83, 0)) 1;
+    background-color: #f7f2f2;
+    border-top: none;
 }
 
 section.total div.total_card {
@@ -61,8 +60,9 @@ section.total div.total_card {
     align-items: center;
     text-align: center;
     padding: 5%;
-    border: 2px solid;
-    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), rgba(0, 226, 242, 0.822), rgba(60, 74, 83, 0)) 1;
+    border: 3px solid;
+    border-image: linear-gradient(120deg, rgba(90, 124, 145, 0), #05888d, rgba(60, 74, 83, 0)) 1;
+    background-color: #0240593a;
 }
 
 section.total div.total_card div:nth-child(1) {
@@ -72,7 +72,7 @@ section.total div.total_card div:nth-child(1) {
 
 section.total div.total_card div:nth-child(2) {
     margin-top: -1.6em;
-    color: #00f7ff;
+    color: #016164;
     font-family: 'Kanit';
     font-size: 1.5em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -85,6 +85,28 @@ section.total div.total_card div img {
     max-width: 9em;
 }
 
+
+.custom-shape-divider-top-1666194810 {
+    position: relative;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1666194810 svg {
+    position: relative;
+    display: block;
+    width: calc(164% + 1.3px);
+    height: 102px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1666194810 .shape-fill {
+    fill: #f7f2f2;
+}
 
 
 
