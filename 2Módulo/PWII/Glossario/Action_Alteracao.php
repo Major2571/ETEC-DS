@@ -10,7 +10,7 @@
 
         try {
 
-            $stmt = $pdo->prepare("update tbpalavra set palavra = '$alterarPalavra', descricao = '$alterarDescricao', imagem = '$alterarImg', link = '$alterarLink' where tbpalavra.idPalavra = '$alterarID'");
+            $stmt = $pdo->prepare(" UPDATE `tbpalavra` SET `palavra` = '$alterarPalavra', descricao = '$alterarDescricao', imagem = '$alterarImg', link = '$alterarLink' WHERE `tbpalavra`.`idPalavra` = '$alterarID'");
             $stmt->execute();
 
             header("Location:BD_ConsultaPalavra.php");

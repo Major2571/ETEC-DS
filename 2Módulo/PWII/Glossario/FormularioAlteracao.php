@@ -16,9 +16,9 @@
         <form action="Action_Alteracao.php" method="post">
             <div class="alteracao">
 
-                <!-- <div>
+                <div>
                     <input type="hidden" placeholder="ID" name="txAlterarID" value="<?php echo @$_GET['alterarId'] ?>">
-                </div> -->
+                </div>
 
                 <div>
                     <h3> Digite a alteração da Palavra: </h3>

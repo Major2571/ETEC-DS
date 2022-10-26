@@ -34,12 +34,17 @@ tr td:nth-child(7) {
     max-width: 5.5em;
 }
 
+tr td:nth-child(4) img{
+    max-width: 7vw;
+}
+
 
 
 tr td {
     border-radius: 5px;
     width: 300px;
     max-height: 200px;
+    flex-flow: row wrap;
     padding: 0 20px;
     background-color: #2e2e2e59;
     padding: 15px;
