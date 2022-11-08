@@ -21,7 +21,7 @@
 
 | Componente Curricular | Linguagens / Ferramentas |
 | :---: | :---:
-| Programação Web II |![HTML5](https://img.shields.io/badge/html5-0D1117.svg?logo=html5&logoColor=E34F26&labelColor=0D1117&style=for-the-badge) <br/> ![CSS3](https://img.shields.io/badge/css3-0D1117.svg?logo=css3&logoColor=1572B6&labelColor=0D1117&style=for-the-badge&)<br/> ![PHP](https://img.shields.io/badge/php-0D1117.svg?logo=php&logoColor=777BB4&labelColor=0D1117&style=for-the-badge)
-| Desenvolvimento de Sistemas I | ![Java](https://img.shields.io/badge/Java-161B22?logo=java&logoColor=ED8B00&labelColor=161B22&style=for-the-badge)
-| Programação Android ( Mobile ) | ![Android Studio](https://img.shields.io/badge/Android_Studio-0D1117?style=for-the-badge&logo=android-studio&logoColor=3DDC84&labelColor=0D1117)
+| Programação Web II </br> ( PWII ) |![HTML5](https://img.shields.io/badge/html5-0D1117.svg?logo=html5&logoColor=E34F26&labelColor=0D1117&style=for-the-badge) <br/> ![CSS3](https://img.shields.io/badge/css3-0D1117.svg?logo=css3&logoColor=1572B6&labelColor=0D1117&style=for-the-badge&)<br/> ![PHP](https://img.shields.io/badge/php-0D1117.svg?logo=php&logoColor=777BB4&labelColor=0D1117&style=for-the-badge)
+| Desenvolvimento de Sistemas I </br> ( DSI ) | ![Java](https://img.shields.io/badge/Java-161B22?logo=java&logoColor=ED8B00&labelColor=161B22&style=for-the-badge)
+| Programação Android ( Mobile ) </br> ( PAM )| ![Android Studio](https://img.shields.io/badge/Android_Studio-0D1117?style=for-the-badge&logo=android-studio&logoColor=3DDC84&labelColor=0D1117)
 </div>
