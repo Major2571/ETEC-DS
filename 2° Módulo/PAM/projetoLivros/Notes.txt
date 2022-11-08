@@ -1,0 +1,88 @@
+
+Design no Canva
+
+https://www.canva.com/design/DAFLFzBv4ns/pscoGVl4bV8R2eNegWKZJA/view?utm_content=DAFLFzBv4ns&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+_________________________________________
+
+AppLivro - Cores HEX
+--------------------------
+
+Página Inicial:
+
+Titulos: #1B1352
+
+Imagem em degrade:
+#6858D2
+#B9AFF6
+
+Imagem inicial:
+#6A66F2
+#5450BF
+#AAA7F2
+--------------------------
+
+Pagina 2 Cadastro:
+Fundo do Titulo: #B9AFF6
+Campos: #D2D1FB
+
+___________________________________________
+___________________________________________
+
+App To Do List - Cores HEX
+--------------------------
+
+Página Inicial:
+
+Titulos: #025070
+
+Fundo: #D8EFF8
+
+Imagem inicial:
+#144A5E
+#006892
+#B2D1DE
+
+Fundo Botão:
+#A9DBEF
+#05ACEF
+
+--------------------------
+
+Pagina 2 Cadastro:
+Fundo: #D8EFF8
+Imagem: #03738C
+
+___________________________________________
+
+
+Fontes:
+
+Título:
+
+Pathway Gothic One (https://fonts.google.com/specimen/Pathway+Gothic+One?query=Gothic)
+
+League Gothic (https://fonts.google.com/specimen/League+Gothic?query=League)
+
+
+Textos:
+
+Questrial (https://fonts.google.com/specimen/Questrial?query=quest)
+
+Open Sans (https://fonts.google.com/specimen/Open+Sans?query=Open+Sans)
+
+Poppins (https://fonts.google.com/specimen/Poppins?query=poppins)
+
+Didact Gothic (https://fonts.google.com/specimen/Didact+Gothic?query=Gothic)
+
+Sawarabi Gothic (https://fonts.google.com/specimen/Sawarabi+Gothic?query=Gothic)
+
+League Spartan(https://fonts.google.com/specimen/League+Spartan)
+
+
+
+
+
+
+
+
