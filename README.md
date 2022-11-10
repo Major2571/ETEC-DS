@@ -34,11 +34,11 @@ Nele você pode encontrar:
 
 <br/>
 
-##  🗂 Projetos Desenvolvidos
+##  🗂 Projetos 
 	 
 <div align="center">
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=44e3d3&icon_color=83d4b9&text_color=9debe7&bg_color=000000ff&height=150)](https://github.com/major2571/Multiverso_Vulgo_Metaverso)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=44e3d3&icon_color=83d4b9&text_color=9debe7&bg_color=000000ff&height=150)](https://github.com/major2571/GlossarioTechPHP)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=9ccfc6&bg_color=000000ff&height=150)](https://github.com/major2571/Multiverso_Vulgo_Metaverso)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=9ccfc6&bg_color=000000ff&height=150)](https://github.com/major2571/GlossarioTechPHP)
 
 </div>
