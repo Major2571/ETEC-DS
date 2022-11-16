@@ -1,0 +1,99 @@
+.search {
+    width: 80%;
+    margin: auto;
+    padding: 1.5em;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.search form .box-item:nth-child(1),
+.search form .box-item:nth-child(2),
+.search form .box-item:nth-child(3),
+.search form .box-item:nth-child(4) {
+    display: block;
+    width: 30em;
+    padding: 15px 10px;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.search form .box-item:nth-child(3){
+    margin-top: 39px;
+}
+
+.search form .box-item-sel select {
+    
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-item-sel {
+    margin: 10px;
+    width: 80%;
+    min-width: 10ch;
+    max-width: 20ch;
+    border: none;
+    border-radius: 0.25em;
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    line-height: 1.5;
+    background-color: rgba(182, 182, 182, 0.671);
+}
+
+.box-item-sel::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+
+.search form .box-item input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: rgb(29, 28, 28);
+    margin-bottom: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    background: transparent;
+}
+
+.search form .enviar input[type="submit"] {
+    position: relative;
+    display: inline-block;
+    border: none;
+    color: #000000;
+    border-radius: 20px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #525252;
+    cursor: pointer;
+    margin: 20px;
+
+}
