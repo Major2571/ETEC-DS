@@ -20,31 +20,28 @@ include('templates/barraBusca.php'); ?>
         <tbody>
             <?php
 
-            include("DAO/conexaoBD.php");
+                include("DAO/conexaoBD.php");
 
-
-            try {
-                $stmt = $pdo->prepare("select * from tbAlunos order by aluno;");
-                $stmt->execute();
-    
-                while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
-    
-                    echo "<tr> 
-                        <td>$row[0]</td>
-                        <td>$row[1]</td>
-                        <td>$row[2]</td>
-                        <td>$row[3]</td>
-                        <td>$row[4]</td>
-                        <td>$row[5]</td>
-                        <td>$row[6]</td>
-                        <td>$row[7]</td>
-                    </tr>";
+                try {
+                    $stmt = $pdo->prepare("select * from tbAlunos order by aluno;");
+                    $stmt->execute();
+        
+                    while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
+        
+                        echo "<tr> 
+                                <td>$row[0]</td>
+                                <td>$row[1]</td>
+                                <td>$row[2]</td>
+                                <td>$row[3]</td>
+                                <td>$row[4]</td>
+                                <td>$row[5]</td>
+                                <td>$row[6]</td>
+                                <td>$row[7]</td>
+                            </tr>";
+                    }
+                } catch (PDOException $e) {
+                    echo "Error: " . $e->getMessage();
                 }
-            } catch (PDOException $e) {
-                echo "Error: " . $e->getMessage();
-            }
-
-
 
             ?>
 

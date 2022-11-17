@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
 
 
-body{
+body {
     font-family: poppins;
     margin: 0;
-    background-color: #912f3f50;
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: url(http://gseii.org/site/wp-content/uploads/2014/05/blue-gradient-wallpaper.jpg);
+
 }
 
 
@@ -14,13 +17,12 @@ header section.top-nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color:  #702632;
+
     color: #FFF;
     font-family: 'Kanit';
     padding: 0 2em;
     height: 5em;
     font-size: 1.4em;
-    
 }
 
 .menu {
@@ -58,18 +60,30 @@ header section.top-nav {
     transform: scaleX(0);
     transition: transform .2s ease-in-out;
 }
-  
+
 .menu li a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
 
 
-
 footer {
-    background-color: #702632;
+    background-color: #281e3900;
     color: #FFF;
     text-align: center;
     padding: 1.5em;
+    
+    border-top: 2px solid;
+    border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #23d4c3, rgba(60, 74, 83, 0)) 1;
 }
 
+@media (max-width: 1500px) {
+    .sobre div.text {
+        width: 100%;
+    }
+
+    .sobre div.image {
+        width: 100%;
+    }
+
+}
