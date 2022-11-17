@@ -5,7 +5,7 @@
 body{
     font-family: poppins;
     margin: 0;
-    background-color: #D9DBF1;
+    background-color: #912f3f50;
 }
 
 
@@ -14,7 +14,7 @@ header section.top-nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color:  #7D84B2;
+    background-color:  #702632;
     color: #FFF;
     font-family: 'Kanit';
     padding: 0 2em;
@@ -63,3 +63,13 @@ header section.top-nav {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+
+
+footer {
+    background-color: #702632;
+    color: #FFF;
+    text-align: center;
+    padding: 1.5em;
+}
+
