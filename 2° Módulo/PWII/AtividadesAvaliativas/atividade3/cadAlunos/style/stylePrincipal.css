@@ -1,50 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Asap+Condensed&display=swap');
 body {
-    font-family: poppins;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
     background-size: 100% 100%;
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background-image: url(http://gseii.org/site/wp-content/uploads/2014/05/blue-gradient-wallpaper.jpg);
-
 }
-
 
 header section.top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    color: #FFF;
-    font-family: 'Kanit';
     padding: 0 2em;
-    height: 5em;
-    font-size: 1.4em;
+    color: #FFF;
+    font-family: 'Asap Condensed';
+    font-size: 1.5em;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
     margin: 0;
     padding: 10px 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-
 }
 
-.menu>li {
+.menu li {
     margin: 1.5em 1.2rem;
     overflow: hidden;
 }
 
 .menu li a {
+    position: relative;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-    position: relative;
 }
 
 .menu li a::before {
@@ -52,10 +48,9 @@ header section.top-nav {
     position: absolute;
     width: 100%;
     height: 1.7px;
-    top: 30px;
+    top: 25.5px;
     border-radius: 3px;
     background-color: #ffffff;
-
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .2s ease-in-out;
@@ -66,24 +61,20 @@ header section.top-nav {
     transform: scaleX(1);
 }
 
-
 footer {
-    background-color: #281e3900;
+    padding: 1.5em;
     color: #FFF;
     text-align: center;
-    padding: 1.5em;
-    
     border-top: 2px solid;
     border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #23d4c3, rgba(60, 74, 83, 0)) 1;
+    background-color: #281e3900;
 }
 
 @media (max-width: 1500px) {
     .sobre div.text {
         width: 100%;
     }
-
     .sobre div.image {
         width: 100%;
     }
-
 }

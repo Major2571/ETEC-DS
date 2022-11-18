@@ -2,6 +2,9 @@ section.sobre {
     width: 60%;
     padding: 1.5em 3em;
     margin: 2% auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     color: #ffffff;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.25) 0%, rgba(162, 162, 162, 0.25) 50%, rgba(255, 255, 255, 0.25) 100%);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -9,11 +12,6 @@ section.sobre {
     -webkit-backdrop-filter: blur(13.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
 }
 
 .sobre h1,
@@ -32,10 +30,8 @@ section.sobre {
     width: 50%;
 }
 
-.infos{
+.infos {
     padding-left: 2em;
     font-style: italic;
     color: rgb(185, 180, 180);
 }
-
-

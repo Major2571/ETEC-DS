@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/styleTabela.css">
 
     <title>Alunos</title>
-    <!-- <link rel="icon" type="image/x-icon" href="./img/icon.svg"> -->
+    <link rel="icon" type="image/x-icon" href="./img/aluno.png">
 
 </head>
 

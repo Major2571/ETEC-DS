@@ -18,12 +18,12 @@
 }
 
 .search form {
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-flow: row wrap;
-    width: 90%;
-    margin: auto;
 }
 
 .search form .box-item:nth-child(1),
@@ -38,12 +38,12 @@
 }
 
 .search form .box-item-sel select {
-    background-color: transparent;
     border: none;
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: inherit;
+    background-color: transparent;
     font-size: inherit;
     cursor: inherit;
     line-height: inherit;
@@ -52,10 +52,6 @@
 
 .search form .box-item-sel select option {
     background-color: #333232;
-}
-
-.search form .box-item-sel select option:hover {
-    background-color: rgb(0, 255, 0);
 }
 
 .select {
@@ -88,7 +84,6 @@
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
-
 .search form .box-item input {
     width: 100%;
     padding: 10px 0;
@@ -117,30 +112,22 @@
     transition: all 0.3s ease-in;
     cursor: pointer;
     margin: 20px;
-
-
 }
 
 .search form .enviar input[type="submit"]:hover {
     background-color: #1b1a1ae1;
     box-shadow: 0 0 10px rgba(15, 228, 182, 0.87);
     transition: all 0.3s ease-in;
-
 }
-
 
 input::placeholder {
     color: #ffffffe0;
 }
 
-
-
-
 @media (max-width: 1000px) {
     .search {
         width: 60%;
     }
-
     .search form .box-item:nth-child(1),
     .search form .box-item:nth-child(2),
     .search form .box-item:nth-child(3),
@@ -151,5 +138,4 @@ input::placeholder {
         margin: 1%;
         border-radius: 10px;
     }
-
 }
