@@ -61,6 +61,20 @@ header section.top-nav {
     transform: scaleX(1);
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(22, 22, 22, 0.699);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7c7b7bd2;
+    border-radius: 10px;
+}
+
+
 footer {
     padding: 1.5em;
     color: #FFF;

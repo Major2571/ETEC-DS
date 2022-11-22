@@ -4,7 +4,29 @@
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #23d4c3, rgba(60, 74, 83, 0)) 1;
+    overflow: scroll;
+    max-height: 35em;
 }
+
+.consultaAlunos::-webkit-scrollbar {
+    max-width: 1px;
+    max-height: 6px;
+}
+
+.consultaAlunos::-webkit-scrollbar-track {
+    background: rgba(187, 187, 187, 0);
+}
+
+.consultaAlunos::-webkit-scrollbar-thumb {
+    background-color: #4242422f;
+    border-radius: 5px;
+}
+
+.consultaAlunos::-webkit-scrollbar-button,
+.consultaAlunos::-webkit-scrollbar-corner {
+    background-color: #00000000;
+}
+
 
 table {
     max-width: 80%;
@@ -39,11 +61,4 @@ table tbody tr td {
 table tbody tr td:nth-child(3),
 table tbody tr td:nth-child(6) {
     width: 15%;
-}
-
-table tbody tr td:nth-child(9) img {
-    padding: 10px;
-    border-radius: 10px;
-    width: 40%;
-    background-color: #ff0000bb;
 }
