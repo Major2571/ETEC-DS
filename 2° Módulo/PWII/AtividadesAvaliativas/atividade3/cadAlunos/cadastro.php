@@ -9,7 +9,7 @@
 
 
             <div class="box-item">
-                <input type="text" placeholder="Nome Completo" name="nome" id="nomeAluno" required>
+                <input type="text" placeholder="Nome Completo" name="nome" required>
             </div>
 
             <div class="box-item">

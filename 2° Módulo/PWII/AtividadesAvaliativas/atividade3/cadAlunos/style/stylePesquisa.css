@@ -55,7 +55,7 @@
     width: 22%;
 }
 
-.search form .box-item-sel select {
+select {
     border: none;
     padding: 0;
     margin: 0;
@@ -68,7 +68,7 @@
     color: #ffffff;
 }
 
-.search form .box-item-sel select option {
+select option {
     background-color: #333232;
 }
 

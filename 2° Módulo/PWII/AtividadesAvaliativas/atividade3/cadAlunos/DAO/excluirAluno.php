@@ -1,22 +1,22 @@
 <?php
 
-$idAluno = $_GET['id'];
+    $idAluno = $_GET['id'];
 
 
-include("conexaoBD.php");
-    try {
+    include("conexaoBD.php");
+        try {
 
-        $stmt = $pdo->prepare("delete from tbAlunos where idAluno = '$idAluno';");
+            $stmt = $pdo->prepare("delete from tbAlunos where idAluno = '$idAluno';");
 
-        $stmt->execute();
+            $stmt->execute();
 
-        $pdo = null;
+            $pdo = null;
 
-        header("Location: ../cadastro.php");
-    }
-    catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-    }
+            header("Location: ../cadastro.php");
+        }
+        catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
 
 
 ?>
