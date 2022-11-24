@@ -14,7 +14,7 @@
         echo  "<div class='aluno_infos'>
                 <div>
                     <h1> Dados do Aluno </h1>
-                    <h2> Nome: $row[2]</h2>
+                    <h2> Nome:  $row[2]</h2>
                     <h2> RM : $row[1]</h2>
                     <h2> Data de Nascimento: $row[3]</h2>
                     <h2> CPF: $row[4]</h2>

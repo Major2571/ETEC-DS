@@ -36,7 +36,7 @@
     flex-flow: row wrap;
 }
 
-.search form .box-item {
+.search form .box-item{
     display: block;
     width: 35%;
     padding: 15px 10px;
@@ -104,7 +104,8 @@ select option {
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
-.search form .box-item input {
+.search form .box-item input,
+.editar_alunos form .box-editar input {
     width: 100%;
     padding: 10px 0;
     font-size: 20px;
@@ -117,7 +118,8 @@ select option {
     background: transparent;
 }
 
-.search form .enviar input[type="submit"] {
+.search form .enviar input[type="submit"],
+.editar_alunos form input[type="submit"] {
     position: relative;
     display: inline-block;
     border: none;
@@ -134,7 +136,8 @@ select option {
     margin: 20px;
 }
 
-.search form .enviar input[type="submit"]:hover {
+.search form .enviar input[type="submit"]:hover,
+.editar_alunos form input[type="submit"]:hover {
     background-color: #1b1a1ae1;
     box-shadow: 0 0 10px rgba(15, 228, 182, 0.87);
     transition: all 0.3s ease-in;
