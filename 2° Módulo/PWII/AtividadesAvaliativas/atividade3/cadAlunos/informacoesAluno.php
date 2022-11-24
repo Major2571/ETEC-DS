@@ -4,7 +4,7 @@
 
     include("DAO/conexaoBD.php");
 
-    $info = $_GET['x'];
+    $info = $_GET['idAluno'];
 
     $stmt = $pdo->prepare("select * from tbAlunos where idAluno = '$info' ;");
     $stmt->execute();
@@ -24,18 +24,19 @@
                 </div>
 
                 <div>
-                    <h1> Residencia </h1>
+                    <h1> Residência </h1>
                     <h2> Endereço: $row[8]</h2>
                     <h2> CEP: $row[9]</h2>
                     <h2> Bairro: $row[10]</h2>
                     <h2> Número: $row[11]  </h2>
-                </div> ";
+                ";
 
                 if( $row[12]!=null ){
-                    echo "Complemento: $row[12]";
+                    echo " <h2> Complemento: $row[12] </h2>";
                 }
 
                 echo "
+                </div>
                 <div>
                     <h1> Responsável </h1>
                     <h2> Nome: $row[13]</h2>

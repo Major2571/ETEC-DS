@@ -15,6 +15,7 @@
                 <th>Curso</th>
                 <th>Módulo</th>
                 <th>Turno</th>
+                <th>Informações</th>
             </tr>
         </thead>
 
@@ -57,6 +58,7 @@
                             <td>$row[5]</td>
                             <td>$row[6]</td>
                             <td>$row[7]</td>
+                            <td> <a href='informacoesAluno.php?idAluno=$row[0]'> Mais Informações </a> </td>
                          </tr>";
                 }
 

@@ -4,6 +4,9 @@ include('templates/barraBusca.php'); ?>
 
 <section class="consultaAlunos">
     <table>
+    <caption>
+            <h1> Alunos Cadastrados no Sistema: </h1>
+        </caption>
         <thead>
             <tr>
                 <th>#</th>
@@ -14,6 +17,7 @@ include('templates/barraBusca.php'); ?>
                 <th>Curso</th>
                 <th>Módulo</th>
                 <th>Turno</th>
+                <th>Sobre</th>
             </tr>
         </thead>
 
@@ -37,6 +41,7 @@ include('templates/barraBusca.php'); ?>
                                 <td>$row[5]</td>
                                 <td>$row[6]</td>
                                 <td>$row[7]</td>
+                                <td> <a href='informacoesAluno.php?idAluno=$row[0]'> Mais Informações </a> </td>
                             </tr>";
                     }
                 } catch (PDOException $e) {

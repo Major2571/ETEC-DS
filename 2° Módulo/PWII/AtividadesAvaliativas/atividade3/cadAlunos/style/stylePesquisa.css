@@ -22,8 +22,8 @@
     display: inline-block;
     font-size: 1.2em;
     padding: 1.7em;
-    border-top: 3px solid;
-    border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #02423c, rgba(60, 74, 83, 0)) 1;
+    border-top: 1.5px solid;
+    border-image: linear-gradient(90deg, rgba(60, 74, 83, 0), #05ecd5, rgba(60, 74, 83, 0)) 1;
 }
 
 

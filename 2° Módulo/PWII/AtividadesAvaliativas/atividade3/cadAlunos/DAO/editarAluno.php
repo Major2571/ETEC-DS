@@ -29,7 +29,7 @@
 
             $pdo = null;
 
-            header("Location: ../informacoesAluno.php?x=$alterarID");
+            header("Location: ../informacoesAluno.php?idAluno=$alterarID");
         }
         catch (PDOException $e) {
             echo "Error: " . $e->getMessage();

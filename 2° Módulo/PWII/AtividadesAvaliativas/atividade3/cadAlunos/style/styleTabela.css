@@ -30,7 +30,7 @@
 
 table {
     max-width: 80%;
-    margin: 50px auto;
+    margin: 0em auto 3em;
     align-items: center;
     color: #FFFFFF;
     font-size: clamp(1em, 1vw, 1.5em);
