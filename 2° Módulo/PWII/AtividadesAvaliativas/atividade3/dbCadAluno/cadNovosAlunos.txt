@@ -1,0 +1,44 @@
+Aluno
+Nome: Tânia Lara Fernandes
+CPF: 10715945327
+RM: 22237192488
+Data de Nascimento: 09/03/2010
+Curso: Nutrição
+Módulo: 2
+Turmo: Manhã
+
+Endereço: Rua Newton Tornelli de Souza
+Cep: 24900125
+Bairro: Centro
+Número: 989
+Complemento:
+
+Nome do Responsável: Thiago Diogo Thales Fernandes
+CPF do Responsável: 99153835921
+Data de Nascimento Resp.: 19/11/1972
+
+_____________________________________________________
+
+Aluno
+Nome: Yago Gabriel Samuel Melo
+CPF: 58559863907
+RM: 22237192488
+Data de Nascimento: 23/04/2010
+Curso: Finanças
+Módulo: 3
+Turmo: Manhã
+
+Endereço: Travessa Dois
+Cep: 78730266
+Bairro: Vila São Sebastião II
+Número: 825
+Complemento:
+
+Nome do Responsável: Joana Manuela Marcela
+CPF do Responsável: 64672290379
+Data de Nascimento Resp.: 19/11/1982
+
+_______________________________________________________
+
+
+https://www.4devs.com.br/gerador_de_pessoas
