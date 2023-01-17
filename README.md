@@ -28,8 +28,8 @@ Nele você pode encontrar:
 	 
 <div align="center">
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=9ccfc6&bg_color=000000ff&height=150)](https://github.com/major2571/Multiverso_Vulgo_Metaverso)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=9ccfc6&bg_color=000000ff&height=150)](https://github.com/major2571/GlossarioTechPHP)
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
 
 </div>
 
@@ -38,7 +38,7 @@ Nele você pode encontrar:
 
 > ### **👩🏻‍💻 Status**: 
 > - 1° Módulo ✅ *( Concluído - 06/2022 )*
-> - 2° Módulo  ⏳ *( Loading... )*
-> - 3° Módulo 🚧 
+> - 2° Módulo ✅ *( Concluído - 12/2022 )*
+> - 3° Módulo ⏳ *( Loading... )* 
 
 <br/>
