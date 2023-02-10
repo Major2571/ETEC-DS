@@ -4,17 +4,9 @@
 
 **Critérios utilizados e avaliadas pelos mentores (de forma geral)**
 
-<img  src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1998567/coding-svg-clipart-xl.png"  width="350"  align="right"/>
+<img  src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1998567/coding-svg-clipart-xl.png"  width="300"  align="right"/>
 
-- Relacionamento de ideias;
-- Relacionamento de conceitos;
-- Criatividade na resolução dos problemas
-- Pertinência das informações;
-- Atendimento às normas;
-- Assiduidade;
-- Elaborar propostas;
-- Organização
-- Interatividade, cooperação/colaboração
+- ...
 
 ####  Ferramentas e linguagens utilizadas/desenvolvidas em aula:
 
@@ -22,8 +14,8 @@
 
 | Componente Curricular | Linguagens / Ferramentas |
 | :---: | :---:
-| Programação Web III </br> ( PWII ) |![HTML5](https://img.shields.io/badge/html5-0D1117.svg?logo=html5&logoColor=E34F26&labelColor=0D1117&style=for-the-badge)  <br/>  ![CSS3](https://img.shields.io/badge/css3-0D1117.svg?logo=css3&logoColor=1572B6&labelColor=0D1117&style=for-the-badge&)<br/>  ![PHP](https://img.shields.io/badge/php-0D1117.svg?logo=php&logoColor=777BB4&labelColor=0D1117&style=for-the-badge)
-| Desenvolvimento de Sistemas II </br> ( DSI ) | ![C#](https://img.shields.io/badge/C%23-0D1117?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=0D1117)
-| Programação Mobile </br> ( PAM )| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+| Programação Web III </br> ( PWIII ) | ![PHP](https://img.shields.io/badge/php-0D1117.svg?logo=php&logoColor=777BB4&labelColor=0D1117&style=for-the-badge) <br/> ![Laravel](https://img.shields.io/badge/laravel-0D1117.svg?style=for-the-badge&logo=laravel&logoColor=23FF2D20&labelColor=0D1117)
+| Desenvolvimento de Sistemas II </br> ( DSI ) | ![C#](https://img.shields.io/badge/C%23-161b22?style=for-the-badge&logo=c-sharp&logoColor=239120&labelColor=161b22)
+| Programação Mobile </br> ( PAM )| ![React](https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB) <br/> ![React Native](https://img.shields.io/badge/react_native-0D1117.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 </div>
