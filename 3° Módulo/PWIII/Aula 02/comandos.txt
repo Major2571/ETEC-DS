@@ -1,0 +1,18 @@
+Laravel 
+
+No terminal
+
+ - verificar se o composer está instalado: composer -v
+
+ - ir para a raiz: cd\ 
+
+ - criar pasta: mkdir laravel
+
+ - acessar pasta: cd laravel
+
+ - criar projeto laravel: composer create-project laravel/laravel aula#
+ 
+ - iniciar servidor: php artisan serve
+
+
+composer version 2.2.12
