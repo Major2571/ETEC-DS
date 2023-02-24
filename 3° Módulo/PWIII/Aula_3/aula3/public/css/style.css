@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --azulEscuro: #2B2D42;
+    --vermelho: #EF233C;
+    --branco: #F5F5F5;
+}
+
+
+* {
+    margin: 0;
+}
+
+*::selection {
+    color: var(--branco);
+    background-color: var(--azulEscuro);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--branco);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7c7b7b62;
+    border-radius: 10px;
+}
+
+body {
+    background: linear-gradient(0deg, #ffffffc4, #ffffff81), url('../img/background.png');
+    background-size: 25em;
+    font-family: 'open sans';
+    min-height: 100vh;
+    line-height: 26px;
+    letter-spacing: .2px;
+}
+
+nav {
+    display: flex;
+    flex-flow: wrap row;
+    background-color: var(--azulEscuro);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    margin: 1em;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: .5em 2em;
+    transition: all .3s ease-in;
+}
+
+nav ul li:hover {
+    background-color: var(--vermelho);
+    transition: all .3s ease-in;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--branco);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin: 2em auto;
+    width: 60%;
+    background-color: var(--branco);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px #8D99AE;
+    font-size: 1.1em;
+}
+
+img {
+    filter: opacity(0.5);
+    width: 100%;
+    height: 25em; 
+    object-fit: cover;
+}
+
+section h1 {
+    text-align: center;
+}
+
+h1, section h2 {
+    color: var(--vermelho);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    line-height: 1.5em;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.7em;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+section div {
+    margin: 2em 0;
+}
+
+div ul li {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+span {
+    font-family: consolas;
+    background-color: #2B2B2B;
+    color: var(--branco);
+    padding: 2px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 0 10px;
+}
+

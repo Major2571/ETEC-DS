@@ -1,0 +1,20 @@
+CREATE DATABASE dbPw3;
+
+USE dbPw3;
+
+DROP TABLE IF EXISTS tbLab;
+CREATE TABLE IF NOT EXISTS tbLab (
+	idLab INT AUTO_INCREMENT PRIMARY KEY,
+    Lab INT
+);
+
+DROP TABLE IF EXISTS tbReclamacao;
+CREATE TABLE IF NOT EXISTS tbReclamacao (
+	idRec INT AUTO_INCREMENT PRIMARY KEY,
+    idLab INT,
+    pc INT,
+    titulo VARCHAR(300),
+    descricao VARCHAR(600),
+    dtCriacao DATE,
+    FOREIGN KEY (idLab) REFERENCES tbLab(idLAb)
+);
