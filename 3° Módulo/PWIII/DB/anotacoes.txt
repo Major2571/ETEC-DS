@@ -1,0 +1,25 @@
+Aula 5 ( 09/03 )
+
+A partir do momento que já existe um banco com tabelas e está conecatado no .env
+1 Rota para chamar o metodo 
+2 no model, colocamos nossa tabela numa variável;
+->> LINKAR A PAGINA DO MODEL NO CONTROLER
+3 no controller, puxamos as informações da tabela, editamos, criamos, etec
+
+
+
+$laboratorio = Laboratorio::all();
+A variável 'laboratorio' recebe o nome do nosso Model
+:: informar qual método queremos acessar, no caso o método acessado é o all e o '()' chama esse metodo
+
+CREATE TABLE IF NOT EXISTS tbQuemSomos ( idQuemSomos INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(300), sobrenome VARCHAR(600) );
+INSERT INTO tbQuemSomos VALUES ( null, 'Carol', 'Moura');
+
+CREATE TABLE IF NOT EXISTS tbContato (
+	idContato INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(300),
+    telefone BIGINT(15),
+    email varchar(300)
+);
+
+INSERT INTO tbContato VALUES ( null, 'Carol', '5511923456987', 'admCarol@email.com')
