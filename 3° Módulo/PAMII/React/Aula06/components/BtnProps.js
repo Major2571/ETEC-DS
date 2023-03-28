@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 
-const BtnProps = ({ label, corFundo, onPress }) => {
+const BtnProps = ({ label, corFundo, msg }) => {
     const btnStyle = {
         backgroundColor: corFundo,
         padding: 10,
@@ -27,8 +27,12 @@ const BtnProps = ({ label, corFundo, onPress }) => {
         fontWeight: 600,
     }
 
+    const handlePress = () => {
+        console.log(msg);
+    };
+
     return (
-        <TouchableOpacity onPress={onPress} style={btnStyle}>
+        <TouchableOpacity onPress={handlePress} style={btnStyle}>
             <Text style={btnText}>{label}</Text>
         </TouchableOpacity>
     );

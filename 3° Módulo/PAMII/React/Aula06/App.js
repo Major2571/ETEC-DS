@@ -3,9 +3,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import BtnProps from './components/btnProps';
 
 const App = () => {
-  const handlePress = (msg) => {
-    console.log(msg);
-  };
 
   return (
     <View style={style.container}>
@@ -14,15 +11,14 @@ const App = () => {
         <BtnProps
           label='Hello'
           corFundo='#677EAB'
-          onPress={handlePress('btn 1')}
+          msg={'Eu sou o btn 1'}
         />
 
         <BtnProps
           label='World'
           corFundo='#899ABE'
-          onPress={handlePress('btn 2')}
+          msg={'Eu sou o btn 2'}
         />
-
       </View>
     </View>
   );
