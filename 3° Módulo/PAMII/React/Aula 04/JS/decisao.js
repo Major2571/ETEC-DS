@@ -6,12 +6,12 @@ if (pivo) {
 	console.log('Bye Bye Bye');
 }
 
-let nome = 'Renan Ferreira';
+let nome = 'Carol Tacats';
 
 if (nome) {
-	console.log('Renan Ferreira chegou');
+	console.log('Carol Tacats chegou');
 } else {
-	console.log('Renan Ferreira saiu');
+	console.log('Carol Tacats saiu');
 }
 
 function teste(entrada) {
@@ -26,19 +26,19 @@ teste(true);
 teste(false);
 
 function testeDois(entrada) {
-	if (entrada === 'Renan') {
+	if (entrada === 'Carol') {
 		return console.log('Seu nome está correto, ele é:', entrada);
 	}
 
-	if (entrada === 'Rennan') {
+	if (entrada === 'Karol') {
 		return console.log('Seu nome está incorreto');
 	}
 	console.log('Nada entrou');
 }
 
-testeDois('Renan');
-testeDois('Rennan');
-testeDois('renan');
+testeDois('Carol');
+testeDois('Karol');
+testeDois('carol');
 
 let num = 2;
 

@@ -1,4 +1,4 @@
-let arrayTeste = ['Renan', 'Kaique', 'Fontes', 'Ferreira'];
+let arrayTeste = ['Caroline', 'Moura', 'Tacats'];
 
 console.log(arrayTeste);
 
