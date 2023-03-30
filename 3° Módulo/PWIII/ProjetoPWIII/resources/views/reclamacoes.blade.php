@@ -13,7 +13,7 @@
                 <th>idLab</th>
                 <th>PC</th>
                 <th>Título</th>
-                <th>Descrição</th>
+                <th class='th-texts'>Descrição</th>
                 <th>Data de Criação</th>
             </tr>
         </thead>

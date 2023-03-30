@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 10-Mar-2023 às 01:08
+-- Tempo de geração: 30-Mar-2023 às 19:35
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -31,17 +31,19 @@ DROP TABLE IF EXISTS `tbcontato`;
 CREATE TABLE IF NOT EXISTS `tbcontato` (
   `idContato` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(300) DEFAULT NULL,
-  `telefone` bigint(15) DEFAULT NULL,
   `email` varchar(300) DEFAULT NULL,
+  `assunto` varchar(200) NOT NULL,
+  `mensagem` varchar(600) NOT NULL,
   PRIMARY KEY (`idContato`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `tbcontato`
 --
 
-INSERT INTO `tbcontato` (`idContato`, `nome`, `telefone`, `email`) VALUES
-(1, 'Carol', 5511923456987, 'admCarol@email.com');
+INSERT INTO `tbcontato` (`idContato`, `nome`, `email`, `assunto`, `mensagem`) VALUES
+(1, 'Carol', 'admCarol@email.com', 'Lorem ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim lobortis commodo. Nam tortor nisi, elementum vel nisi ac, dictum mattis felis. Proin id ipsum nisi. Pellentesque eleifend finibus magna a consequat. Nam tincidunt orci elit, non pretium mauris malesuada sit amet. In blandit velit vulputate interdum rutrum. Donec vitae gravida orci. Mauris malesuada enim id porttitor vulputate. In ornare velit eu ultricies pulvinar. Mauris sed diam neque. Cras hendrerit eleifend leo, nec convallis nibh rhoncus ut. Donec euismod risus et fringilla tristique. Quisque venenatis leo mi.'),
+(2, 'Teste', 'teste', 'teste', 'teste');
 
 -- --------------------------------------------------------
 

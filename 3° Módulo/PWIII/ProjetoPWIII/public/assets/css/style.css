@@ -1,5 +1,11 @@
 /* Estilização do header */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
+
+* {
+    margin: 0;
+    font-family: Lato;
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -10,9 +16,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
     padding: 1.5em;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilização da lista de navegação */
@@ -26,52 +30,126 @@ header nav ul {
 
 /* Estilização dos itens da lista de navegação */
 nav li {
-    margin: 0 10px;
+    margin: 0 1em;
 }
 
 nav li a {
-    color: #333;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 1em;
     transition: all 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
 
 nav li a:hover {
     color: #333;
-    border-bottom-color: #ff6b6b;
+    border-bottom-color: #6c7ae0;
 }
 
+
+/* Tabela de Informações*/
+.table {
+    max-width: 80%;
+    margin: 2% auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .15);
+}
 
 table {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    align-items: center;
+    font-size: clamp(1em, 1vw, 1.5em);
+    color: grey;
+    text-align: center;
 }
 
-th,
-td {
-    text-align: left;
-    padding: 8px;
+thead {
+    background: #0a153a;
+    font-size: 1em;
+    color: #ffffff;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    text-transform: uppercase;
+
+thead tr th {
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #6c7ae0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+tr td {
+    border-radius: 5px;
+    max-height: 200px;
+    flex-flow: row wrap;
+    padding: 0 20px;
+    padding: 15px;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f8f6ff;
 }
 
-tr:hover {
-    background-color: #ddd;
+.th-texts {
+    width: 25em;
 }
 
-td a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+
+/*Formulários*/
+form {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.input-box input {
+    border: none;
+    height: 3em;
+    border: 1px solid #6c7ae0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 24em;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #6c7ae0;
+    padding: 15px;
+    border-radius: 50px;
+    width: 8em;
+    border: none;
+    font-size: 0.9em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/*footer*/
+footer {
+    background-color: #6c7ae0;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #f8f6ff;
 }

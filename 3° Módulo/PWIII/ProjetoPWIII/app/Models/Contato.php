@@ -9,4 +9,7 @@ class Contato extends Model
 {
     //use HasFactory;
     protected $table = 'tbContato';
+
+    protected $fillable = ['nome','email','assunto','mensagem'];
+    public $timestamps = false;
 }

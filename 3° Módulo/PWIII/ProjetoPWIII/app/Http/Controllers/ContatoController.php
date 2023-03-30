@@ -29,7 +29,14 @@ class ContatoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contato = new Contato();
+
+        $contato->nome = $request->txNome;
+        $contato->email = $request->txEmail;
+        $contato->assunto = $request->txAssunto;
+        $contato->mensagem = $request->txMensagem;
+
+        $contato->save();
     }
 
     /**

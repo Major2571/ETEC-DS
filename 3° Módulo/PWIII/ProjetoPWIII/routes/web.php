@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/contato', 'App\Http\Controllers\ContatoController@index');
+Route::post('/contato', 'App\Http\Controllers\ContatoController@store');
 
 Route::get('/laboratorio', 'App\Http\Controllers\LaboratorioController@index');
 
