@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { StyleSheet, Text, View, TextInput, Button } from "react-native";
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-native";
 
 const Container = styled.View`
   flex: 1;
@@ -9,9 +9,15 @@ const Container = styled.View`
   justify-content: center;
 `;
 
-const MeuBtn = styled.Button`
-  background-color: #000;
+const MeuBtn = styled.TouchableOpacity`
+  background-color: #e63946;
+  height: 40px;
   width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
 `;
 
 const LoginInput = styled.TextInput`
@@ -20,7 +26,7 @@ const LoginInput = styled.TextInput`
   padding: 10px;
   margin: 0.5em;
   border: solid 1px #0005;
-  background-color: #f5f5f5;
+  background-color: #a8dadc;
   border-radius: 5px;
 `;
 
@@ -31,13 +37,13 @@ export default () => (
       placeholder='UserName'
     />
     <LoginInput
-      placeholder='Password' 
+      placeholder='Password'
       secureTextEntry='true'
     />
 
-    <MeuBtn
-      title='Entrar'
-    />
+    <MeuBtn>
+      <Text>Login</Text>
+    </MeuBtn>
 
   </Container>
 );
