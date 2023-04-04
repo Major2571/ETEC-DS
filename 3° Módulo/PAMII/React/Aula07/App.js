@@ -15,10 +15,13 @@ const MeuBtn = styled.TouchableOpacity`
   width: 300px;
   text-align: center;
   border-radius: 5px;
-  color: #fff;
   padding: 10px;
-  text-transform: uppercase;
+  color: #fff;
+  font-weigh: 600;
+  font-family: consolas;
 `;
+
+const btnText = styled.Text;
 
 const LoginInput = styled.TextInput`
   height: 40px;
@@ -42,7 +45,7 @@ export default () => (
     />
 
     <MeuBtn>
-      <Text>Login</Text>
+      <btnText>Login</btnText>
     </MeuBtn>
 
   </Container>
