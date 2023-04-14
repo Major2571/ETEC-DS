@@ -26,7 +26,9 @@ class ReclamacoesController extends Controller
         }
 
         else {
+            
             $reclamacoes = Reclamacoes::orderBy('dtCriacao')->get();
+
         }
         
 
