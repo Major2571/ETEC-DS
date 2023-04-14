@@ -1,0 +1,62 @@
+DROP TABLE IF EXISTS `tbcontato`;
+CREATE TABLE IF NOT EXISTS `tbcontato` (
+  `idContato` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(300) DEFAULT NULL,
+  `email` varchar(300) DEFAULT NULL,
+  `assunto` varchar(200) NOT NULL,
+  `mensagem` varchar(600) NOT NULL,
+  PRIMARY KEY (`idContato`)
+);
+
+
+INSERT INTO `tbcontato` (`idContato`, `nome`, `email`, `assunto`, `mensagem`) VALUES
+(1, 'Carol', 'admCarol@email.com', 'Lorem ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim lobortis commodo. Nam tortor nisi, elementum vel nisi ac, dictum mattis felis. Proin id ipsum nisi. Pellentesque eleifend finibus magna a consequat. Nam tincidunt orci elit, non pretium mauris malesuada sit amet. In blandit velit vulputate interdum rutrum. Donec vitae gravida orci. Mauris malesuada enim id porttitor vulputate. In ornare velit eu ultricies pulvinar. Mauris sed diam neque. Cras hendrerit eleifend leo, nec convallis nibh rhoncus ut. Donec euismod risus et fringilla tristique. Quisque venenatis leo mi.'),
+(2, 'Teste', 'teste', 'teste', 'teste');
+
+
+
+DROP TABLE IF EXISTS `tblaboratorio`;
+CREATE TABLE IF NOT EXISTS `tblaboratorio` (
+  `idLab` int(11) NOT NULL AUTO_INCREMENT,
+  `Laboratorio` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`idLab`)
+) ;
+
+
+INSERT INTO `tblaboratorio` (`idLab`, `Laboratorio`) VALUES
+(1, 'Lab01'),
+(2, 'Lab02'),
+(3, 'Lab03'),
+(4, 'Lab04');
+
+
+
+DROP TABLE IF EXISTS `tbquemsomos`;
+CREATE TABLE IF NOT EXISTS `tbquemsomos` (
+  `idQuemSomos` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(300) DEFAULT NULL,
+  `sobrenome` varchar(600) DEFAULT NULL,
+  PRIMARY KEY (`idQuemSomos`)
+) ;
+
+INSERT INTO `tbquemsomos` (`idQuemSomos`, `nome`, `sobrenome`) VALUES
+(1, 'Carol', 'Moura');
+
+
+DROP TABLE IF EXISTS `tbreclamacao`;
+CREATE TABLE IF NOT EXISTS `tbreclamacao` (
+  `idRec` int(11) NOT NULL AUTO_INCREMENT,
+  `idLab` int(11) DEFAULT NULL,
+  `pc` int(11) DEFAULT NULL,
+  `titulo` varchar(300) DEFAULT NULL,
+  `descricao` varchar(600) DEFAULT NULL,
+  `dtCriacao` date DEFAULT NULL,
+  PRIMARY KEY (`idRec`),
+  KEY `idLab` (`idLab`)
+);
+
+INSERT INTO `tbreclamacao` (`idRec`, `idLab`, `pc`, `titulo`, `descricao`, `dtCriacao`) VALUES
+(1, 4, 2, 'Pc não Liga', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor vulputate ullamcorper.', '2022-11-11');
+
+
+ALTER TABLE `tbreclamacao` CHANGE `dtCriacao` `dtCriacao` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;

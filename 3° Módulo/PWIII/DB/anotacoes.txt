@@ -23,3 +23,10 @@ CREATE TABLE IF NOT EXISTS tbContato (
 );
 
 INSERT INTO tbContato VALUES ( null, 'Carol', '5511923456987', 'admCarol@email.com')
+
+
+Para não ficar criando um novo projeto:
+-> composer update ( caso necassário )
+-> composer install 
+-> copia e cola o .env.example e edita para .env
+-> php artisan key:generate
