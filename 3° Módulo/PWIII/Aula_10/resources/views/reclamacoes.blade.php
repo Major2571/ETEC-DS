@@ -17,7 +17,7 @@
         <div class="input-box">
             <select name="laboratorio" id="">
                 @foreach($lab as $dadosLab)
-                    <option value="{{$dadosLab -> idLab}}">{{$dadosLab -> Laboratorio}}</option>
+                    <option value="{{$dadosLab->lab -> idLab}}">{{$dadosLab->lab->Laboratorio}}</option>
                 @endforeach
             </select>
         </div>

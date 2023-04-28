@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Laboratorio;
 use App\Reclamacoes;
 use Illuminate\Http\Request;
 
@@ -17,28 +18,27 @@ class ReclamacoesController extends Controller
 
         $searchDate = request('searchDate');
 
-        if($searchNumber){
+        if ($searchNumber) {
             $reclamacoes = Reclamacoes::where('idLab', '=', $searchNumber)->get();
-        } 
-        
-        if($searchDate) {
-            $reclamacoes = Reclamacoes::where('dtCriacao', '=', $searchDate)->get();
         }
 
-        else {
-            
+        if ($searchDate) {
+            $reclamacoes = Reclamacoes::where('dtCriacao', '=', $searchDate)->get();
+        } else {
+
             $reclamacoes = Reclamacoes::orderBy('dtCriacao')->get();
 
         }
-        
+
 
         return view('reclamacoes', compact('reclamacoes', 'searchNumber'));
     }
 
     // Slect Count
-    public static function totalDeReclamacoes(){
-        $reclamacoes = new Reclamacoes();        
-        $total =  $reclamacoes::all()->count();
+    public static function totalDeReclamacoes()
+    {
+        $reclamacoes = new Reclamacoes();
+        $total = $reclamacoes::all()->count();
         return $total;
     }
 
@@ -57,10 +57,10 @@ class ReclamacoesController extends Controller
     {
         $reclamacoes = new Reclamacoes();
 
-        $reclamacoes -> idLab = $request -> txLab;
-        $reclamacoes -> pc = $request -> txPc;
-        $reclamacoes -> titulo = $request -> txTitulo;
-        $reclamacoes -> descricao = $request -> txDescricao;
+        $reclamacoes->idLab = $request->txLab;
+        $reclamacoes->pc = $request->txPc;
+        $reclamacoes->titulo = $request->txTitulo;
+        $reclamacoes->descricao = $request->txDescricao;
 
         $reclamacoes->save();
 
@@ -100,4 +100,11 @@ class ReclamacoesController extends Controller
         $reclamacoes->where('idRec', $idRec)->delete();
         return redirect('/reclamacoes');
     }
+
+    public function allReclamacoes()
+    {
+        $reclamacoes = Reclamacoes::all();
+        return $reclamacoes;
+    }
+
 }

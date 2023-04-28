@@ -18,3 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/contato', 'ContatoController@allContacts');
+
+Route::get('/laboratorio', 'LaboratorioController@allLabs');
+
+Route::get('/reclamacoes', 'ReclamacoesController@allReclamacoes');

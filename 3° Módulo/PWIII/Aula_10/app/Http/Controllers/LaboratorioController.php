@@ -71,4 +71,10 @@ class LaboratorioController extends Controller
         $laboratorio->where('idLab', $idLab)->delete();
         return redirect('/laboratorio');
     }
+
+    public function allLabs()
+    {
+        $laboratorio = Laboratorio::all();
+        return $laboratorio;
+    }
 }
