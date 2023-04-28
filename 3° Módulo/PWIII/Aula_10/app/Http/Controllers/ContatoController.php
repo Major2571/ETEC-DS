@@ -74,4 +74,9 @@ class ContatoController extends Controller
         $contato->where('idContato', $idContato)->delete();
         return redirect('/contato');
     }
+
+    public function allContacts(){
+        $contato = Contato::all();
+        return $contato;
+    }
 }

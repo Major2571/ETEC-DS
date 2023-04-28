@@ -15,7 +15,11 @@
         {{csrf_field()}}
 
         <div class="input-box">
-            <input type="text" name="txLab" placeholder="Laboratorio" />
+            <select name="laboratorio" id="">
+                @foreach($lab as $dadosLab)
+                    <option value="{{$dadosLab -> idLab}}">{{$dadosLab -> Laboratorio}}</option>
+                @endforeach
+            </select>
         </div>
 
         <div class="input-box">
@@ -35,7 +39,7 @@
 
 </section>
 
-<h1>  Total de Reclamacoes Encontradas: {{App\Http\Controllers\ReclamacoesController::totalDeReclamacoes()}} </h1>
+<!-- <h1>  Total de Reclamacoes Encontradas: {{App\Http\Controllers\ReclamacoesController::totalDeReclamacoes()}} </h1>
 
 <div class="search-container">
     <p> Busque um Laboratorio: </p>
@@ -52,11 +56,11 @@
         <p> Reclamações do Laboratorio: {{ $searchNumber }} </p>
     @endif
 
-</div>
+</div> -->
 
 <section class="table">
 
-     
+
     <table>
         <thead>
             <tr>
@@ -72,20 +76,20 @@
 
         <tbody>
             @foreach($reclamacoes AS $rec)
-                <tr>
-                    <td>{{$rec -> idRec}}</td>
-                    <td>{{$rec -> idLab}}</td>
-                    <td>{{$rec -> pc}}</td>
-                    <td>{{$rec -> titulo}}</td>
-                    <td>{{$rec -> descricao}}</td>
-                    <td>{{date('d/m/y', strtotime($rec -> dtCriacao))}}</td>
-                    
-                    <td class='delete'>
-                        <a href="/reclamacoes/excluir/{{$rec -> idRec}}">
+            <tr>
+                <td>{{$rec -> idRec}}</td>
+                <td>{{$rec -> idLab}}</td>
+                <td>{{$rec -> pc}}</td>
+                <td>{{$rec -> titulo}}</td>
+                <td>{{$rec -> descricao}}</td>
+                <td>{{date('d/m/y', strtotime($rec -> dtCriacao))}}</td>
+
+                <td class='delete'>
+                    <a href="/reclamacoes/excluir/{{$rec -> idRec}}">
                         <i class="deleteIcon material-icons">delete_outline</i>
-                        </a>
-                    </td>
-                </tr>
+                    </a>
+                </td>
+            </tr>
             @endforeach
         </tbody>
 
