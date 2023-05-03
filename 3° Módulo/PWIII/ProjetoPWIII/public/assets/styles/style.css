@@ -33,3 +33,77 @@ body {
 .cards .card {
     height: 100%;
 }
+
+.hello {
+    background: linear-gradient(180deg, #0d0c0ccc 0%, 
+                                        #0d0c0c41 50%,
+                                        #0d0c0cd5 100%), 
+    url('../img/section2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.custom-shape-divider-top-1683154805 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1683154805 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 121px;
+}
+
+.custom-shape-divider-top-1683154805 .shape-fill {
+    fill: #0F172A;
+}
+
+.custom-shape-divider-bottom-1683154878 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1683154878 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 121px;
+}
+
+.custom-shape-divider-bottom-1683154878 .shape-fill {
+    fill: #0F172A;
+}
+
+@media(max-width:600px) {
+    .section-one .main-top div:nth-child(2) img {
+        max-width: 100%;
+    }
+
+    .section-one .main-top div:first-child {
+        max-width: 100%;
+    }
+}
