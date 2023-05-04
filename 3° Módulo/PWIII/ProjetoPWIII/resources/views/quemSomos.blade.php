@@ -6,24 +6,70 @@
 
 <section class="form">
 
-    <div class='titles'>
-        <h1>Adicione Novos Membros</h1>
+<div class="flex flex-wrap justify-center items-center content-center main-top">
+    <div class="w-1/2">
+        <form action="/quem-somos" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-2/3 m-auto">
+    
+            {{csrf_field()}}
+    
+            <div class="relative z-0 w-full mb-6 group">
+                <input 
+                    type="text" 
+                    name="txNome" 
+                    id="txNome" 
+                    class="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
+                    placeholder=" " 
+                    required 
+                />
+                <label 
+                    for="txNome" 
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                    Nome
+                </label>
+            </div>
+    
+            <div class="relative z-0 w-full mb-6 group">
+                <input 
+                    type="text" 
+                    name="txSobrenome" 
+                    id="txSobrenome" 
+                    class="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
+                    placeholder=" " 
+                    required 
+                />
+                <label 
+                    for="txSobrenome" 
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                    Sobrenome
+                </label>
+            </div>
+            <!-- 
+            <div class="input-box">
+                <input type="text" name="txNome" placeholder="Nome" />
+            </div>
+    
+            <div class="input-box">
+                <input type="text" name="txSobrenome" placeholder="Sobrenome" />
+            </div> -->
+    
+            <div class="flex items-center content-center flex-wrap m-auto justify-center">
+                <input type="submit" value="Salvar" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/>
+            </div>
+    
+        </form>
     </div>
 
-    <form action="/quem-somos" method="post">
-
-        {{csrf_field()}}
-
-        <div class="input-box">
-            <input type="text" name="txNome" placeholder="Nome" />
-        </div>
-
-        <div class="input-box">
-            <input type="text" name="txSobrenome" placeholder="Sobrenome" />
-        </div>
-
-        <input type="submit" value="Salvar" />
-    </form>
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-1/2">
+        <h1>Reclamações</h1>
+        <p>
+            No CamargoLabs, levamos a sério qualquer problema que possa afetar sua experiência no laboratório de informática. Se você encontrou algum problema, como um computador com defeito, um teclado com problemas, ou qualquer outra coisa que esteja impedindo você de estudar, queremos saber.
+            Use o formulário ao lado para nos informar sobre o problema. Nossa equipe de suporte técnico entrará em contato o mais rápido possível para resolver o problema e garantir que você possa se concentrar em seus estudos novamente.
+            Agradecemos por nos ajudar a melhorar o ambiente acadêmico!
+        </p>
+    </div>
+</div>
 
 </section>
 
