@@ -7,10 +7,10 @@
 <section class="form">
 
 <div class="flex flex-wrap justify-center items-center content-center main-top">
-    <div class="w-1/2">
-        <form action="/quem-somos" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-2/3 m-auto">
+    <div class="w-1/5">
+        <form action="/quem-somos" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full m-auto">
     
-            {{csrf_field()}}
+            @csrf
     
             <div class="relative z-0 w-full mb-6 group">
                 <input 
@@ -54,18 +54,22 @@
                 <input type="text" name="txSobrenome" placeholder="Sobrenome" />
             </div> -->
     
-            <div class="flex items-center content-center flex-wrap m-auto justify-center">
+            <div class="flex items-center content-center flex-wrap m-auto justify-center cursor-pointer">
                 <input type="submit" value="Salvar" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"/>
             </div>
     
         </form>
     </div>
 
-    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-1/2">
-        <h1>Reclamações</h1>
-        <p>
-            No CamargoLabs, levamos a sério qualquer problema que possa afetar sua experiência no laboratório de informática. Se você encontrou algum problema, como um computador com defeito, um teclado com problemas, ou qualquer outra coisa que esteja impedindo você de estudar, queremos saber.
+    <div class="px-8 pt-6 pb-8 mb-4 w-1/4">
+        <h1 class="mt-2 block mt-1 text-3xl leading-tight font-bold text-slate-100 drop-shadow-lg mb-5">
+            Reclamações
+        </h1>
+      <p class="block mt-1 leading-tight text-xl text-gray-400 drop-shadow-lg">
+            No CamargoLabs, levamos a sério qualquer problema que possa afetar sua experiência no laboratório de informática. Se você encontrou algum problema, como um computador com defeito, um teclado com problemas, ou qualquer outra coisa que esteja impedindo você de estudar, queremos saber. 
+            </br>
             Use o formulário ao lado para nos informar sobre o problema. Nossa equipe de suporte técnico entrará em contato o mais rápido possível para resolver o problema e garantir que você possa se concentrar em seus estudos novamente.
+            </br>
             Agradecemos por nos ajudar a melhorar o ambiente acadêmico!
         </p>
     </div>
@@ -73,7 +77,7 @@
 
 </section>
 
-<section class="table table-lab">
+<!-- <section class="table table-lab">
     <table>
         <thead>
             <tr>
@@ -98,6 +102,6 @@
             @endforeach
         </tbody>
     </table>
-</section>
+</section> -->
 
 @endsection

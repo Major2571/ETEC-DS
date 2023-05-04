@@ -70,7 +70,7 @@ class QuemSomosController extends Controller
     public function destroy($idQuemSomos)
     {
         $quemSomos = new QuemSomos();
-        $quemSomos->where('idQuemSomos', $idQuemSomos)->delete();
+        $quemSomos->where('id', $idQuemSomos)->delete();
         return redirect('/quem-somos');
     }
 }

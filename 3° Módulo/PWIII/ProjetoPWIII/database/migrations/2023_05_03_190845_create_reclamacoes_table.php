@@ -24,6 +24,7 @@ return new class extends Migration
             $table->foreign('idLab')->references('id')->on('tbLaboratorio')->onDelete('cascade');
 
             $table->timestamps();
+
         });
     }
 

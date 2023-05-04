@@ -68,7 +68,7 @@ class LaboratorioController extends Controller
     public function destroy($idLab)
     {
         $laboratorio = new Laboratorio();
-        $laboratorio->where('idLab', $idLab)->delete();
+        $laboratorio->where('id', $idLab)->delete();
         return redirect('/laboratorio');
     }
 

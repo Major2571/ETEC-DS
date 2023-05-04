@@ -97,7 +97,7 @@ class ReclamacoesController extends Controller
     public function destroy($idRec)
     {
         $reclamacoes = new Reclamacoes();
-        $reclamacoes->where('idRec', $idRec)->delete();
+        $reclamacoes->where('id', $idRec)->delete();
         return redirect('/reclamacoes');
     }
 
