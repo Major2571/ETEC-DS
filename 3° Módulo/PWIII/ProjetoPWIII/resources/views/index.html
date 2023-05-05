@@ -16,17 +16,25 @@
 
 <body>
 
-    <h4 class="uppercase tracking-wide text-indigo-500 font-semibold">
-        
-    </h4>
+<!-- <h1>  Total de Reclamacoes Encontradas: {{App\Http\Controllers\ReclamacoesController::totalDeReclamacoes()}} </h1>
 
-    <h6 class="block mt-1 text-lg leading-tight font-medium text-black">
-        
-    </h6>
+<div class="search-container">
+    <p> Busque um Laboratorio: </p>
+    <form action="/reclamacoes" method="get">
 
-    <p class="mt-2 text-slate-500">
-        
-    </p>
+        <input  type="number" name="searchNumber" class="form-control">
+
+        <input type="date" name="searchDate" class="form-control">
+        <input type="submit" value="Pesquisar">
+
+    </form>
+
+    @if($searchNumber)
+        <p> Reclamações do Laboratorio: {{ $searchNumber }} </p>
+    @endif
+
+</div> -->
+
     
 </body>
 

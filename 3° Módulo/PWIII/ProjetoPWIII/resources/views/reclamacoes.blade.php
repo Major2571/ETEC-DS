@@ -32,11 +32,22 @@
                 @csrf
 
                 <div class="grid md:grid-cols-2 md:gap-6">
+
                     <div class="relative z-0 w-full mb-6 group">
-                        <input type="text" name="txLab" id="txLab" class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer" placeholder=" " required />
-                        <label for="txLab" class="peer-focus:font-medium absolute text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2.5 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#DE3F4D] peer-focus:dark:text-[#DE3F4D] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                            N° Laboratorio
-                        </label>
+
+                        <label for="txLab" class="sr-only">Underline select</label>
+
+                        <select id="txLab" name="txLab" class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-400 dark:border-gray-300 focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer">
+
+                            <option value="">N° Laboratório</option>
+
+                            @foreach($lab AS $dadosLab)
+                            <option value="{{$dadosLab -> id}}">
+                                {{$dadosLab -> laboratorio}}
+                            </option>
+                            @endforeach
+
+                        </select>
                     </div>
 
                     <div class="relative z-0 w-full mb-6 group">
@@ -72,25 +83,6 @@
 
 </section>
 
-<!-- <h1>  Total de Reclamacoes Encontradas: {{App\Http\Controllers\ReclamacoesController::totalDeReclamacoes()}} </h1>
-
-<div class="search-container">
-    <p> Busque um Laboratorio: </p>
-    <form action="/reclamacoes" method="get">
-
-        <input  type="number" name="searchNumber" class="form-control">
-
-        <input type="date" name="searchDate" class="form-control">
-        <input type="submit" value="Pesquisar">
-
-    </form>
-
-    @if($searchNumber)
-        <p> Reclamações do Laboratorio: {{ $searchNumber }} </p>
-    @endif
-
-</div> -->
-
 <section>
 
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-auto lg:w-4/5 md:w-4/5">
@@ -99,9 +91,9 @@
 
             <thead class="text-lg text-white bg-[#1e4cb2] dark:text-white">
                 <tr>
-                    <th scope="col" class="px-6 py-3">
+                    <!-- <th scope="col" class="px-6 py-3">
                         idRec
-                    </th>
+                    </th> -->
 
                     <th scope="col" class="px-6 py-3">
                         idLab
@@ -133,10 +125,10 @@
             <tbody>
                 @foreach($reclamacoes AS $rec)
                     <tr class="bg-[#161B26] border-b dark:bg-[#161B26] dark:border-gray-700 hover:bg-[#1C2230] dark:hover:bg-[#1C2230] text-gray-300 text-base">
-
+<!-- 
                         <td class="px-6 py-4">
                             {{$rec -> id}}
-                        </td>
+                        </td> -->
 
                         <td class="px-6 py-4">
                             {{$rec -> idLab}}

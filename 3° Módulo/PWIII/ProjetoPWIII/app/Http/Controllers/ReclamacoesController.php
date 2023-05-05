@@ -13,25 +13,10 @@ class ReclamacoesController extends Controller
      */
     public function index()
     {
+        $reclamacoes = Reclamacoes::all();
+        $lab = Laboratorio::all();
 
-        $searchNumber = request('searchNumber');
-
-        $searchDate = request('searchDate');
-
-        if ($searchNumber) {
-            $reclamacoes = Reclamacoes::where('idLab', '=', $searchNumber)->get();
-        }
-
-        if ($searchDate) {
-            $reclamacoes = Reclamacoes::where('dtCriacao', '=', $searchDate)->get();
-        } else {
-
-            $reclamacoes = Reclamacoes::orderBy('dtCriacao')->get();
-
-        }
-
-
-        return view('reclamacoes', compact('reclamacoes', 'searchNumber'));
+        return view('reclamacoes', compact('reclamacoes', 'lab'));
     }
 
     // Slect Count

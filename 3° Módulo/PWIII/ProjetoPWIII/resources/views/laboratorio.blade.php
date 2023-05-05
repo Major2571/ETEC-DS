@@ -36,7 +36,7 @@
             @foreach($lab AS $dadosLab)
             <tr>
                 <td>{{$dadosLab -> id}}</td>
-                <td>{{$dadosLab -> Laboratorio}}</td>
+                <td>{{$dadosLab -> laboratorio}}</td>
                 <td class='delete'>
                     <a href="/laboratorio/excluir/{{$dadosLab -> id}}">
                         <i class="deleteIcon material-icons">delete_outline</i>
