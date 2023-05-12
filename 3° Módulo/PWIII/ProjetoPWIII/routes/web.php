@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\LaboratorioController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\QuemSomosController;
+use App\Http\Controllers\ReclamacoesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,26 +22,30 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Contato
-Route::get('/contato', 'App\Http\Controllers\ContatoController@index');
-Route::get('/contato/excluir/{idContato}', 'App\Http\Controllers\ContatoController@destroy');
-Route::post('/contato', 'App\Http\Controllers\ContatoController@store');
+// Contato e Sugestoes
+Route::get('/contato', [ ContatoController::class, 'index'])->name('contato');
+Route::get('/mande-uma-sugestao', [ContatoController::class, 'create'])->name('reclamacoes.create');
+Route::post('/mande-uma-sugestao', [ ContatoController::class, 'store'])->name('contato.store');
+Route::get('/contato/excluir/{idContato}', [ ContatoController::class, 'destroy'])->name('contato.destroy');
 
 // Laboratorio
-Route::get('/laboratorio', 'App\Http\Controllers\LaboratorioController@index');
-Route::get('/laboratorio/excluir/{idLab}', 'App\Http\Controllers\LaboratorioController@destroy');
-Route::post('/laboratorio', 'App\Http\Controllers\LaboratorioController@store');
+Route::get('/laboratorio', [LaboratorioController::class, 'index'])->name('laboratorio');
+Route::get('/laboratorio/excluir/{idLab}', [LaboratorioController::class, 'destroy'])->name('laboratorio.destroy');
+Route::post('/laboratorio', [LaboratorioController::class, 'store'])->name('laboratorio.store');
+
 
 // Reclamacoes
-Route::get('/reclamacoes', 'App\Http\Controllers\ReclamacoesController@index');
-Route::get('/reclamacoes/excluir/{idRec}', 'App\Http\Controllers\ReclamacoesController@destroy');
-Route::post('/reclamacoes', 'App\Http\Controllers\ReclamacoesController@store');
+Route::get('/reclamacoes', [ReclamacoesController::class, 'index'])->name('reclamacoes');
+Route::get('/mande-uma-reclamacoes', [ReclamacoesController::class, 'create'])->name('reclamacoes.create');
+Route::post('/mande-uma-reclamacoes', [ReclamacoesController::class, 'store'])->name('reclamacoes.store');
+Route::get('/reclamacoes/excluir/{idRec}', [ReclamacoesController::class, 'destroy'])->name('reclamacoes.destroy');
 
 
 // Quem Somos
-Route::get('/quem-somos', 'App\Http\Controllers\QuemSomosController@index');
-Route::get('/quem-somos/excluir/{idQuemSomos}', 'App\Http\Controllers\QuemSomosController@destroy');
-Route::post('/quem-somos', 'App\Http\Controllers\QuemSomosController@store');
+Route::get('/quem-somos', [QuemSomosController::class, 'index'])->name('quemSomos');
+Route::get('/cad-new-dev', [QuemSomosController::class, 'create'])->name('quemSomosCad');
+Route::post('/cad-new-dev', [QuemSomosController::class, 'store'])->name('quemSomosCad');
+Route::get('/quem-somos/excluir/{idQuemSomos}', [QuemSomosController::class, 'destroy'])->name('quemSomos.destroy');
 
 
 Route::get('/dashboard', function () {

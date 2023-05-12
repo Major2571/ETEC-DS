@@ -13,7 +13,7 @@ class ContatoController extends Controller
     public function index()
     {
         $contato = Contato::all();
-        return view('contato', compact('contato'));
+        return view('contatoTabela', compact('contato'));
     }
 
     /**
@@ -21,7 +21,8 @@ class ContatoController extends Controller
      */
     public function create()
     {
-        //
+        $contato = Contato::all();
+        return view('contato', compact('contato'));
     }
 
     /**
@@ -38,7 +39,7 @@ class ContatoController extends Controller
 
         $contato->save();
 
-        return redirect('/contato');
+        return redirect('/mande-uma-sugestao');
     }
 
     /**

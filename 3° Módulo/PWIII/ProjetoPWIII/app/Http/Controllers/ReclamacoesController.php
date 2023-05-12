@@ -16,7 +16,7 @@ class ReclamacoesController extends Controller
         $reclamacoes = Reclamacoes::all();
         $lab = Laboratorio::all();
 
-        return view('reclamacoes', compact('reclamacoes', 'lab'));
+        return view('reclamacoesTabela', compact('reclamacoes', 'lab'));
     }
 
     // Slect Count
@@ -32,7 +32,10 @@ class ReclamacoesController extends Controller
      */
     public function create()
     {
-        //
+        $reclamacoes = Reclamacoes::all();
+        $lab = Laboratorio::all();
+
+        return view('reclamacoes', compact('reclamacoes', 'lab'));
     }
 
     /**
@@ -49,7 +52,7 @@ class ReclamacoesController extends Controller
 
         $reclamacoes->save();
 
-        return redirect('/reclamacoes');
+        return redirect('/mande-uma-reclamacoes');
     }
 
     /**

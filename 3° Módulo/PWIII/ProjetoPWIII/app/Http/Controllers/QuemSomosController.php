@@ -21,7 +21,8 @@ class QuemSomosController extends Controller
      */
     public function create()
     {
-        //
+        $quemSomos = QuemSomos::all();
+        return view('quemSomosCad', compact('quemSomos'));
     }
 
     /**
@@ -37,7 +38,7 @@ class QuemSomosController extends Controller
 
         $quemSomos->save();
         
-        return redirect('/quem-somos');
+        return redirect('/cad-new-dev');
     }
 
     /**
@@ -71,6 +72,6 @@ class QuemSomosController extends Controller
     {
         $quemSomos = new QuemSomos();
         $quemSomos->where('id', $idQuemSomos)->delete();
-        return redirect('/quem-somos');
+        return redirect('/cad-new-dev');
     }
 }
