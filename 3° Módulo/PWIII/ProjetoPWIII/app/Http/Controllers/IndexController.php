@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contato;
 use App\Models\Index;
+use App\Models\Laboratorio;
+use App\Models\QuemSomos;
+use App\Models\Reclamacoes;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -12,8 +17,44 @@ class IndexController extends Controller
      */
     public function index()
     {
-        //
+        $reclamacoes = Reclamacoes::all();
+        $lab = Laboratorio::all();
+        $contato = Contato::all();
+        $contato = QuemSomos::all();
+
+        // Count
+        $totalLaboratorios = Laboratorio::count();
+        $totalReclamacoes = Reclamacoes::count();
+        $totalContato = Contato::count();
+        $totalDev = QuemSomos::count();
+
+        // Última reclamação
+        $ultimaRec = Reclamacoes::orderBy('dtCriacao', 'desc')->first();
+
+        // Reclamção mais antiga
+        $antigaRec = Reclamacoes::orderBy('dtCriacao', 'asc')->first();
+
+
+        // Quantidade de rec por lab
+        $reclamacoesPorLab = DB::table('tbReclamacao')
+            ->join('tbLaboratorio', 'tbReclamacao.idLab', '=', 'tbLaboratorio.id')
+            ->select('tbLaboratorio.laboratorio', DB::raw('count(tbReclamacao.id) as total'))
+            ->groupBy('tbLaboratorio.laboratorio')
+            ->get();
+
+        return view('dashboard', compact(
+            'reclamacoes', 
+            'lab', 
+            'totalLaboratorios', 
+            'totalReclamacoes', 
+            'totalContato', 
+            'totalDev',
+            'reclamacoesPorLab',
+            'ultimaRec',
+            'antigaRec'
+        ));
     }
+
 
     /**
      * Show the form for creating a new resource.

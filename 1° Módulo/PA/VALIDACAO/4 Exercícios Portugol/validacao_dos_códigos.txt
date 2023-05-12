@@ -1,0 +1,62 @@
+
+Atividade - "Exercícios Decisão" 
+Validação dos Códigos
+
+-----------------------------------------------------
+
+ex1 - "Idade"
+
+Foi utilizado 1 váriavel do tipo real ( idade );
+
+Foram feitas duas propóstas, usando dois laços de repetição, FAÇA e ENQUANTO;
+
+Validação de entrada caso seja posto números negativos ou maiores que 100;
+
+-----------------------------------------------------
+
+ex2 - "Notas"
+
+Foram feitas duas propóstas, usando dois laços de repetição, FAÇA e ENQUANTO;
+
+Validação para que não coloque nenhuma letra além das 5 que foram pedidas ( A, B, C, D e E ), sendo a entrada maiuscula ou minuscula , não sendo necessário um 3° SE caso a pessoa coloque as demais letras;
+
+
+-----------------------------------------------------
+
+ex3 
+
+Foi utilizado o condicional FACA para aceitar apenas:
+  F/f para o sexo feminino e M/m para o masculino;
+  idade > 0;
+  altura, é levado em consideração os valores correspondentes a menor e a maior pessoa do mundo ( menor pessoa do mundo mede apx. 55cm e a maior 2,51m );
+  peso, é levado em consideração os valores correspondentes a pessoa mais e menos pesada do mundo;
+
+O programa irá executar as demais etapas caso a pessoa seja do sexo masculino ( entre com M/m ), senão, o programa será finalizado;
+
+Caso a pessoa seja do sexo Masculino, as demais entradas serão validadas e irá para a verificação ( altura >= 1.8 e peso >= 75 ), sendo assim, aceito ou não;
+
+
+-----------------------------------------------------
+ex4 - "Peso Ideal"
+
+Foram feitas duas propóstas, usando dois laços de repetição, FAÇA e ENQUANTO;
+
+A biblioteca de matematica foi inclusa para arredondar os valores com 2 casas depois da vírgula;
+
+Ambos programas usam 7 variáveis, sendo 6 do tipo real e 1 do tipo caracter;
+
+É usado nas estruturas enquanto:
+ 1° entrada de dados (sexo) , a validação de letras maiusculas e minusculas ( F, f, M, m );
+
+ 2° entrada de dados ( altura ), é levado em consideração os valores correspondentes a menor e a maior pessoa do mundo ( menor pessoa do mundo mede apx. 55cm e a maior 2,51m );
+
+Dentro de cada SE há um 2° SE, que irá ser usado se o PESO < 0, ou seja um valor inválido; nele o resultado negativo é multiplicado por -1, tornando assim o valor positivo e válido.
+
+Variáveis: 
+
+altura = altura da pessoa;
+pesoF = peso ideal Feminino;
+pesoM = peso ideal Masculino;
+pesoFN e pesoMN = variável que vai receber o valor da conta do peso ideal Feminino/Masculino, caso o peso seja negativo, já que necessita ser multiplicado por -1;
+sexo = F, f para Feminino, ou, M,m para Masculino;
+arredondamento = peso arredondado para 2 casas depois da vírgula

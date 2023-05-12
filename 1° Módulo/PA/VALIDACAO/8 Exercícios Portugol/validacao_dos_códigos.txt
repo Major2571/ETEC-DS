@@ -1,0 +1,102 @@
+
+Atividade - "Oito exercicíos Portugol" 
+Validação dos Códigos
+
+-----------------------------------------------------
+
+ex1 - "Mostrar o tempo em horas, minutos e segundos"
+
+Foi utilizada 5 variáveis do tipo real;
+
+FAÇA - laço de repetição utilizado caso o número digitado seja negativo;
+
+Para converter segundos em horas devemos dividir segundos por horas ( hor = seg / 3600 );
+
+Se for uma conta quebrada, o resto será armazenado na variável para ser utilizado para o calculo de minutos e segundos;
+minutos = resto da div de hor dividido por 60
+segundos = resto da div de minutos
+
+-----------------------------------------------------
+
+ex2 - " Preço Final do Carro"
+
+Foi utilizada 2 variáveis do tipo real;
+custo_fabr = custo de fabrica do carro 
+custo_final = custo final do carro com a porcentagem do distribuidor (28%) e impostos (45%)
+
+Condicional 'faça' adicionado para não aceitar valores = ou < que 0;
+
+-----------------------------------------------------
+
+ex3 - "Salário Mensal"
+
+Foram feitas duas propóstas, usando dois laços de repetição, FAÇA e ENQUANTO;
+
+Condicional adicionada para que não aceite valores menores ou iguais a 0 nas entradas de altura e peso;
+
+Foram usadas 3 variáveis em ambos programas do tipo real;
+altura = entrada de dados da altura da pessoa;
+peso = entrada de dados da altura da pessoa;
+imc = conta referente ao indicie de massa corporal, que ira usar as 2 entradas de dados no precesso
+
+-----------------------------------------------------
+
+ex4 - "Emprestimo"
+
+Foi utilizada 3 variáveis do tipo real;
+
+Código corrigido;
+
+Condicional 'faça' adicionado para não aceitar valores = ou < que 0;
+
+-----------------------------------------------------
+
+ex5 - "Ordem Crescente"
+
+Foi utilizada 2 variáveis do tipo inteiro;
+
+Foram acrescentadas algumas coisas no código final, como mensagens na saida de dados;
+
+-----------------------------------------------------
+
+ex6 - "Peso Ideal"
+
+Foram feitas duas propóstas, usando dois laços de repetição, FAÇA e ENQUANTO;
+
+Ambos programas usam 6 variáveis, sendo 5 do tipo real e 1 do tipo caracter;
+
+É usado na estrutura enquanto, na 1 entrada de dados (sexo) , a validação de letras maiusculas e minusculas ( F, f, M, m );
+
+Já na segunda entrada de dados ( altura ), é levado em consideração os valores correspondentes a menor e a maior pessoa do mundo ( menor pessoa do mundo mede apx. 55cm e a maior 2,51m );
+
+Dentro de cada SE há um 2° SE, que irá ser usado se o PESO < 0, ou seja um valor inválido; nele o resultado negativo é multiplicado por -1, tornando assim o valor positivo e válido.
+
+Variáveis: 
+
+altura = altura da pessoa;
+pesoF = peso ideal Feminino;
+pesoM = peso ideal Masculino;
+pesoFN e pesoMN = variável que vai receber o valor da conta do peso ideal Feminino/Masculino, caso o peso seja negativo, já que necessita ser multiplicado por -1;
+sexo = F, f para Feminino, ou, M,m para Masculino;
+
+-----------------------------------------------------
+
+ex7 - "IMC"
+
+Foram feitas duas propóstas, usando dois laços de repetição, FAÇA e ENQUANTO;
+
+Condicional adicionada para que não aceite valores menores ou iguais a 0 nas entradas de altura e peso;
+
+Foram usadas 3 variáveis em ambos programas do tipo real;
+altura = entrada de dados da altura da pessoa;
+peso = entrada de dados da altura da pessoa;
+imc = conta referente ao indicie de massa corporal, que ira usar as 2 entradas de dados no precesso
+
+
+-----------------------------------------------------
+
+ex8 - "Menção"
+
+Laço de repetição ( faca ) adicionado para a validação de entrada
+
+

@@ -12,26 +12,11 @@ class ReclamacoesController extends Controller
      * Display a listing of the resource.
      */
     public function index(Request $request)
-{
-    $reclamacoes = Reclamacoes::all();
-    $lab = Laboratorio::all();
-
-    $search = $request->search;
-
-    $reclamacoes = Reclamacoes::when($search, function ($query) use ($search) {
-        return $query->where('idLab', 'LIKE' ,"%{$search}%");
-    })->get();
- 
-    return view('reclamacoes', compact('reclamacoes', 'lab', 'search'));
-}
-    
-
-    // Slect Count
-    public static function totalDeReclamacoes()
     {
-        $reclamacoes = new Reclamacoes();
-        $total = $reclamacoes::all()->count();
-        return $total;
+        $reclamacoes = Reclamacoes::all();
+        $lab = Laboratorio::all();
+
+        return view('reclamacoesTabela', compact('reclamacoes', 'lab'));
     }
 
     /**
@@ -39,7 +24,10 @@ class ReclamacoesController extends Controller
      */
     public function create()
     {
-        //
+        $reclamacoes = Reclamacoes::all();
+        $lab = Laboratorio::all();
+
+        return view('reclamacoes', compact('reclamacoes', 'lab'));
     }
 
     /**
@@ -56,7 +44,7 @@ class ReclamacoesController extends Controller
 
         $reclamacoes->save();
 
-        return redirect('/reclamacoes');
+        return redirect('/mande-uma-reclamacoes');
     }
 
     /**
@@ -98,5 +86,4 @@ class ReclamacoesController extends Controller
         $reclamacoes = Reclamacoes::all();
         return $reclamacoes;
     }
-
 }

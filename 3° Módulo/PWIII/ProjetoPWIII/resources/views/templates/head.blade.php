@@ -34,10 +34,10 @@
                         <a href="/" class="mr-4 hover:underline md:mr-6 ">Inicio</a>
                     </li>
                     <li>
-                        <a href="/reclamacoes" class="mr-4 hover:underline md:mr-6">Reclamações </a>
+                        <a href="/mande-uma-reclamacoes" class="mr-4 hover:underline md:mr-6">Reclamações </a>
                     </li>
                     <li>
-                        <a href="/contato" class="mr-4 hover:underline md:mr-6 ">Contato</a>
+                        <a href="/mande-uma-sugestao" class="mr-4 hover:underline md:mr-6 ">Contato</a>
                     </li>
                     <li>
                         <a href="/quem-somos" class="hover:underline">Sobre</a>
@@ -48,6 +48,9 @@
             <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2023. All Rights Reserved.</span>
         </div>
     </footer>
+
+    
+
 </body>
 
 </html>

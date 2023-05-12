@@ -14,28 +14,80 @@
 <link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<!-- <body>
 
-<!-- <h1>  Total de Reclamacoes Encontradas: {{App\Http\Controllers\ReclamacoesController::totalDeReclamacoes()}} </h1>
+    <di class="w-full flex aling-center justify-center">
+        <div id="reclamacoesPorLabColumn" class="m-5 text-center aling-center  "></div>
+        <div id="reclamacoesPorLabPie" class="m-5"></div>
+    </di>
 
-<div class="search-container">
-    <p> Busque um Laboratorio: </p>
-    <form action="/reclamacoes" method="get">
 
-        <input  type="number" name="searchNumber" class="form-control">
+    {{-- PieChart --}}
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
 
-        <input type="date" name="searchDate" class="form-control">
-        <input type="submit" value="Pesquisar">
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Laboratório', 'Reclamações'],
+                @foreach ($reclamacoesPorLab as $rec)
+                    ['{{ $rec->laboratorio }}', {{ $rec->total }}],
+                @endforeach
+            ]);
 
-    </form>
+            var options = {
+                title: 'Reclamações por Laboratório ( percentual )',
+                pieHole: 0.4,
+                width: 500,
+                height: 300,
 
-    @if($searchNumber)
-        <p> Reclamações do Laboratorio: {{ $searchNumber }} </p>
-    @endif
+                // colors: ['red', 'blue', 'green', ''],
+            };
 
-</div> -->
+            var chart = new google.visualization.PieChart(document.getElementById('reclamacoesPorLabPie'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    {{-- ColumnChart --}}
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Laboratório', 'Reclamações'],
+                @foreach ($reclamacoesPorLab as $rec)
+                    ['{{ $rec->laboratorio }}', {{ $rec->total }}],
+                @endforeach
+            ]);
+
+            var options = {
+                title: 'Reclamações por Laboratório',
+                legend: {
+                    position: 'bottom'
+                },
+                colors: ['#DE3F4D'],
+                width: 500,
+                height: 300,
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('reclamacoesPorLabColumn'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
+
 
     
-</body>
+</body> -->
 
 </html>

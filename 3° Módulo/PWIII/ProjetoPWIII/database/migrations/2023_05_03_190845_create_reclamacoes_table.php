@@ -17,11 +17,12 @@ return new class extends Migration
             $table->id();
             
             $table->unsignedBigInteger('idLab');
+            $table->foreign('idLab')->references('id')->on('tbLaboratorio')->onDelete('cascade');
+
             $table->integer('pc');
             $table->string('titulo', 300);
             $table->string('descricao', 600);
             $table->date('dtCriacao');
-            $table->foreign('idLab')->references('id')->on('tbLaboratorio')->onDelete('cascade');
 
             $table->timestamps();
 
