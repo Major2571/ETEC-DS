@@ -83,7 +83,45 @@
 
 </section>
 
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg m-auto lg:w-4/5 md:w-4/5">
+    <form action="/reclamacoes" method="get" class="flex items-center w-3/5">
+        <div class="flex w-1/2">
+            <div>
+                <div class="relative w-full">
+                    <select id="search" name="search" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pr-10 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+
+                        <option value="">N° do Laboratório</option>
+
+                        @foreach($lab AS $dadosLab)
+                        <option value="{{$dadosLab -> id}}">
+                            {{$dadosLab -> laboratorio}}
+                        </option>
+                        @endforeach
+
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <span class="sr-only">Search</span>
+            </button>
+        </div>
+    </form>
+
+    @if($search)
+    <h2 class="text-gray-300 text-base">
+        Reclamações do Laboratório {{ $search }}
+    </h2>
+    @else
+    @endif
+</div>
+
+
+
 <section>
+
 
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-auto lg:w-4/5 md:w-4/5">
 
@@ -124,48 +162,42 @@
 
             <tbody>
                 @foreach($reclamacoes AS $rec)
-                    <tr class="bg-[#161B26] border-b dark:bg-[#161B26] dark:border-gray-700 hover:bg-[#1C2230] dark:hover:bg-[#1C2230] text-gray-300 text-base">
-<!-- 
-                        <td class="px-6 py-4">
-                            {{$rec -> id}}
-                        </td> -->
+                <tr class="bg-[#161B26] border-b dark:bg-[#161B26] dark:border-gray-700 hover:bg-[#1C2230] dark:hover:bg-[#1C2230] text-gray-300 text-base">
 
-                        <td class="px-6 py-4">
-                            {{$rec -> idLab}}
-                        </td>
 
-                        <td class="px-6 py-4">
-                            {{$rec -> pc}}
-                        </td>
+                    <td class="px-6 py-4">
+                        {{$rec -> idLab}}
+                    </td>
 
-                        <td class="px-6 py-4">
-                            {{$rec -> titulo}}
-                        </td>
+                    <td class="px-6 py-4">
+                        {{$rec -> pc}}
+                    </td>
 
-                        <td class="px-6 py-4">
-                            {{$rec -> descricao}}
-                        </td>
+                    <td class="px-6 py-4">
+                        {{$rec -> titulo}}
+                    </td>
 
-                        <td class="px-6 py-4">
-                            {{date('d/m/y', strtotime($rec -> dtCriacao))}}
-                        </td>
-                        
-                        <td class="px-6 py-4 text-center w-2">
-                            <a href="/reclamacoes/excluir/{{$rec -> id}}">
-                                <button 
-                                    type="button" 
-                                    class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500"
-                                >
-                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z" />
-                                    </svg>
-                                    <span class="sr-only">trash icon</span>
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
+                    <td class="px-6 py-4">
+                        {{$rec -> descricao}}
+                    </td>
+
+                    <td class="px-6 py-4">
+                        {{date('d/m/y', strtotime($rec -> dtCriacao))}}
+                    </td>
+
+                    <td class="px-6 py-4 text-center w-2">
+                        <a href="/reclamacoes/excluir/{{$rec -> id}}">
+                            <button type="button" class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z" />
+                                </svg>
+                                <span class="sr-only">trash icon</span>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
                 @endforeach
-                
+
             </tbody>
 
         </table>

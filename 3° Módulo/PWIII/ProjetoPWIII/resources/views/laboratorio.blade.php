@@ -7,7 +7,7 @@
 <section class="form">
     <div class="w-full flex flex-wrap justify-center items-center content-center main-top">
         <div class="lg:w-1/4 md:w-2/5">
-            <form action="/quem-somos" method="post" class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
+            <form action="/laboratorio" method="post" class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
 
                 @csrf
 

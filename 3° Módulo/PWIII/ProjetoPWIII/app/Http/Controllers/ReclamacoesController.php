@@ -11,13 +11,20 @@ class ReclamacoesController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        $reclamacoes = Reclamacoes::all();
-        $lab = Laboratorio::all();
+    public function index(Request $request)
+{
+    $reclamacoes = Reclamacoes::all();
+    $lab = Laboratorio::all();
 
-        return view('reclamacoes', compact('reclamacoes', 'lab'));
-    }
+    $search = $request->search;
+
+    $reclamacoes = Reclamacoes::when($search, function ($query) use ($search) {
+        return $query->where('idLab', 'LIKE' ,"%{$search}%");
+    })->get();
+ 
+    return view('reclamacoes', compact('reclamacoes', 'lab', 'search'));
+}
+    
 
     // Slect Count
     public static function totalDeReclamacoes()

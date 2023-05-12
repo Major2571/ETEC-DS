@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReclamacoesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,7 @@ Route::post('/laboratorio', 'App\Http\Controllers\LaboratorioController@store');
 Route::get('/reclamacoes', 'App\Http\Controllers\ReclamacoesController@index');
 Route::get('/reclamacoes/excluir/{idRec}', 'App\Http\Controllers\ReclamacoesController@destroy');
 Route::post('/reclamacoes', 'App\Http\Controllers\ReclamacoesController@store');
+
 
 
 // Quem Somos
