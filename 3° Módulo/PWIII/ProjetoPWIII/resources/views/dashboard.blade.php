@@ -15,32 +15,61 @@
         </div>
     </div>
 
-    <div>
-        <h1 class="text-white">
-            Total de Laboratórios Cadastrados: {{ $totalLaboratorios }}
-        </h1>
-        <h1 class="text-white">
-            Total de Reclamações Realizadas: {{ $totalReclamacoes }}
-        </h1>
-        <h1 class="text-white">
-            Total de Contato ou Sugestões Feitos: {{ $totalContato }}
-        </h1>
-        <h1 class="text-white">
-            Quantidade de Desenvolvedores: {{ $totalDev }}
-        </h1>
+    <div class="w-full flex align-center justify-center">
 
-        {{-- <h1 class="text-white">
-            Quantidade de Reclamacoes por lab: {{ $reclamacoesPorLab }}
-        </h1> --}}
+        <div
+            class="block w-2/12 p-6 text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Total de Laboratórios
+                Cadastrados:</h5>
+            <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $totalLaboratorios }}
+            </h1>
+        </div>
 
-        <h1 class="text-white">
-            Última Reclamação: {{ $ultimaRec }}
-        </h1>
+        <div
+            class="block w-2/12 p-6 text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Quantidade de
+                Desenvolvedores:</h5>
+            <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $totalDev }}</h1>
+        </div>
 
-        <h1 class="text-white">
-            Reclamação mais antiga: {{ $antigaRec }}
-        </h1>
+        <div
+            class="block w-2/12 p-6 text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Total de Reclamações
+                Realizadas:</h5>
+            <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $totalReclamacoes }}
+            </h1>
+        </div>
+
+        <div
+            class="block w-2/12 p-6 text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Total de Contato ou
+                Sugestões Feitas:</h5>
+            <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $totalContato }}</h1>
+        </div>
+
     </div>
+
+    <div class="w-full flex align-center justify-center">
+
+        <div
+            class="block w-1/4 p-6 text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Última Reclamação:</h5>
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Laboratório: {{ $ultimaRec->laboratorio->laboratorio }}</h2>
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pc: {{ $ultimaRec->pc }}</h2>
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Feita em: {{ $ultimaRec->dtCriacao }}</h2>
+        </div>
+        
+        <div
+            class="block w-1/4 p-6 text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Reclamação mais antiga: </h5>
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Laboratório: {{ $antigaRec->laboratorio->laboratorio }}</h2>
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pc: {{ $antigaRec->pc }}</h2>
+            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Feita em: {{ $antigaRec->dtCriacao }}</h2>
+        
+        </div>
+
+    </div>
+
 
     <div class="flex m-auto justify-center">
         <div class="chart-wrapper bg-slate-200 p-5 ">
@@ -50,19 +79,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        var ctx = document.getElementById('reclamacoesPorLab').getContext('2d');
+        const ctx = document.getElementById('reclamacoesPorLab').getContext('2d');
 
-        var data = @json($reclamacoesPorLab);
+        const data = @json($reclamacoesPorLab);
 
-        var lab = data.map(function(item) {
+        const lab = data.map(function(item) {
             return item.laboratorio;
         });
 
-        var recLaboratorios = data.map(function(item) {
+        const recLaboratorios = data.map(function(item) {
             return item.total;
         });
 
-        var chart = new Chart(ctx, {
+        const chart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: lab,
