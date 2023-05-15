@@ -127,8 +127,8 @@ select::-webkit-scrollbar-thumb {
 }
 
 .chart-wrapper {
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 80%;
     border-radius: 10px;
 }
 

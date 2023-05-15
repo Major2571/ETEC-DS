@@ -108,40 +108,58 @@
 
     </div>
 
-    <div class="w-full flex align-center justify-center my-10">
-
-        <div
-            class="m-5 block w-1/5 p-6 text-left bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Reclamação mais recente:</h5>
-            <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Laboratório:
-                {{ $ultimaRec->laboratorio->laboratorio }}</p>
-            <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">N° do Computador: {{ $ultimaRec->pc }}
-            </p>
-            <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Feita em:
-                {{ date('d/m/y, h:ia', strtotime($ultimaRec->dtCriacao)) }}</p>
-        </div>
-
-        <div
-            class="m-5 block w-1/5 p-6 text-left bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Reclamação mais antiga:</h5>
-            <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Laboratório:
-                {{ $antigaRec->laboratorio->laboratorio }}</p>
-            <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">N° do Computador: {{ $antigaRec->pc }}
-            </p>
-            <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Feita em:
-                {{ date('d/m/y, h:ia', strtotime($antigaRec->dtCriacao)) }}</p>
+    <div class="flex justify-center items-center">
+        <div class="grid grid-cols-3 gap-4 m-auto">
+            <div class="col-span-2">
+                <div class="chart-wrapper bg-slate-200 p-5 ">
+                    <canvas id="reclamacoesPorLab"></canvas>
+                </div>
+    
+            </div>
+            <div class="">
+    
+                <div
+                    class="m-5 block p-6 text-left bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Reclamação mais
+                        recente:
+                    </h5>
+                    <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Laboratório:
+                        {{ $ultimaRec->laboratorio->laboratorio }}</p>
+                    <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">N° do Computador:
+                        {{ $ultimaRec->pc }}
+                    </p>
+                    <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Feita em:
+                        {{ date('d/m/y, h:ia', strtotime($ultimaRec->dtCriacao)) }}</p>
+                </div>
+    
+                <div
+                    class="m-5 block p-6 text-left bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Reclamação mais
+                        antiga:</h5>
+                    <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Laboratório:
+                        {{ $antigaRec->laboratorio->laboratorio }}</p>
+                    <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">N° do Computador:
+                        {{ $antigaRec->pc }}
+                    </p>
+                    <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-white">Feita em:
+                        {{ date('d/m/y, h:ia', strtotime($antigaRec->dtCriacao)) }}</p>
+                </div>
+    
+            </div>
+    
         </div>
 
     </div>
 
 
-    <div class="flex m-auto justify-center">
-        <div class="chart-wrapper bg-slate-200 p-5 ">
-            <canvas id="reclamacoesPorLab"></canvas>
-        </div>
+
+    <div class="chart-wrapper bg-slate-200 p-5 ">
+        <canvas id="reclamacoesPorLabDoughnut"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
     <script>
         const ctx = document.getElementById('reclamacoesPorLab').getContext('2d');
 
@@ -204,5 +222,71 @@
             }
         });
     </script>
+
+    <script>
+        const ctxDoughnut = document.getElementById('reclamacoesPorLabDoughnut').getContext('2d');
+
+        const dataDoughnut = @json($reclamacoesPorLab);
+
+        const labDoughnut = data.map(function(item) {
+            return item.laboratorio;
+        });
+
+        const recLaboratoriosDoughnut = data.map(function(item) {
+            return item.total;
+        });
+
+        const chartDoughnut = new Chart(ctxDoughnut, {
+            type: 'doughnut',
+            data: {
+                labels: labDoughnut,
+                datasets: [{
+                    label: 'Reclamações por laboratório',
+                    data: recLaboratoriosDoughnut,
+                    borderWidth: 1,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 206, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(255, 159, 64, 0.5)',
+                        'rgb(255, 90, 95, 0.5)',
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgb(255, 90, 95, 1)',
+                    ],
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            precision: 0
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Reclamações por laboratório'
+                }
+            }
+        });
+    </script>
+
+
+
 
 </x-app-layout>

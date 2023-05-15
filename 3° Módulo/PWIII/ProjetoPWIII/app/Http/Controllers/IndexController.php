@@ -7,6 +7,7 @@ use App\Models\Index;
 use App\Models\Laboratorio;
 use App\Models\QuemSomos;
 use App\Models\Reclamacoes;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -42,16 +43,17 @@ class IndexController extends Controller
             ->groupBy('tbLaboratorio.laboratorio')
             ->get();
 
+
         return view('dashboard', compact(
-            'reclamacoes', 
-            'lab', 
-            'totalLaboratorios', 
-            'totalReclamacoes', 
-            'totalContato', 
+            'reclamacoes',
+            'lab',
+            'totalLaboratorios',
+            'totalReclamacoes',
+            'totalContato',
             'totalDev',
             'reclamacoesPorLab',
             'ultimaRec',
-            'antigaRec'
+            'antigaRec',
         ));
     }
 
