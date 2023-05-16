@@ -1,10 +1,17 @@
 <x-app-layout>
-    <section class="form">
+    <x-slot name="header">
+        <div class="intro">
+            <h1 class="text-3xl font-bold text-gray-200">Cadastre um novo Desenvolvedor</h1>
+            <p class="text-lg text-gray-300 mt-4">Preencha o formulário abaixo para cadastrar um novo membro da equipe!</p>
+          </div>
+    </x-slot>
+
+    <section class="cad-form my-10">
     
         <div class="w-full flex flex-wrap justify-center items-center content-center main-top">
     
             <div class="lg:w-1/4 md:w-4/5">
-                <form action="/cad-new-dev" method="post" class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
+                <form action="/cad-new-dev" id="cadastroForm" method="post" class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
     
                     @csrf
     
@@ -79,7 +86,8 @@
     
                         <td class="px-6 py-4 text-center w-2">
                             <a href="/quem-somos/excluir/{{$qmSomos -> id}}">
-                                <button type="button" class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500">
+                                <button type="button" onclick="confirmExclusao(event)"
+                                class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500">
                                     <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z" />
                                     </svg>
@@ -94,4 +102,38 @@
             </table>
         </div>
     </section>
+
 </x-app-layout>
+
+<script>
+    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Desenvolvedor Cadastrado com Sucesso!',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true
+        }).then(function() {
+            event.target.submit();
+        });
+    });
+
+    function confirmExclusao(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Confirmação de Exclusão',
+            text: 'Tem certeza que deseja excluir este item?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#DE3F4D',
+            cancelButtonColor: '#6B7280',
+            confirmButtonText: 'Sim, excluir!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = event.target.closest('a').href;
+            }
+        });
+    }
+</script>

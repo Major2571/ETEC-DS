@@ -16,7 +16,18 @@ class ReclamacoesController extends Controller
         $reclamacoes = Reclamacoes::all();
         $lab = Laboratorio::all();
 
-        return view('reclamacoesTabela', compact('reclamacoes', 'lab'));
+        // Filtros
+        $filtroLab = $request->input('filtroLab');
+        if ($filtroLab) {
+            $reclamacoes = $reclamacoes->where('idLab', $filtroLab);
+        }
+
+
+        return view('reclamacoesTabela', compact(
+            'reclamacoes',
+            'lab',
+            'filtroLab'
+        ));
     }
 
     /**

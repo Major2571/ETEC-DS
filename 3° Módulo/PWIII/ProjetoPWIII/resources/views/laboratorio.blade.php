@@ -1,12 +1,21 @@
 <x-app-layout>
+    <x-slot name="header">
+        <div class="intro">
+            <h1 class="text-3xl font-bold text-gray-200">Cadastre um novo Laboratório</h1>
+            <p class="text-lg text-gray-300 mt-4">Preencha o formulário abaixo para cadastrar um novo laboratório. Lembre-se de seguir o padrão 'Lab00' ( 'Lab' + N° do Laboratório )</p>
+          </div>
+    </x-slot>
 
-    <section class="form">
+    <section class="cad-form my-10">
         <div class="w-full flex flex-wrap justify-center items-center content-center main-top">
             <div class="lg:w-1/4 md:w-2/5">
-                <form action="/laboratorio" method="post"
+                <form action="/laboratorio" method="post" id="cadastroForm"
                     class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
 
                     @csrf
+                    <h1 class="text-2xl font-bold text-center text-gray-800 mb-10">
+                         Cadaste um novo Laboratório
+                    </h1>
 
                     <div class="relative z-0 w-full mb-6 group">
                         <input type="text" name="txLab" id="txLab"
@@ -19,7 +28,7 @@
                     </div>
 
                     <div class="flex items-center content-center flex-wrap m-auto justify-center">
-                        <input type="submit" value="Enviar"
+                        <input type="submit" value="Cadastrar"
                             class="text-white bg-[#DE3F4D] hover:bg-[#DA2C43] focus:ring-4 focus:outline-none focus:ring-[#eea7b2] font-medium rounded-md w-full sm:w-auto px-8 py-2 text-center mt-5 cursor-pointer" />
                     </div>
                 </form>
@@ -63,7 +72,7 @@
 
                             <td class="px-6 py-4 text-center w-2">
                                 <a href="/laboratorio/excluir/{{ $dadosLab->id }}">
-                                    <button type="button"
+                                    <button type="button" onclick="confirmExclusao(event)"
                                         class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500">
                                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
                                             viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
@@ -80,4 +89,38 @@
             </table>
     </section>
 
+
 </x-app-layout>
+
+<script>
+    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Laboratório Cadastrado com Sucesso!',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true
+        }).then(function() {
+            event.target.submit();
+        });
+    });
+
+    function confirmExclusao(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Confirmação de Exclusão',
+            text: 'Tem certeza que deseja excluir este item?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#DE3F4D',
+            cancelButtonColor: '#6B7280',
+            confirmButtonText: 'Sim, excluir!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = event.target.closest('a').href;
+            }
+        });
+    }
+</script>

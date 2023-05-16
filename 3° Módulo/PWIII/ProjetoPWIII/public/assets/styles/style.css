@@ -126,16 +126,7 @@ select::-webkit-scrollbar-thumb {
     fill: #0F172A;
 }
 
-.chart-wrapper {
-    height: 400px;
-    width: 100%;
-    border-radius: 10px;
-}
 
-#reclamacoesPorLab {
-    color: #fff;
-
-}
 
 @media(max-width:600px) {
     .section-one .main-top div:nth-child(2) img {

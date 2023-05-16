@@ -1,9 +1,4 @@
 <x-app-layout>
-    {{-- <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot> --}}
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -111,23 +106,19 @@
     <div class="flex justify-center items-center mx-auto my-10">
         <div class="grid md:grid-cols-3 gap-4 m-auto items-center w-4/5">
 
-            <div class="md:col-span-2">
-                <div class="chart-wrapper p-5">
-                    <canvas id="reclamacoesPorLab"></canvas>
-                </div>
+            <div class="md:col-span-2 p-5 h-[30em]">
+                <canvas id="reclamacoesPorLab"></canvas>
             </div>
 
-            <div class="md:col-span-2">
-                <div class="chart-wrapper p-5">
-                    <canvas id="reclamacoesPorLabLine"></canvas>
-                </div>
-            </div>
-
-            <div class="chart-wrapper bg-transparent p-5 w-4/5 m-auto">
+            <div class="p-5 w-4/5 h-[30em] m-auto">
                 <canvas id="reclamacoesPorLabDoughnut"></canvas>
             </div>
-        </div>
 
+            {{-- <div class="md:col-span-2 p-5 h-96 rounded-lg shadow border bg-gray-800 border-gray-700">
+                <canvas id="reclamacoesPorLabLine"></canvas>
+            </div> --}}
+
+        </div>
     </div>
 
     <div class="w-4/5 flex justify-center items-center flex-wrap m-auto">
@@ -193,7 +184,6 @@
     </div>
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     {{-- Bar --}}
@@ -245,16 +235,26 @@
                 maintainAspectRatio: false,
                 scales: {
                     y: {
+                        grid: {
+                            color: '#212b42', 
+                            borderColor: 'black',
+                            borderWidth: 1,
+                        },
                         ticks: {
                             beginAtZero: true,
                             precision: 0,
                             stepSize: 1,
-                            color: '#d1d5db' // Change the font color of y-axis labels here
+                            color: '#d1d5db'
                         }
                     },
                     x: {
+                        grid: {
+                            color: '#212b42',
+                            borderColor: 'black',
+                            borderWidth: 1,
+                        },
                         ticks: {
-                            color: '#d1d5db' // Change the font color of x-axis labels here
+                            color: '#d1d5db'
                         }
                     }
                 },
@@ -334,40 +334,30 @@
         });
     </script>
 
+    {{-- Line --}}
     <script>
-        const ctxLine = document.getElementById('reclamacoesPorLabDoughnut').getContext('2d');
+        const ctxLine = document.getElementById('reclamacoesPorLabLine').getContext('2d');
 
-        const dataDoughnut = @json($reclamacoesPorLab);
+        const dataLine = @json($reclamacoesPorLab);
 
-        const labDoughnut = data.map(function(item) {
+        const labLine = data.map(function(item) {
             return item.laboratorio;
         });
 
-        const recLaboratoriosDoughnut = data.map(function(item) {
+        const recLaboratoriosLine = data.map(function(item) {
             return item.total;
         });
 
-        const chartDoughnut = new Chart(ctxLine, {
-            type: 'doughnut',
+        const chartLine = new Chart(ctxLine, {
+            type: 'line',
             data: {
                 labels: lab,
                 datasets: [{
                     label: 'Reclamações por laboratório',
                     data: recLaboratorios,
-                    borderWidth: 3,
-                    borderRadius: 5,
-                    backgroundColor: [
-                        '#f32952',
-                        '#3c82f6',
-                        '#fef08a',
-                        '#03ffae',
-                        '#6a7fdb',
-                        '#fb8500',
-                        'rgb(255, 90, 95, 1)',
-                        '#219ebc',
-                    ],
-                    borderColor: '#0f172a',
-
+                    borderWidth: 2,
+                    backgroundColor: '#d1d5db',
+                    borderColor: '#d1d5db',
                 }]
             },
             options: {
@@ -387,11 +377,26 @@
                         }
                     },
                 },
+                scales: {
+                    y: {
+                        ticks: {
+                            beginAtZero: true,
+                            precision: 0,
+                            stepSize: 1,
+                            color: '#d1d5db' // Change the font color of y-axis labels here
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#d1d5db' // Change the font color of x-axis labels here
+                        }
+                    }
+                },
             }
         });
     </script>
 
-   
+
 
 
 </x-app-layout>

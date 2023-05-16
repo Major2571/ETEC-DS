@@ -1,13 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Contato&Sugestões') }}
-        </h2>
+        <div class="intro">
+            <h1 class="text-3xl font-bold text-gray-200">Controle de Contato&Sugestões</h1>
+            <p class="text-lg text-gray-300 mt-4">Bem-vindo ao painel de controle de Contato&Sugestões. Aqui você pode gerenciar todos os contatos e sugestões que os alunos fizeram.</p>
+          </div>
     </x-slot>
 
     <section>
     
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-auto lg:w-4/5 md:w-4/5">
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-6 m-auto lg:w-4/5 md:w-4/5">
     
             <table class="table-fixed w-full text-base text-left text-black dark:text-black">
     
@@ -61,6 +62,7 @@
                                 <a href="/contato/excluir/{{$contacts -> id}}">
                                     <button 
                                         type="button" 
+                                        onclick="confirmExclusao(event)"
                                         class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500"
                                     >
                                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
@@ -80,3 +82,23 @@
     
     </section>
 </x-app-layout>
+
+<script>
+    function confirmExclusao(event) {
+        event.preventDefault(); 
+        Swal.fire({
+            title: 'Confirmação de Exclusão',
+            text: 'Tem certeza que deseja excluir este item?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#DE3F4D',
+            cancelButtonColor: '#6B7280',
+            confirmButtonText: 'Sim, excluir!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = event.target.closest('a').href;
+            }
+        });
+    }
+</script>
