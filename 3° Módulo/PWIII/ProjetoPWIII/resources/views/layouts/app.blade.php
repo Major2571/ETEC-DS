@@ -28,7 +28,7 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-transparent">
+    <div class="min-h-screen max-h-full bg-transparent">
         @include('layouts.navigation')
 
         <!-- Page Heading -->
@@ -57,6 +57,7 @@
     <script src="assets/js/modalDelete.js"></script>
     <script src="assets/js/modalSuccess.js"></script>
     <script src="assets/js/modalSuccessForm.js"></script>
+    <script src="assets/js/viaCEP.js"></script>
 </body>
 
 </html>

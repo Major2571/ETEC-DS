@@ -12,6 +12,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/cep', function () {
+    return view('apiCEP');
+})->name('cep');
+
 // Contato e Sugestoes
 Route::get('/mande-uma-sugestao', [ContatoController::class, 'create'])->name('reclamacoes.create');
 Route::post('/mande-uma-sugestao', [ContatoController::class, 'store'])->name('contato.store');
