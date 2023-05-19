@@ -126,7 +126,14 @@ select::-webkit-scrollbar-thumb {
     fill: #0F172A;
 }
 
+.card-vacina:hover .absolute {
+    opacity: 1;
+    background-color: rgba(42, 50, 63, 0.658);
+}
 
+img.img-lab {
+    filter: drop-shadow(0px 2px 3px rgba(12, 12, 12, 0.884));
+}
 
 @media(max-width:600px) {
     .section-one .main-top div:nth-child(2) img {

@@ -43,6 +43,7 @@ class IndexController extends Controller
             ->groupBy('tbLaboratorio.laboratorio')
             ->get();
 
+            // dd($reclamacoesPorLab);
 
         return view('dashboard', compact(
             'reclamacoes',
