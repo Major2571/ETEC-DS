@@ -87,6 +87,13 @@
                 Reclamacoes
             </button>
         </a>
+        <a href="api/laboratorio-api">
+            <button type="button"
+                class="text-white border border-[#DE3F4D] hover:bg-[#DE3F4D] focus:ring-2 focus:outline-none focus:ring-[#DE3F4D] font-medium rounded-lg px-7 py-2 text-center mr-4 mb-2">
+                JSON
+                Laboratórios
+            </button>
+        </a>
 
     </div>
 </x-app-layout>

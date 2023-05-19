@@ -16,6 +16,11 @@ class LaboratorioController extends Controller
         return view('Laboratorio', compact('lab'));
     }
 
+    public function labAll() {
+        $lab = Laboratorio::all();
+        return $lab;
+    }
+
     /**
      * Show the form for creating a new resource.
      */

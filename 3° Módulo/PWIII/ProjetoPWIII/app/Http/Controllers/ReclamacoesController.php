@@ -62,6 +62,19 @@ class ReclamacoesController extends Controller
 
         return redirect('/mande-uma-reclamacoes');
     }
+    public function addRecApi(Request $request)
+    {
+        $reclamacoes = new Reclamacoes();
+
+        $reclamacoes->idLab = $request->txLab;
+        $reclamacoes->pc = $request->txPc;
+        $reclamacoes->titulo = $request->txTitulo;
+        $reclamacoes->descricao = $request->txDescricao;
+
+        $reclamacoes->save();
+
+        return $reclamacoes;
+    }
 
     /**
      * Display the specified resource.
