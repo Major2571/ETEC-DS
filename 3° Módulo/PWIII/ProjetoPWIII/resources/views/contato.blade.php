@@ -75,22 +75,5 @@
 
 </section>
 
-<script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita o envio do formulário padrão
-
-        // Exibe o SweetAlert
-        Swal.fire({
-            title: 'Formulário enviado!',
-            text: 'O formulário será enviado em instantes.',
-            icon: 'success',
-            showConfirmButton: false, 
-            timer: 2000,
-            timerProgressBar: true
-        }).then(function() {
-            event.target.submit();
-        });
-    });
-</script>
 
 @endsection

@@ -53,6 +53,10 @@
                 Reserved.</span>
         </div>
     </footer>
+
+    <script src="assets/js/modalDelete.js"></script>
+    <script src="assets/js/modalSuccess.js"></script>
+    <script src="assets/js/modalSuccessForm.js"></script>
 </body>
 
 </html>
