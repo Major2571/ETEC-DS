@@ -3,8 +3,9 @@
     <x-slot name="header">
         <div class="intro">
             <h1 class="text-3xl font-bold text-gray-200">Informe o CEP</h1>
-            <p class="text-lg text-gray-300 mt-4">Digite o CEP e ao sair o campo o endereço será completado. Pode utilizar a tecla TAB após digitar o CEP.</p>
-          </div>
+            <p class="text-lg text-gray-300 mt-4">Digite o CEP e ao sair o campo o endereço será completado. Pode
+                utilizar a tecla TAB após digitar o CEP.</p>
+        </div>
     </x-slot>
 
     <div class="flex flex-wrap justify-center items-center content-center main-top mt-5">
@@ -13,8 +14,8 @@
 
                 <h1 class="text-2xl font-bold text-center text-gray-800 mb-10">
                     Busque pelo CEP
-               </h1>
-        
+                </h1>
+
                 <div class="relative z-0 w-full mb-6 group">
                     <input type="text" name="cep" id="cep"
                         class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer"
@@ -24,7 +25,7 @@
                         Cep:
                     </label>
                 </div>
-        
+
                 <div class="relative z-0 w-full mb-6 group">
                     <input
                         class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer"
@@ -34,7 +35,7 @@
                         Rua:
                     </label>
                 </div>
-        
+
                 <div class="relative z-0 w-full mb-6 group">
                     <input
                         class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer"
@@ -44,7 +45,7 @@
                         Bairro:
                     </label>
                 </div>
-        
+
                 <div class="relative z-0 w-full mb-6 group">
                     <input
                         class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer"
@@ -54,7 +55,7 @@
                         Cidade:
                     </label>
                 </div>
-        
+
                 <div class="relative z-0 w-full mb-6 group">
                     <input
                         class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer"
@@ -64,7 +65,7 @@
                         Estado:
                     </label>
                 </div>
-        
+
                 <div class="relative z-0 w-full mb-6 group">
                     <input
                         class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer"
@@ -78,4 +79,14 @@
         </div>
     </div>
 
+    <div class="flex flex-wrap justify-center items-center content-center main-top mt-5">
+        <a href="api/reclamacoes-api">
+            <button type="button"
+                class="text-white border border-[#DE3F4D] hover:bg-[#DE3F4D] focus:ring-2 focus:outline-none focus:ring-[#DE3F4D] font-medium rounded-lg px-7 py-2 text-center mr-4 mb-2">
+                JSON
+                Reclamacoes
+            </button>
+        </a>
+
+    </div>
 </x-app-layout>

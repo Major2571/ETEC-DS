@@ -30,6 +30,11 @@ class ReclamacoesController extends Controller
         ));
     }
 
+    public function recAll() {
+        $reclamacoes = Reclamacoes::all();
+        return $reclamacoes;
+    }
+
     /**
      * Show the form for creating a new resource.
      */
