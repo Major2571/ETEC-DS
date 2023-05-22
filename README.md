@@ -28,8 +28,8 @@ Onde você pode encontrar:
 	 
 <div align="center">
 
-<a href="https://github.com/Major2571/Multiverso_Vulgo_Metaverso"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
-<a href="https://github.com/Major2571/GlossarioTechPHP"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=0bb1a1&icon_color=008f81&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
+<a href="https://github.com/Major2571/Multiverso_Vulgo_Metaverso"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=FD6767&icon_color=9A1A27&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
+<a href="https://github.com/Major2571/GlossarioTechPHP"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=FD6767&icon_color=9A1A27&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
 
 </div>
 
