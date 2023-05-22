@@ -32,7 +32,7 @@
 
         <div class="lg:w-1/4 md:w-1/2">
 
-            <form action="/mande-uma-sugestao" method="post" class="bg-white shadow-md rounded-md px-9 py-10 mb-2 w-full m-auto">
+            <form action="/mande-uma-sugestao" method="post" class="bg-white shadow-md rounded-md px-9 py-10 mb-2 w-full m-auto" id="submitForm">
 
                 @csrf
 
