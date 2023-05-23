@@ -32,7 +32,7 @@
         </div>
 
         <div  class="relative z-0 w-full my-6 group">
-            <input type="password_confirmation" name="password_confirmation" id="password_confirmation" class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer text-white" placeholder=" " required autofocus autocomplete="password_confirmation"/>
+            <input type="password" name="password_confirmation" id="password_confirmation" class="block py-2.5 px-0 w-full text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#DE3F4D] peer text-white" placeholder=" " required autofocus autocomplete="password_confirmation"/>
 
             <label for="password_confirmation" 
             class="peer-focus:font-medium absolute text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2.5 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#DE3F4D] peer-focus:dark:text-[#DE3F4D] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" 
