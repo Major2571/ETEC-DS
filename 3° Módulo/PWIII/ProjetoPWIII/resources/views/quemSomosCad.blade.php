@@ -49,7 +49,7 @@
 
                 <div class="">
                     <div class="inline-flex flex-wrap text-md font-semibold items-center">
-                        <div class="bg-[#1e4cb2] text-white uppercase px-3 py-1 rounded-full">
+                        <div class="bg-[#d33f57] text-white uppercase px-3 py-1 rounded-full">
                             <span>
                                 #0{{ $qmSomos->id }}
                             </span>

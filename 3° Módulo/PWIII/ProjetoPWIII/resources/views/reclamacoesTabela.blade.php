@@ -19,7 +19,7 @@
                                 Filtre por Laboratório:
                             </label>
                             <select name="filtroLab" id="filtroLab"
-                                class="bg-gray-700 border border-gray-600 text-gray-300 text-md rounded-lg focus:ring-[#1e4cb2] focus:border-[#1e4cb2] block w-full p-2.5">
+                                class="bg-gray-700 border border-gray-600 text-gray-300 text-md rounded-lg focus:ring-[#DE3F4D] focus:border-[#DE3F4D] block w-full p-2.5">
                                 <option value="">Todos</option>
                                 @foreach ($lab as $nLab)
                                     <option value="{{ $nLab->id }}" {{ $filtroLab == $nLab->id ? 'selected' : '' }}>
@@ -33,7 +33,7 @@
 
 
                         <button type="submit"
-                            class="p-3 text-sm font-medium text-white bg-[#1e4cb2] rounded-lg border border-[#1e4cb2] hover:bg-[#1e4cb5] focus:ring-2 focus:outline-none focus:ring-[#1e4cb2]">
+                            class="p-3 text-sm font-medium text-white bg-[#d33f57] rounded-lg border border-[#d33f57] hover:bg-[#DE3F4D] focus:ring-2 focus:outline-none focus:ring-[#d33f57]">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -51,7 +51,7 @@
 
             <table id="reclamacoesTable" class="table-fixed w-full text-base text-left text-black dark:text-black">
 
-                <thead class="text-lg text-white bg-[#1e4cb2] dark:text-white">
+                <thead class="text-lg text-white bg-[#d33f57] dark:text-white">
                     <tr>
                         <!-- <th scope="col" class="px-6 py-3">
                         idRec

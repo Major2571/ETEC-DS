@@ -12,7 +12,7 @@
     
             <table class="table-fixed w-full text-base text-left text-black dark:text-black">
     
-                <thead class="text-lg text-white bg-[#1e4cb2] dark:text-white">
+                <thead class="text-lg text-white bg-[#d33f57] dark:text-white">
                     <tr>
                         <th scope="col" class="px-6 py-3">
                             Nome

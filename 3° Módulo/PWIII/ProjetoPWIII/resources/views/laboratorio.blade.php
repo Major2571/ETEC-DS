@@ -13,6 +13,7 @@
                     class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
 
                     @csrf
+
                     <h1 class="text-2xl font-bold text-center text-gray-800 mb-10">
                          Cadaste um novo Laboratório
                     </h1>
@@ -46,7 +47,7 @@
 
                 <div class="">
                     <div class="inline-flex flex-wrap text-md font-semibold items-center">
-                        <div class="bg-[#1e4cb2] text-white uppercase px-3 py-1 rounded-full">
+                        <div class="bg-[#d33f57] text-white uppercase px-3 py-1 rounded-full">
                             <span>
                                 #0{{ $dadosLab->id }}
                             </span>

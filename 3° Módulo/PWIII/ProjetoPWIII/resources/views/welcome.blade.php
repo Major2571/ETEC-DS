@@ -10,8 +10,8 @@
 
 <section class="section-one">
 
-    <div class="flex flex-wrap justify-around items-center content-center main-top">
-        <div>
+    <div class="flex flex-wrap justify-center items-center content-center main-top">
+        <div class="">
             <h1 class="mt-2 block mt-1 text-5xl leading-tight font-bold text-slate-100 drop-shadow-lg mb-5">Bem-Vindo(a) ao CamargoLabs!</h1>
 
             <p class="block mt-1 leading-tight font-semibold text-gray-200 drop-shadow-lg">
