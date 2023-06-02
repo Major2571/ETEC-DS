@@ -46,6 +46,21 @@ select::-webkit-scrollbar-thumb {
     line-height: 1.5em;
 }
 
+.tabela::-webkit-scrollbar {
+    height: 0.3em;
+    width: 0.5em;
+}
+
+.tabela::-webkit-scrollbar-track {
+    background: #fff1f100;
+    border-radius: 0 0 10px 10px;
+}
+
+.tabela::-webkit-scrollbar-thumb {
+    background-color: #690d29;
+    border-radius: 10px;
+}
+
 .cards {
     max-width: 80%;
 }

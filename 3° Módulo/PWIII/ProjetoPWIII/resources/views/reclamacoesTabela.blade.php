@@ -2,8 +2,9 @@
     <x-slot name="header">
         <div class="intro">
             <h1 class="text-3xl font-bold text-gray-200">Controle de Reclamações</h1>
-            <p class="text-lg text-gray-300 mt-4">Bem-vindo ao painel de controle de reclamações. Aqui você pode gerenciar todas as reclamações registradas pelos alunos.</p>
-          </div>
+            <p class="text-lg text-gray-300 mt-4">Bem-vindo ao painel de controle de reclamações. Aqui você pode
+                gerenciar todas as reclamações registradas pelos alunos.</p>
+        </div>
     </x-slot>
 
     <section>
@@ -14,8 +15,7 @@
 
                     <div class="flex items-end justufy-center">
                         <div class="mr-2 w-3/4">
-                            <label for="filtroLab"
-                                class="block mb-2 font-medium">
+                            <label for="filtroLab" class="block mb-2 font-medium">
                                 Filtre por Laboratório:
                             </label>
                             <select name="filtroLab" id="filtroLab"
@@ -47,21 +47,21 @@
             </div>
         </div>
 
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-auto lg:w-4/5 md:w-4/5">
+        <div class="tabela relative m-auto w-4/5 overflow-x-auto shadow-md sm:rounded-lg">
 
-            <table id="reclamacoesTable" class="table-fixed w-full text-base text-left text-black dark:text-black">
+            <table class="w-full text-left text-base text-black">
 
-                <thead class="text-lg text-white bg-[#d33f57] dark:text-white">
+                <thead class="text-lg text-white bg-[#d33f57] dark:text-white ">
                     <tr>
                         <!-- <th scope="col" class="px-6 py-3">
                         idRec
                     </th> -->
 
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-4 py-3 text-center">
                             Laboratório
                         </th>
 
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-4 py-3 text-center">
                             PC
                         </th>
 
@@ -73,14 +73,18 @@
                             Descrição
                         </th>
 
-                        <th scope="col" class="px-6 py-3">
-                            Data
-                            <span id="sortIcon" class="arrow-icon">
-
-                            </span>
+                        <th scope="col" class="px-4 py-3">
+                            Data e Horário
                         </th>
 
-                        <th scope="col" class="px-6 py-3 text-center w-1/6">
+                        <th scope="col" class="px-6 py-3">
+                            Status
+                        </th>
+
+                        <th scope="col" class="px-6 py-3 text-center">
+                            editar
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-center">
                             Apagar
                         </th>
 
@@ -96,11 +100,11 @@
                             {{ $rec->id }}
                         </td> -->
 
-                            <td class="px-6 py-4">
+                            <td class="px-4 py-4 text-center">
                                 {{ $rec->laboratorio->laboratorio }}
                             </td>
 
-                            <td class="px-6 py-4">
+                            <td class="px-4 py-4 text-center">
                                 {{ $rec->pc }}
                             </td>
 
@@ -116,16 +120,27 @@
                                 {{ date('d/m/y, h:ia', strtotime($rec->dtCriacao)) }}
                             </td>
 
+                            <td class="px-6 py-4 text-red-300 uppercase">
+                                {{ $rec->status }}
+                            </td>
+
+                            <td class="px-6 py-4 text-center">
+                                <a 
+                                href="{{ route('editRec', $rec->id) }}"
+                                    >
+                                    <button type="button"
+                                        class="mr-2 inline-flex items-center rounded-lg border border-blue-600 p-2.5 text-center font-medium text-blue-600 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-200">
+                                        <i class="fa-solid fa-edit"></i>
+                                    </button>
+                                </a>
+                            </td>
+
+
                             <td class="px-6 py-4 text-center w-2">
-                                <a href="/reclamacoes/excluir/{{ $rec->id }}">
+                                <a href="{{ route('deleteRec', $rec->id) }}">
                                     <button type="button" onclick="confirmExclusao(event)"
-                                        class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500">
-                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
-                                            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z" />
-                                        </svg>
-                                        <span class="sr-only">trash icon</span>
+                                        class="mr-2 inline-flex items-center rounded-lg border border-red-600 p-2.5 text-center font-medium text-red-500 hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-200">
+                                        <i class="fa-solid fa-trash"></i>
                                     </button>
                                 </a>
                             </td>
@@ -141,7 +156,7 @@
 
 <script>
     function confirmExclusao(event) {
-        event.preventDefault(); 
+        event.preventDefault();
         Swal.fire({
             title: 'Confirmação de Exclusão',
             text: 'Tem certeza que deseja excluir este item?',

@@ -24,6 +24,8 @@ return new class extends Migration
             $table->string('descricao', 600);
             $table->date('dtCriacao');
 
+            $table->enum('status', ['Pendente', 'Em andamento', 'Concluído'])->default('Pendente');
+
             $table->timestamps();
 
         });

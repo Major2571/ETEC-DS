@@ -81,23 +81,40 @@ class ReclamacoesController extends Controller
      */
     public function show(Reclamacoes $reclamacoes)
     {
-        //
+        
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Reclamacoes $reclamacoes)
+    public function edit(Reclamacoes $reclamacoes, $id)
     {
-        //
+        $reclamacoes = Reclamacoes::FindOrFail($id);
+        $lab = Laboratorio::all();
+
+        // dd($reclamacoes);
+
+        return view('updateRec', compact('reclamacoes', 'lab'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Reclamacoes $reclamacoes)
+    public function update(Request $request, $id)
     {
-        //
+        $reclamacoes = Reclamacoes::FindOrFail($id);
+
+        // $reclamacoes->idLab = $request->input('txLab');
+        // $reclamacoes->pc = $request->input('txPc');
+        // $reclamacoes->titulo = $request->input('txTitulo');
+        // $reclamacoes->descricao = $request->input('txDescricao');
+        // $reclamacoes->dtCriacao = $request->input('txdtCriacao');
+
+        $reclamacoes->status = $request->input('status');
+
+        $reclamacoes->save();
+
+        return redirect()->route('reclamacoes');
     }
 
     /**

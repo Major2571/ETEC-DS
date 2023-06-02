@@ -17,7 +17,8 @@ class Reclamacoes extends Model
         'pc', 
         'titulo', 
         'descricao', 
-        'dtCriacao'
+        'dtCriacao',
+        'status'
     ];
 
     public $timestamps = false;

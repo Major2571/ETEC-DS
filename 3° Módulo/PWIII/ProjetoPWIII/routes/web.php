@@ -31,7 +31,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [IndexController::class, 'index'])->name('dashboard');
 
     Route::get('/reclamacoes', [ReclamacoesController::class, 'index'])->name('reclamacoes');
-    Route::get('/reclamacoes/excluir/{idRec}', [ReclamacoesController::class, 'destroy'])->name('reclamacoes.destroy');
+    Route::get('/reclamacoes/excluir/{idRec}', [ReclamacoesController::class, 'destroy'])->name('deleteRec');
+    Route::get('/reclamacoes/edit/{idRec}', [ReclamacoesController::class, 'edit'])->name('editRec');
+    Route::put('/reclamacoes/update/{idRec}', [ReclamacoesController::class, 'update'])->name('updateRec');
 
     Route::get('/laboratorio', [LaboratorioController::class, 'index'])->name('laboratorio');
     Route::get('/laboratorio/excluir/{idLab}', [LaboratorioController::class, 'destroy'])->name('laboratorio.destroy');
