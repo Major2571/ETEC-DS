@@ -32,35 +32,34 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen max-h-full bg-transparent">
+    <div class="max-h-full min-h-screen bg-transparent">
         @include('layouts.navigation')
 
         <!-- Page Heading -->
         @if (isset($header))
             <header class="bg-[#1e293b] shadow">
-                <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
                 </div>
             </header>
         @endif
-
-        <!-- Page Content -->
         <main>
             {{ $slot }}
         </main>
     </div>
 
-    <footer class="bg-none m-0">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <footer class="m-0 bg-none">
+        <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
             <hr class="my-6 border-gray-700 sm:mx-auto lg:my-10" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2023. All Rights
+            <span class="block text-sm text-gray-500 dark:text-gray-400 sm:text-center">&copy; 2023. All Rights
                 Reserved.</span>
         </div>
     </footer>
 
-    <script src="assets/js/modalDelete.js"></script>
-    <script src="assets/js/modalSuccess.js"></script>
-    <script src="assets/js/modalSuccessForm.js"></script>
+    <script src={{ url('assets/js/modals/modalDelete.js') }}></script>
+    <script src={{ url('assets/js/modals/modalSuccess.js') }}></script>
+    <script src={{ url('assets/js/modals/modalSuccessForm.js') }}></script>
+    <script src={{ url('assets/js/toggleDiv.js') }}></script>
     <script src="assets/js/viaCEP.js"></script>
 </body>
 

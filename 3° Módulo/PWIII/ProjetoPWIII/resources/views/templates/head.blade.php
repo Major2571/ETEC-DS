@@ -23,8 +23,6 @@
 </head>
 
 <body class="antialiased">
-
-
     <nav class="bg-transparent">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
@@ -81,7 +79,6 @@
     </nav>
 
 
-
     @yield('content')
 
 
@@ -115,7 +112,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/modalSuccessForm.js"></script>
+    <script src="assets/js/modals/modalSuccessForm.js"></script>
 
 </body>
 

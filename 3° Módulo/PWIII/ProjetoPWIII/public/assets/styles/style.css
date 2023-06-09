@@ -1,3 +1,7 @@
+* {
+    transition: all .2s ease-in-out;
+}
+
 body {
     background-color: #0f172a;
 }
@@ -70,10 +74,10 @@ select::-webkit-scrollbar-thumb {
 }
 
 .hello {
-    background: linear-gradient(180deg, #0d0c0ccc 0%, 
-                                        #0d0c0c41 50%,
-                                        #0d0c0cd5 100%), 
-    url('../img/section2.png');
+    background: linear-gradient(180deg, #0d0c0ccc 0%,
+            #0d0c0c41 50%,
+            #0d0c0cd5 100%),
+        url('../img/section2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -141,7 +145,7 @@ select::-webkit-scrollbar-thumb {
     fill: #0F172A;
 }
 
-.card-vacina:hover .absolute {
+.card-reclamacao:hover .edit-delete {
     opacity: 1;
     background-color: rgba(42, 50, 63, 0.658);
 }
@@ -149,6 +153,37 @@ select::-webkit-scrollbar-thumb {
 img.img-lab {
     filter: drop-shadow(0px 2px 3px rgba(12, 12, 12, 0.884));
 }
+
+.status-pendente i {
+    color: #ec6161;
+}
+
+.status-em i {
+    color: #2988ec;
+}
+
+.status-concluído i {
+    color: #28a745;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.card-reclamacao {
+    animation: fadeIn 0.5s .3s ease-out forwards;
+    opacity: 0;
+}
+
+
 
 @media(max-width:600px) {
     .section-one .main-top div:nth-child(2) img {

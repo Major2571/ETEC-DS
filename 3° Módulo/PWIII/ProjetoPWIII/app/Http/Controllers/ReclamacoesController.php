@@ -13,8 +13,10 @@ class ReclamacoesController extends Controller
      */
     public function index(Request $request)
     {
-        $reclamacoes = Reclamacoes::all();
+        // $reclamacoes = Reclamacoes::all();
         $lab = Laboratorio::all();
+
+        $reclamacoes = Reclamacoes::with('laboratorio')->get();
 
         // Filtros
         $filtroLab = $request->input('filtroLab');
@@ -30,7 +32,8 @@ class ReclamacoesController extends Controller
         ));
     }
 
-    public function recAll() {
+    public function recAll()
+    {
         $reclamacoes = Reclamacoes::all();
         return $reclamacoes;
     }
@@ -81,7 +84,6 @@ class ReclamacoesController extends Controller
      */
     public function show(Reclamacoes $reclamacoes)
     {
-        
     }
 
     /**

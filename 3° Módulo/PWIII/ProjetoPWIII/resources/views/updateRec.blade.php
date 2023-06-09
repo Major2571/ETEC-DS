@@ -2,7 +2,6 @@
     <section class="cad-form my-10">
         <div class="w-full flex flex-wrap justify-center items-center content-center main-top">
             <div class="lg:w-1/4 md:w-4/5 sm:w-full bg-slate-100 shadow-lg rounded-md px-9 py-10">
-
                 <form method="post" action="{{ route( 'updateRec', $reclamacoes->id ) }}">
                     @csrf
                     @method('PUT')

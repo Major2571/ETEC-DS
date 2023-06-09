@@ -40,7 +40,7 @@
     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 w-1/2 m-auto">
         @foreach ($lab as $dadosLab)
             <div
-                class="relative card-vacina border border-gray-600 flex justify-evenly items-center p-5 rounded-md w-full bg-gray-700">
+                class="relative card-reclamacao border border-gray-600 flex justify-evenly items-center p-5 rounded-md w-full bg-gray-700">
                 <div class="w-1/3 p-3 mr-3 rounded-full border border-gray-600">
                     <img src="https://img.icons8.com/?size=512&id=gvQUkpW15e1x&format=png" alt="" class="img-lab">
                 </div>

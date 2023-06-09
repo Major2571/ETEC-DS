@@ -1,7 +1,7 @@
 <x-app-layout>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 
             <div class="p-6 text-gray-300">
                 <div> Bem-Vindo(a) {{ Auth::user()->name }}!</div>
@@ -10,10 +10,10 @@
         </div>
     </div>
 
-    <div class="w-4/5 grid xl:grid-cols-4 sm:grid-cols-2 gap-4 m-auto items-center mx-auto mb-5 ">
+    <div class="m-auto mx-auto mb-5 grid w-4/5 items-center gap-4 sm:grid-cols-2 xl:grid-cols-4">
 
         <div
-            class="m-2 flex justify-evenly items-center p-5 text-center border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-[#1e293b]">
+            class="m-2 flex items-center justify-evenly rounded-lg border border-gray-700 bg-gray-800 p-5 text-center shadow hover:bg-[#1e293b]">
             <div class="w-1/6 text-gray-300">
                 <svg class="text-gray-300" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
         </div>
 
         <div
-            class="m-2 flex justify-evenly items-center p-5 text-center border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-[#1e293b]">
+            class="m-2 flex items-center justify-evenly rounded-lg border border-gray-700 bg-gray-800 p-5 text-center shadow hover:bg-[#1e293b]">
             <div class="w-1/6 text-gray-300">
                 <svg class="text-gray-300" aria-hidden="true" fill="currentColor" viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,6 @@
                     <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
                 </svg>
             </div>
-
 
             <div>
                 <p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
@@ -58,7 +57,7 @@
         </div>
 
         <div
-            class="m-2 flex justify-evenly items-center p-5 text-center border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-[#1e293b]">
+            class="m-2 flex items-center justify-evenly rounded-lg border border-gray-700 bg-gray-800 p-5 text-center shadow hover:bg-[#1e293b]">
             <div class="w-1/6 text-gray-300">
                 <svg class="text-gray-300" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +79,7 @@
         </div>
 
         <div
-            class="m-2 flex justify-evenly items-center p-5 text-center border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-[#1e293b]">
+            class="m-2 flex items-center justify-evenly rounded-lg border border-gray-700 bg-gray-800 p-5 text-center shadow hover:bg-[#1e293b]">
             <div class="w-1/6 text-gray-300">
                 <svg class="text-gray-300" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +88,6 @@
                     <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
                 </svg>
             </div>
-
 
             <div>
                 <p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
@@ -103,14 +101,14 @@
 
     </div>
 
-    <div class="flex justify-center items-center mx-auto my-10">
-        <div class="grid md:grid-cols-3 gap-4 m-auto items-center w-4/5">
+    <div class="mx-auto my-10 flex items-center justify-center">
+        <div class="m-auto grid w-4/5 items-center gap-4 md:grid-cols-3">
 
-            <div class="md:col-span-2 p-5 h-[30em]">
-                <canvas id="reclamacoesPorLab"></canvas>
+            <div class="h-[30em] p-5 md:col-span-2">
+                <canvas id="reclamacoesPorLabBar"></canvas>
             </div>
 
-            <div class="p-5 w-4/5 h-[30em] m-auto">
+            <div class="m-auto h-[30em] w-4/5 p-5">
                 <canvas id="reclamacoesPorLabDoughnut"></canvas>
             </div>
 
@@ -121,85 +119,84 @@
         </div>
     </div>
 
-    <div class="w-4/5 flex justify-center items-center flex-wrap m-auto">
+    <div class="m-auto flex w-4/5 flex-wrap items-center justify-center">
         @if ($ultimaRec)
             <div
-                class="m-5 block p-6 text-left w-2/5 border-gray-200 rounded-lg shadow dark:bg-gray-800 border dark:border-gray-700 dark:hover:bg-[#1e293b]">
+                class="m-5 block w-2/5 rounded-lg border border-gray-200 p-6 text-left shadow dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b]">
                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-300">Reclamação
                     mais
                     recente:
                 </h5>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
                     {{ $ultimaRec->laboratorio->laboratorio }}</p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
                     {{ $ultimaRec->pc }}
                 </p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Feita em:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Feita em:
                     {{ date('d/m/y, h:ia', strtotime($ultimaRec->dtCriacao)) }}</p>
             </div>
 
             <div
-                class="m-5 block p-6 text-left w-2/5 border-gray-200 rounded-lg shadow dark:bg-gray-800 border dark:border-gray-700 dark:hover:bg-[#1e293b]">
+                class="m-5 block w-2/5 rounded-lg border border-gray-200 p-6 text-left shadow dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b]">
                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-300">Reclamação
                     mais
                     antiga:</h5>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
                     {{ $antigaRec->laboratorio->laboratorio }}</p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
                     {{ $antigaRec->pc }}
                 </p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Feita em:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Feita em:
                     {{ date('d/m/y, h:ia', strtotime($antigaRec->dtCriacao)) }}</p>
             </div>
         @else
             <div
-                class="m-5 block p-6 text-left w-2/5 border-gray-200 rounded-lg shadow hover:bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-[#1e293b]">
+                class="m-5 block w-2/5 rounded-lg border border-gray-200 p-6 text-left shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b]">
                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-300">Reclamação
                     mais
                     recente:
                 </h5>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
                     0 </p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
                     0
                 </p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Feita em:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Feita em:
                     00/00/00</p>
             </div>
 
             <div
-                class="m-5 block p-6 text-left w-2/5 border-gray-200 rounded-lg shadow hover:bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-[#1e293b]">
+                class="m-5 block w-2/5 rounded-lg border border-gray-200 p-6 text-left shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b]">
                 <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-gray-300">Reclamação
                     mais
                     antiga:</h5>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
                     0 </p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
                     0
                 </p>
-                <p class="mb-2 text-xl font- tracking-tight text-gray-900 dark:text-gray-300">Feita em:
+                <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Feita em:
                     0 </p>
             </div>
         @endif
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    {{-- Bar --}}
     <script>
-        const ctx = document.getElementById('reclamacoesPorLab').getContext('2d');
+        const ctx = document.getElementById('reclamacoesPorLabBar').getContext('2d');
+        const ctxDoughnut = document.getElementById('reclamacoesPorLabDoughnut').getContext('2d');
+        // const ctxLine = document.getElementById('reclamacoesPorLabLine').getContext('2d');
 
         const data = @json($reclamacoesPorLab);
-
         const lab = data.map(function(item) {
             return item.laboratorio;
         });
-
         const recLaboratorios = data.map(function(item) {
             return item.total;
         });
 
+        // Bar
         const chart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -217,17 +214,7 @@
                         '#fb8500',
                         'rgb(255, 90, 95, 1)',
                         '#219ebc',
-                    ],
-                    // borderColor: [
-                    //     'rgba(255,99,132,1)',
-                    //     'rgba(54, 162, 235, 1)',
-                    //     'rgba(255, 206, 86, 1)',
-                    //     'rgba(75, 192, 192, 1)',
-                    //     'rgba(153, 102, 255, 1)',
-                    //     'rgba(255, 159, 64, 1)',
-                    //     'rgb(255, 90, 95, 1)',
-                    // ],
-
+                    ]
                 }]
             },
             options: {
@@ -236,7 +223,7 @@
                 scales: {
                     y: {
                         grid: {
-                            color: '#212b42', 
+                            color: '#212b42',
                             borderColor: 'black',
                             borderWidth: 1,
                         },
@@ -274,22 +261,8 @@
                 },
             }
         });
-    </script>
 
-    {{-- Doughnut --}}
-    <script>
-        const ctxDoughnut = document.getElementById('reclamacoesPorLabDoughnut').getContext('2d');
-
-        const dataDoughnut = @json($reclamacoesPorLab);
-
-        const labDoughnut = data.map(function(item) {
-            return item.laboratorio;
-        });
-
-        const recLaboratoriosDoughnut = data.map(function(item) {
-            return item.total;
-        });
-
+        // Doughnut
         const chartDoughnut = new Chart(ctxDoughnut, {
             type: 'doughnut',
             data: {
@@ -306,11 +279,10 @@
                         '#03ffae',
                         '#6a7fdb',
                         '#fb8500',
-                        'rgb(255, 90, 95, 1)',
+                        '#ff5a5f',
                         '#219ebc',
                     ],
                     borderColor: '#0f172a',
-
                 }]
             },
             options: {
@@ -332,22 +304,8 @@
                 },
             }
         });
-    </script>
 
-    {{-- Line --}}
-    <script>
-        const ctxLine = document.getElementById('reclamacoesPorLabLine').getContext('2d');
-
-        const dataLine = @json($reclamacoesPorLab);
-
-        const labLine = data.map(function(item) {
-            return item.laboratorio;
-        });
-
-        const recLaboratoriosLine = data.map(function(item) {
-            return item.total;
-        });
-
+        // Line 
         const chartLine = new Chart(ctxLine, {
             type: 'line',
             data: {
@@ -395,8 +353,5 @@
             }
         });
     </script>
-
-
-
 
 </x-app-layout>
