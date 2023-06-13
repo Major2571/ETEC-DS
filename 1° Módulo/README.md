@@ -21,6 +21,6 @@
 | :---:        |     :---:      
 | Programação Web I   |![HTML5](https://img.shields.io/badge/html5-0D1117.svg?logo=html5&logoColor=E34F26&labelColor=0D1117&style=for-the-badge) <br/> ![CSS3](https://img.shields.io/badge/css3-0D1117.svg?logo=css3&logoColor=1572B6&labelColor=0D1117&style=for-the-badge&)<br/>  ![Git](https://img.shields.io/badge/git-0D1117.svg?logo=git&logoColor=E44C30&labelColor=0D1117&style=for-the-badge) 
 | Banco de Dados I     | ![MySQL](https://img.shields.io/badge/mysql-161B22.svg?logo=mysql&logoColor=white&labelColor=161B22&style=for-the-badge)
-| Programação e Algoritmos <br/> ( Lógica voltada a Programação )     | <img src="https://cdn.programadoresbrasil.com.br/wp-content/uploads/2022/06/Portugol.jpg" height="50" width="auto" />    
+| Programação e Algoritmos <br/> ( Lógica voltada a Programação )     | <img src='https://img.shields.io/badge/Portugol-0D1117?style=for-the-badge&logo=&logoColor=white&labelColor=0D1117&color=0D1117'/>   
  
 </div>
