@@ -9,7 +9,7 @@
     <section class="cad-form my-10">
         <div class="w-full flex flex-wrap justify-center items-center content-center main-top">
             <div class="lg:w-1/4 md:w-2/5">
-                <form action="/laboratorio" method="post" id="cadastroForm"
+                <form action="{{ route('laboratorio.store')}}" method="post" id="cadastroForm"
                     class="bg-slate-100 shadow-md rounded px-8 py-10 mb-4 w-full m-auto">
 
                     @csrf
@@ -46,14 +46,6 @@
                 </div>
 
                 <div class="">
-                    <div class="inline-flex flex-wrap text-md font-semibold items-center">
-                        <div class="bg-[#d33f57] text-white uppercase px-3 py-1 rounded-full">
-                            <span>
-                                #0{{ $dadosLab->id }}
-                            </span>
-                        </div>
-                    </div>
-
                     <div class="font-bold py-1.5 text-gray-200 text-lg ">
                         <span>
                             {{ $dadosLab->laboratorio }}
@@ -61,8 +53,8 @@
                     </div>
 
                     <div
-                        class="absolute inset-0 flex justify-center items-center opacity-0 flex-wrap transition-opacity duration-300 rounded-md">
-                        {{-- <a href="{{ route('editVacina', $vacinas->id) }}">
+                        class="edit-delete absolute inset-0 flex flex-wrap items-center justify-center rounded-md opacity-0 transition-opacity duration-300">
+                        <a href="{{ route('editLab', $dadosLab->id) }}">
                             <button type="button"
                                 class="border border-blue-600 hover:bg-blue-700 bg-blue-600 text-white focus:ring-2 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2">
                                 <svg aria-hidden="true" class="w-5 h-5 mr-5" fill="currentColor" viewBox="0 0 512 512"
@@ -73,7 +65,7 @@
                                 <span class="sr-only">Icon description</span>
                                 Editar
                             </button>
-                        </a> --}}
+                        </a>
 
                         <a href="/laboratorio/excluir/{{ $dadosLab->id }}">
                             <button type="button" onclick="confirmExclusao(event)"
@@ -93,61 +85,6 @@
         @endforeach
     </div>
 
-    {{-- <section>
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-auto lg:w-1/2 md:w-4/5">
-
-            <table class="table-fixed w-full text-base text-left text-black dark:text-black">
-
-                <thead class="text-lg text-white bg-[#1e4cb2] dark:text-white">
-                    <tr>
-                        <th scope="col" class="px-6 py-3">
-                            IdLaboratorio
-                        </th>
-
-                        <th scope="col" class="px-6 py-3">
-                            N° Laboratório
-                        </th>
-
-                        <th scope="col" class="px-6 py-3 text-center w-1/6">
-                            Apagar
-                        </th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    @foreach ($lab as $dadosLab)
-                        <tr
-                            class="bg-[#161B26] border-b dark:bg-[#161B26] dark:border-gray-700 hover:bg-[#1C2230] dark:hover:bg-[#1C2230] text-gray-300 text-base">
-
-                            <td class="px-6 py-4">
-                                {{ $dadosLab->id }}
-                            </td>
-
-                            <td>
-                                {{ $dadosLab->laboratorio }}
-                            </td>
-
-                            <td class="px-6 py-4 text-center w-2">
-                                <a href="/laboratorio/excluir/{{ $dadosLab->id }}">
-                                    <button type="button" onclick="confirmExclusao(event)"
-                                        class="text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500">
-                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
-                                            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z" />
-                                        </svg>
-                                        <span class="sr-only">trash icon</span>
-                                    </button>
-                                </a>
-                            </td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
-    </section> --}}
 
 </x-app-layout>
 
-<script>
-
-</script>

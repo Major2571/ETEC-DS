@@ -22,7 +22,7 @@ class QuemSomosController extends Controller
     public function create()
     {
         $quemSomos = QuemSomos::all();
-        return view('quemSomosCad', compact('quemSomos'));
+        return view('user.quemSomosCad', compact('quemSomos'));
     }
 
     /**
@@ -30,7 +30,6 @@ class QuemSomosController extends Controller
      */
     public function store(Request $request)
     {
-        //'nome', 'sobrenome'
         $quemSomos = new QuemSomos();
 
         $quemSomos -> nome = $request -> txNome;
@@ -38,7 +37,7 @@ class QuemSomosController extends Controller
 
         $quemSomos->save();
         
-        return redirect('/cad-new-dev');
+        return redirect()->route('quemSomosCad');
     }
 
     /**
@@ -52,17 +51,25 @@ class QuemSomosController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuemSomos $quemSomos)
+    public function edit(QuemSomos $quemSomos, $id)
     {
-        //
+        $quemSomos = QuemSomos::FindOrFail($id);
+        return view('user.update.updateDev', compact('quemSomos'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuemSomos $quemSomos)
+    public function update(Request $request, $id)
     {
-        //
+        $quemSomos = QuemSomos::FindOrFail($id);
+
+        $quemSomos->nome = $request->input('txNome');
+        $quemSomos->sobrenome = $request->input('txSobrenome');
+
+        $quemSomos->save();
+        
+        return redirect()->route('quemSomosCad');
     }
 
     /**
@@ -72,6 +79,6 @@ class QuemSomosController extends Controller
     {
         $quemSomos = new QuemSomos();
         $quemSomos->where('id', $idQuemSomos)->delete();
-        return redirect('/cad-new-dev');
+        return redirect()->route('quemSomosCad');
     }
 }

@@ -118,7 +118,6 @@
 
         </div>
     </div>
-
     <div class="m-auto flex w-4/5 flex-wrap items-center justify-center">
         @if ($ultimaRec)
             <div
@@ -128,7 +127,8 @@
                     recente:
                 </h5>
                 <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">Laboratório:
-                    {{ $ultimaRec->laboratorio->laboratorio }}</p>
+                    {{ $ultimaRec->laboratorio->laboratorio }}
+                </p>
                 <p class="font- mb-2 text-xl tracking-tight text-gray-900 dark:text-gray-300">N° do Computador:
                     {{ $ultimaRec->pc }}
                 </p>

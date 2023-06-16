@@ -34,7 +34,7 @@ class IndexController extends Controller
 
         // Reclamção mais antiga
         $antigaRec = Reclamacoes::orderBy('dtCriacao', 'asc')->first();
-
+        
 
         // Quantidade de rec por lab
         $reclamacoesPorLab = DB::table('tbReclamacao')

@@ -13,7 +13,7 @@ class ContatoController extends Controller
     public function index()
     {
         $contato = Contato::all();
-        return view('contatoTabela', compact('contato'));
+        return view('user.contatoTabela', compact('contato'));
     }
 
     /**

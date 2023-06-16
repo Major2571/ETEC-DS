@@ -15,9 +15,9 @@ class Laboratorio extends Model
     ];
     public $timestamps = false;
 
-    // public function reclamacoes(): HasMany
-    // {
-    //     return $this->hasMany(Reclamacoes::class, 'idLab');
-    // }
+    public function reclamacoes(): HasMany
+    {
+        return $this->hasMany(Reclamacoes::class, 'idLab');
+    }
 
 }

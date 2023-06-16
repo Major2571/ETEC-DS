@@ -23,9 +23,7 @@ class ReclamacoesController extends Controller
         if ($filtroLab) {
             $reclamacoes = $reclamacoes->where('idLab', $filtroLab);
         }
-
-
-        return view('reclamacoesTabela', compact(
+        return view('user.reclamacoesTabela', compact(
             'reclamacoes',
             'lab',
             'filtroLab'
@@ -96,7 +94,7 @@ class ReclamacoesController extends Controller
 
         // dd($reclamacoes);
 
-        return view('updateRec', compact('reclamacoes', 'lab'));
+        return view('user.update.updateRec', compact('reclamacoes', 'lab'));
     }
 
     /**
@@ -126,12 +124,12 @@ class ReclamacoesController extends Controller
     {
         $reclamacoes = new Reclamacoes();
         $reclamacoes->where('id', $idRec)->delete();
-        return redirect('/reclamacoes');
+        return redirect()->route('reclamacoes');
     }
 
-    public function allReclamacoes()
-    {
-        $reclamacoes = Reclamacoes::all();
-        return $reclamacoes;
-    }
+    // public function allReclamacoes()
+    // {
+    //     $reclamacoes = Reclamacoes::all();
+    //     return $reclamacoes;
+    // }
 }

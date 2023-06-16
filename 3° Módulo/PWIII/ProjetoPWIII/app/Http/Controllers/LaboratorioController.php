@@ -13,7 +13,7 @@ class LaboratorioController extends Controller
     public function index()
     {
         $lab = Laboratorio::all();
-        return view('Laboratorio', compact('lab'));
+        return view('user.laboratorio', compact('lab'));
     }
 
     public function labAll() {
@@ -36,11 +36,11 @@ class LaboratorioController extends Controller
     {
         $laboratorio = new Laboratorio();
 
-        $laboratorio -> laboratorio = $request -> txLab;
+        $laboratorio->laboratorio = $request->txLab;
 
         $laboratorio->save();
         
-        return redirect('/laboratorio');
+        return redirect()->route('laboratorio');
     }
 
     /**
@@ -54,17 +54,23 @@ class LaboratorioController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Laboratorio $laboratorio)
+    public function edit(Laboratorio $laboratorio, $id)
     {
-        //
+        $lab = Laboratorio::FindOrFail($id);
+        return view('user.update.updateLab', compact('lab'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Laboratorio $laboratorio)
+    public function update(Request $request, $id)
     {
-        //
+        $lab = Laboratorio::FindOrFail($id);
+
+        $lab->laboratorio = $request -> input('txLab');
+        $lab->save();
+
+        return redirect()->route('laboratorio');
     }
 
     /**
@@ -74,12 +80,12 @@ class LaboratorioController extends Controller
     {
         $laboratorio = new Laboratorio();
         $laboratorio->where('id', $idLab)->delete();
-        return redirect('/laboratorio');
+        return redirect()->route('laboratorio');
     }
 
-    public function allLabs()
-    {
-        $laboratorio = Laboratorio::all();
-        return $laboratorio;
-    }
+    // public function allLabs()
+    // {
+    //     $laboratorio = Laboratorio::all();
+    //     return $laboratorio;
+    // }
 }

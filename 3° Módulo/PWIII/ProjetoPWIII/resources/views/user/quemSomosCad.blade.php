@@ -48,14 +48,6 @@
                 </div>
 
                 <div class="">
-                    <div class="inline-flex flex-wrap text-md font-semibold items-center">
-                        <div class="bg-[#d33f57] text-white uppercase px-3 py-1 rounded-full">
-                            <span>
-                                #0{{ $qmSomos->id }}
-                            </span>
-                        </div>
-                    </div>
-
                     <div class="font-bold py-1.5 text-gray-200 text-lg ">
                         <span>
                             {{ $qmSomos->nome }}  {{ $qmSomos->sobrenome }} 
@@ -63,8 +55,8 @@
                     </div>
 
                     <div
-                        class="absolute inset-0 flex justify-center items-center opacity-0 flex-wrap transition-opacity duration-300 rounded-md">
-                        {{-- <a href="{{ route('editVacina', $vacinas->id) }}">
+                        class="edit-delete absolute inset-0 flex flex-wrap items-center justify-center rounded-md opacity-0 transition-opacity duration-300">
+                        <a href="{{ route('editQuemSomos', $qmSomos->id) }}">
                             <button type="button"
                                 class="border border-blue-600 hover:bg-blue-700 bg-blue-600 text-white focus:ring-2 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2">
                                 <svg aria-hidden="true" class="w-5 h-5 mr-5" fill="currentColor" viewBox="0 0 512 512"
@@ -75,7 +67,7 @@
                                 <span class="sr-only">Icon description</span>
                                 Editar
                             </button>
-                        </a> --}}
+                        </a>
 
                         <a href="/quem-somos/excluir/{{ $qmSomos->id }}">
                             <button type="button" onclick="confirmExclusao(event)"
