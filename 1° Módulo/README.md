@@ -1,17 +1,7 @@
 
 ## 1° Módulo - DS
-**Critérios utilizados e avaliadas pelos mentores (de forma geral)**
+
 <img src="https://i.pinimg.com/originals/9a/68/71/9a68716efc331fcc84e3a4ce5f23d18d.png" width="450" align="right"/>
-
-
-- Relacionamento de ideias;
-- Relacionamento de conceitos;
-- Resolução de problemas;
-- Pertinência das informações;
-- Atendimento às normas;
-- Assiduidade;
-- Elaborar propostas;
-
 
 #### Ferramentas e linguagens utilizadas/desenvolvidas em aula:
 
@@ -24,3 +14,17 @@
 | Programação e Algoritmos <br/> ( Lógica voltada a Programação )     | <img src='https://img.shields.io/badge/Portugol-0D1117?style=for-the-badge&logo=&logoColor=white&labelColor=0D1117&color=0D1117'/>   
  
 </div>
+
+Essas linguagens e ferramentas são fundamentais para o desenvolvimento de sistemas e aplicações web. Ao longo do 1° Módulo, os alunos são introduzidos a essas tecnologias e têm a oportunidade de aplicar os conceitos aprendidos por meio de exercícios e projetos práticos.
+
+#### Os critérios utilizados e avaliados pelos mentores no 1° Módulo - DS incluem:
+
+- **Relacionamento de ideias:** Capacidade de conectar conceitos e informações de forma coerente e clara.
+- **Relacionamento de conceitos:** Habilidade de compreender e relacionar conceitos abordados durante o curso.
+- **Resolução de problemas:** Capacidade de solucionar desafios e problemas propostos, utilizando os conhecimentos adquiridos.
+- **Pertinência das informações:** Relevância e adequação das informações apresentadas em trabalhos e projetos.
+- **Atendimento às normas:** Observância das normas e diretrizes estabelecidas para cada atividade ou projeto.
+- **Assiduidade:** Participação e presença regular nas aulas e atividades propostas.
+- **Elaborar propostas:** Capacidade de criar propostas de solução para determinados problemas ou necessidades.
+
+Esses critérios são avaliados para garantir o aprendizado e o desenvolvimento dos alunos, bem como sua capacidade de aplicar os conhecimentos adquiridos de forma adequada e eficaz.
