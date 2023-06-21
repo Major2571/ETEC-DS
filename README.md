@@ -2,12 +2,10 @@
 ## 📚 ETEC - DS
 
 Bem-vindo(a) ao meu repositório geral de aulas do **Curso Técnico de Desenvolvimento de Sistemas**, realizado entre 2022 e 2023. 
+&nbsp;
 
-Onde você pode encontrar: 
-- Critérios utilizados e avaliados pelos mentores;
-- Ferramentas utilizadas em aula;
-- Linguagens desenvolvidas em aula;
-- Projetos, avaliações, entre outros.
+Aqui você encontrará uma ampla variedade de recursos relacionados ao curso, incluindo critérios de avaliação utilizados pelos mentores, ferramentas e linguagens de programação abordadas em sala de aula, bem como projetos, avaliações e outros materiais relevantes.
+
 </br>
 
 ###  💻 Technologies & Tools
@@ -30,9 +28,13 @@ Onde você pode encontrar:
 
 <a href="https://github.com/Major2571/Multiverso_Vulgo_Metaverso"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=Multiverso_Vulgo_Metaverso&show_icons=true&count_private=true&hide_border=true&title_color=FD6767&icon_color=9A1A27&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
 <a href="https://github.com/Major2571/GlossarioTechPHP"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=GlossarioTechPHP&show_icons=true&count_private=true&hide_border=true&title_color=FD6767&icon_color=9A1A27&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
-<a href="https://github.com/Major2571/WebApp-TCC"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=WebApp-TCC&show_icons=true&count_private=true&hide_border=true&title_color=FD6767&icon_color=9A1A27&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
+<a href="https://github.com/Major2571/CloudMed"><img height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Major2571&repo=CloudMed&show_icons=true&count_private=true&hide_border=true&title_color=FD6767&icon_color=9A1A27&text_color=c9d1d9&bg_color=0d1117" alt="github-readme-streak-stats"></a>
 
 </div>
+
+- **Multiverso_Vulgo_Metaverso:** Um projeto que explora o conceito de multiverso e metaverso, utilizando diversas tecnologias abordadas no curso.
+- **GlossarioTechPHP:** Um glossário com termos e conceitos relacionados à tecnologia, fornecendo uma referência útil para estudantes e desenvolvedores.
+- **CloudMed:** Um projeto de plataforma de gestão e gerenciamento de informações médicas, desenvolvido como um Trabalho de Conclusão de Curso (TCC).
 
 
 <br/>
