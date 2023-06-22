@@ -31,7 +31,7 @@
             </div>
 
             <div class="lg:w-1/4 md:w-1/2">
-                <form action="/mande-uma-reclamacoes" method="post"
+                <form action="/mande-uma-reclamacao" method="post"
                     class="bg-white shadow-lg rounded-md px-9 py-10 mb-2 w-full m-auto"
                     id="submitForm"
                     >

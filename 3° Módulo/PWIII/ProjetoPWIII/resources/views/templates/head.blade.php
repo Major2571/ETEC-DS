@@ -30,7 +30,7 @@
             </a>
             <div class="flex md:order-2">
                 <a href="/login"
-                    class=" font-medium p-4 block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0f172a] md:p-0"
+                    class=" font-medium block py-2 px-5 text-gray-100 rounded hover:bg-[#d33f57] hover:text-[#0f172a]"
                     aria-current="page">
                     Login
                 </a>
@@ -50,26 +50,26 @@
                 <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
                     <li>
                         <a href="/"
-                            class="block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0f172a] md:p-0"
+                            class="font-medium block py-2 px-5 text-gray-100 rounded hover:bg-[#d33f57] hover:text-[#0f172a]"
                             aria-current="page">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="/mande-uma-reclamacoes"
-                            class="block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0f172a] md:p-0">
+                        <a href="/mande-uma-reclamacao"
+                            class="font-medium block py-2 px-5 text-gray-100 rounded hover:bg-[#d33f57] hover:text-[#0f172a]">
                             Reclamações
                         </a>
                     </li>
                     <li>
                         <a href="/mande-uma-sugestao"
-                            class="block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0f172a] md:p-0">
+                            class="font-medium block py-2 px-5 text-gray-100 rounded hover:bg-[#d33f57] hover:text-[#0f172a]">
                             Contato
                         </a>
                     </li>
                     <li>
                         <a href="/quem-somos"
-                            class="block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0f172a] md:p-0">
+                            class="font-medium block py-2 px-5 text-gray-100 rounded hover:bg-[#d33f57] hover:text-[#0f172a]">
                             Sobre
                         </a>
                     </li>
@@ -96,7 +96,7 @@
                         <a href="/" class="mr-4 hover:underline md:mr-6 ">Inicio</a>
                     </li>
                     <li>
-                        <a href="/mande-uma-reclamacoes" class="mr-4 hover:underline md:mr-6">Reclamações </a>
+                        <a href="/mande-uma-reclamacao" class="mr-4 hover:underline md:mr-6">Reclamações </a>
                     </li>
                     <li>
                         <a href="/mande-uma-sugestao" class="mr-4 hover:underline md:mr-6 ">Contato</a>

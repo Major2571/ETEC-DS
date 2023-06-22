@@ -12,7 +12,9 @@
 
     <div class="flex flex-wrap justify-center items-center content-center main-top">
         <div class="">
-            <h1 class="mt-2 block mt-1 text-5xl leading-tight font-bold text-slate-100 drop-shadow-lg mb-5">Bem-Vindo(a) ao CamargoLabs!</h1>
+            <h1 class="mt-2 block mt-1 text-5xl leading-tight font-bold text-slate-100 drop-shadow-lg mb-5">
+                Bem-Vindo(a) ao CamargoLabs!
+            </h1>
 
             <p class="block mt-1 leading-tight font-semibold text-gray-200 drop-shadow-lg">
                 Com nossa plataforma fácil de usar, você pode se comunicar facilmente com a equipe de suporte
@@ -36,12 +38,12 @@
         <p class="block mt-1 leading-tight text-2xl text-gray-400 drop-shadow-lg">No CamargoLabs, acreditamos que a comunicação aberta e transparente é essencial para criar um ambiente acadêmico de qualidade. É por isso que disponibilizamos as funcionalidades de reclamações e sugestões, para que você possa expressar suas necessidades e contribuir para melhorias no laboratório de informática.</p>
     </div>
 
-    <div class="flex items-center content-center flex-wrap m-auto cards mb-9">
+    <div class="grid lg:grid-cols-2 content-center flex-wrap m-auto w-4/5 mb-9 md:grid-cols-1">
 
-        <div class="mb-3 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl card">
+        <div class="mb-3 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl max-h-4/5">
             <div class="md:flex">
-                <div>
-                    <img class="h-50 w-full object-cover md:h-full md:w-full" src="assets/img/img-sug.png" alt="reclamacoes-robot">
+                <div class="max-h-4/5">
+                    <img class="h-full w-full object-cover" src="assets/img/img-sug.png" alt="reclamacoes-robot">
                 </div>
                 <div class="p-8">
 
@@ -68,10 +70,10 @@
             </div>
         </div>
 
-        <div class="mb-3 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl card">
+        <div class="mb-3 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl max-h-4/5">
             <div class="md:flex">
                 <div>
-                    <img class="h-50 w-full object-cover md:h-full md:w-full" src="assets/img/img-rec.png" alt="reclamacoes-robot">
+                    <img class="h-full w-full object-cover md:h-full md:w-full" src="assets/img/img-rec.png" alt="reclamacoes-robot">
                 </div>
                 <div class="p-8">
 
@@ -79,7 +81,7 @@
                         Reclamações
                     </h4>
 
-                    <h6 class="mt-2 block mt-1 text-lg leading-tight font-medium text-black">
+                    <h6 class="mt-2 block text-lg leading-tight font-medium text-black">
                         Encontrou problemas no
                         laboratório de informática?
                     </h6>
@@ -90,7 +92,7 @@
                         técnico e receber uma resposta rápida e eficiente.
                     </p>
 
-                    <a href="/reclamacoes" class="mt-4 w-max inline-flex items-center px-5 py-2 text-sm font-medium text-center text-white bg-[#DE3F4D] rounded-lg hover:bg-[#DA2C43] focus:ring-4 focus:outline-none focus:ring-blue-300">
+                    <a href="/mande-uma-reclamacao" class="mt-4 w-max inline-flex items-center px-5 py-2 text-sm font-medium text-center text-white bg-[#DE3F4D] rounded-lg hover:bg-[#DA2C43] focus:ring-4 focus:outline-none focus:ring-blue-300">
                         Confira
                         <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>

@@ -65,13 +65,7 @@ select::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-.cards {
-    max-width: 80%;
-}
 
-.cards .card {
-    height: 100%;
-}
 
 .hello {
     background: linear-gradient(180deg, #0d0c0ccc 0%,
