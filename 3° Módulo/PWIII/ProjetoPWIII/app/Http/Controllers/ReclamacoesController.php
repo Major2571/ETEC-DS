@@ -61,7 +61,7 @@ class ReclamacoesController extends Controller
 
         $reclamacoes->save();
 
-        return redirect('/mande-uma-reclamacoes');
+        return redirect('/mande-uma-reclamacao');
     }
     public function addRecApi(Request $request)
     {

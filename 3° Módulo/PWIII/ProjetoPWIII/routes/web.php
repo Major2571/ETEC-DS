@@ -21,8 +21,8 @@ Route::get('/mande-uma-sugestao', [ContatoController::class, 'create'])->name('c
 Route::post('/mande-uma-sugestao', [ContatoController::class, 'store'])->name('contato.store');
 
 // Reclamacoes
-Route::get('/mande-uma-reclamacoes', [ReclamacoesController::class, 'create'])->name('reclamacoes.create');
-Route::post('/mande-uma-reclamacoes', [ReclamacoesController::class, 'store'])->name('reclamacoes.store');
+Route::get('/mande-uma-reclamacao', [ReclamacoesController::class, 'create'])->name('reclamacoes.create');
+Route::post('/mande-uma-reclamacao', [ReclamacoesController::class, 'store'])->name('reclamacoes.store');
 
 // Quem Somos
 Route::get('/quem-somos', [QuemSomosController::class, 'index'])->name('quemSomos');

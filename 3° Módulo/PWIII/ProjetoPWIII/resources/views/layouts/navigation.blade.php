@@ -51,6 +51,9 @@
                             <x-dropdown-link :href="route('quemSomosCad')" >
                                 {{ __('Desenvolvedor') }}
                             </x-dropdown-link>
+                            <x-dropdown-link :href="route('register')">
+                                {{ __('Conta') }}
+                            </x-dropdown-link>
                         </x-slot>
                     </x-dropdown>
                 </div>
