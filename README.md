@@ -42,6 +42,6 @@ Aqui você encontrará uma ampla variedade de recursos relacionados ao curso, in
 > ### **👩🏻‍💻 Status**: 
 > - 1° Módulo ✅ *( Concluído - 06/2022 )*
 > - 2° Módulo ✅ *( Concluído - 12/2022 )*
-> - 3° Módulo ⏳ *( Loading... )* 
+> - 3° Módulo ✅ *( Concluído - 06/2023 )*
 
 <br/>
